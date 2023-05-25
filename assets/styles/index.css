@@ -76,7 +76,6 @@
 .top-row .top-row-content .currency .dropdown-menu {
   border: transparent;
   background-color: white;
-  transition: 0.5s;
   text-align: left;
 }
 .top-row .top-row-content .currency .dropdown-menu .dropdown-item {
@@ -95,30 +94,12 @@
 }
 @keyframes slideIn {
   0% {
-    transform: translateY(1rem);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0rem);
+    transform: translateY(2rem);
     opacity: 1;
-  }
-  0% {
-    transform: translateY(1rem);
-    opacity: 0;
-  }
-}
-@-webkit-keyframes slideIn {
-  0% {
-    -webkit-transform: transform;
-    -webkit-opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    -webkit-opacity: 1;
-  }
-  0% {
-    -webkit-transform: translateY(1rem);
-    -webkit-opacity: 0;
   }
 }
 .slideIn {
