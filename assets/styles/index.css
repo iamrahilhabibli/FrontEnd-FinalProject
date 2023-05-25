@@ -21,13 +21,24 @@
 }
 .top-row .contacts-list {
   list-style-type: none;
-  gap: 20px;
+  font-size: 15px;
+}
+.top-row .contacts-list .fa-twitter {
+  margin-left: 10px;
+}
+.top-row .contacts-list .fa-phone {
+  margin-left: 20px;
+  background-color: transparent;
 }
 .top-row .contacts-list li i {
   color: #343a40;
 }
 .top-row .contacts-list :hover {
+  transition: 0.2s;
   color: #bcac76;
+}
+.top-row .top-row-content .text-container {
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -24,12 +24,25 @@ $icons-color: #343a40;
   }
   .contacts-list {
     list-style-type: none;
-    gap: 20px;
+    font-size: 15px;
+    .fa-twitter {
+      margin-left: 10px;
+    }
+    .fa-phone {
+      margin-left: 20px;
+      background-color: transparent;
+    }
     li i {
       color: $icons-color;
     }
     :hover {
+      transition: 0.2s;
       color: $secondary-color;
+    }
+  }
+  .top-row-content {
+    .text-container {
+      text-align: center;
     }
   }
 }
