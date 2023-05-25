@@ -44,5 +44,41 @@ $icons-color: #343a40;
     .text-container {
       text-align: center;
     }
+    .language {
+      .dropdown-toggle {
+        border: transparent;
+        border-right: 1px solid rgba($color: #dee2e6, $alpha: 1);
+        border-radius: 0px;
+        height: 20px;
+      }
+      .dropdown-menu {
+        border: transparent;
+        background-color: white;
+        transition: 0.5s;
+        text-align: left;
+        .dropdown-item {
+          color: #868e96;
+          font-size: smaller;
+          font-weight: 600;
+        }
+      }
+    }
+    .currency {
+      .dropdown-toggle {
+        border: transparent;
+        border-radius: 0px;
+      }
+      .dropdown-menu {
+        border: transparent;
+        background-color: white;
+        transition: 0.5s;
+        text-align: left;
+        .dropdown-item {
+          color: #868e96;
+          font-size: smaller;
+          font-weight: 600;
+        }
+      }
+    }
   }
 }

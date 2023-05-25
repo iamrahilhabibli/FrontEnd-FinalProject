@@ -40,5 +40,37 @@
 .top-row .top-row-content .text-container {
   text-align: center;
 }
+.top-row .top-row-content .language .dropdown-toggle {
+  border: transparent;
+  border-right: 1px solid #dee2e6;
+  border-radius: 0px;
+  height: 20px;
+}
+.top-row .top-row-content .language .dropdown-menu {
+  border: transparent;
+  background-color: white;
+  transition: 0.5s;
+  text-align: left;
+}
+.top-row .top-row-content .language .dropdown-menu .dropdown-item {
+  color: #868e96;
+  font-size: smaller;
+  font-weight: 600;
+}
+.top-row .top-row-content .currency .dropdown-toggle {
+  border: transparent;
+  border-radius: 0px;
+}
+.top-row .top-row-content .currency .dropdown-menu {
+  border: transparent;
+  background-color: white;
+  transition: 0.5s;
+  text-align: left;
+}
+.top-row .top-row-content .currency .dropdown-menu .dropdown-item {
+  color: #868e96;
+  font-size: smaller;
+  font-weight: 600;
+}
 
 /*# sourceMappingURL=index.css.map */
