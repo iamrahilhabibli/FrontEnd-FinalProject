@@ -47,11 +47,15 @@ $icons-color: #343a40;
     }
   }
   .top-row-content {
+    .left-side-contacts-container {
+      padding-top: 10px;
+    }
     .text-container {
       text-align: center;
       font-size: 14px;
       font-weight: 400;
       color: #343a40;
+      padding-top: 10px;
     }
     .language {
       .dropdown-toggle {
@@ -110,7 +114,7 @@ $icons-color: #343a40;
   }
 
   100% {
-    transform: translateY(2rem);
+    transform: translateY(3rem);
     opacity: 1;
   }
 }
