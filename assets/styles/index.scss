@@ -72,10 +72,13 @@ $icons-color: #343a40;
         transition: 0.5s;
         text-align: left;
         box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
+        border-radius: 0px;
+        padding: 0.5rem 0;
         .dropdown-item {
           color: #868e96;
-          font-size: smaller;
+          font-size: 14px;
           font-weight: 600;
+          padding: 0.5rem;
         }
       }
     }
@@ -92,10 +95,13 @@ $icons-color: #343a40;
         background-color: white;
         text-align: left;
         box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
+        border-radius: 0px;
+        padding: 0.5rem 0;
         .dropdown-item {
           color: #868e96;
-          font-size: smaller;
+          font-size: 14px;
           font-weight: 600;
+          padding: 0.5rem;
         }
       }
     }
@@ -117,7 +123,7 @@ $icons-color: #343a40;
   }
 
   100% {
-    transform: translateY(3rem);
+    transform: translateY(2.7rem);
     opacity: 1;
   }
 }
