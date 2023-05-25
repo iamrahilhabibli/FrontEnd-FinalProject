@@ -11,7 +11,7 @@
 
 .top-row {
   width: 100vw;
-  height: 55px;
+  height: 75px;
   position: relative;
   background-color: #e9ecef;
 }
@@ -29,22 +29,31 @@
 .top-row .contacts-list .fa-phone {
   margin-left: 20px;
   background-color: transparent;
+  font-size: 20px;
+}
+.top-row .contacts-list .phone-number {
+  margin-left: 10px;
+  font-size: 14px;
 }
 .top-row .contacts-list li i {
   color: #343a40;
 }
-.top-row .contacts-list :hover {
+.top-row .contacts-list :hover:not(.phone-number):not(.fa-phone) {
   transition: 0.2s;
   color: #bcac76;
 }
 .top-row .top-row-content .text-container {
   text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  color: #343a40;
 }
 .top-row .top-row-content .language .dropdown-toggle {
   border: transparent;
   border-right: 1px solid #dee2e6;
   border-radius: 0px;
-  height: 20px;
+  font-size: 14px;
+  font-weight: 300;
 }
 .top-row .top-row-content .language .dropdown-menu {
   border: transparent;
@@ -60,6 +69,8 @@
 .top-row .top-row-content .currency .dropdown-toggle {
   border: transparent;
   border-radius: 0px;
+  font-size: 14px;
+  font-weight: 300;
 }
 .top-row .top-row-content .currency .dropdown-menu {
   border: transparent;

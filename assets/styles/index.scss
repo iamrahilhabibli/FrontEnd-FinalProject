@@ -15,7 +15,7 @@ $icons-color: #343a40;
 
 .top-row {
   width: 100vw;
-  height: 55px;
+  height: 75px;
   position: relative;
   background-color: $primary-color;
   .container-fluid {
@@ -31,11 +31,16 @@ $icons-color: #343a40;
     .fa-phone {
       margin-left: 20px;
       background-color: transparent;
+      font-size: 20px;
+    }
+    .phone-number {
+      margin-left: 10px;
+      font-size: 14px;
     }
     li i {
       color: $icons-color;
     }
-    :hover {
+    :hover:not(.phone-number):not(.fa-phone) {
       transition: 0.2s;
       color: $secondary-color;
     }
@@ -43,13 +48,17 @@ $icons-color: #343a40;
   .top-row-content {
     .text-container {
       text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      color: #343a40;
     }
     .language {
       .dropdown-toggle {
         border: transparent;
         border-right: 1px solid rgba($color: #dee2e6, $alpha: 1);
         border-radius: 0px;
-        height: 20px;
+        font-size: 14px;
+        font-weight: 300;
       }
       .dropdown-menu {
         border: transparent;
@@ -67,6 +76,8 @@ $icons-color: #343a40;
       .dropdown-toggle {
         border: transparent;
         border-radius: 0px;
+        font-size: 14px;
+        font-weight: 300;
       }
       .dropdown-menu {
         border: transparent;
