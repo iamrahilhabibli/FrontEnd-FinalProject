@@ -1,0 +1,35 @@
+$primary-color: #e9ecef;
+$secondary-color: #bcac76;
+$icons-color: #343a40;
+
+@font-face {
+  font-family: "VremenaGrotesk";
+  src: url("/vremena-grotesk/") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: VremenaGrotesk, sans-serif;
+}
+
+.top-row {
+  width: 100vw;
+  height: 55px;
+  position: relative;
+  background-color: $primary-color;
+  .container-fluid {
+    position: relative;
+    padding: 20px 0px;
+  }
+  .contacts-list {
+    list-style-type: none;
+    gap: 20px;
+    li i {
+      color: $icons-color;
+    }
+    :hover {
+      color: $secondary-color;
+    }
+  }
+}
