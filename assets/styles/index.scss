@@ -65,11 +65,13 @@ $icons-color: #343a40;
         font-size: 14px;
         font-weight: 300;
       }
+
       .dropdown-menu {
         border: transparent;
         background-color: white;
         transition: 0.5s;
         text-align: left;
+        box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
         .dropdown-item {
           color: #868e96;
           font-size: smaller;
@@ -89,6 +91,7 @@ $icons-color: #343a40;
         border: transparent;
         background-color: white;
         text-align: left;
+        box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
         .dropdown-item {
           color: #868e96;
           font-size: smaller;
