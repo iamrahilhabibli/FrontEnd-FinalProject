@@ -115,6 +115,16 @@ $icons-color: #343a40;
     -webkit-animation-fill-mode: both;
   }
 }
+@media (max-width: 767px) {
+  .left-side-contacts-container {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .col-md-4.col-sm-6.language-currency {
+    display: none !important;
+  }
+}
 
 @keyframes slideIn {
   0% {
