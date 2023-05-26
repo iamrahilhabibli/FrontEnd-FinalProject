@@ -178,6 +178,17 @@ nav .login-checkout-container ul li button {
 .swiper-container .swiper-pagination {
   position: relative;
 }
+.swiper-container .clock-section {
+  text-align: center;
+  position: relative;
+}
+.swiper-container .clock-section svg {
+  position: absolute;
+  top: 0 !important;
+  height: 450px;
+  z-index: -10;
+  left: 150px;
+}
 .swiper-container .col-sm-6 p {
   letter-spacing: 3px;
   text-transform: uppercase;
