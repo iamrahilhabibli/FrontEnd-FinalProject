@@ -298,10 +298,14 @@ nav .login-checkout-container ul li button {
   position: relative;
   padding: 0px 15px;
 }
+.section-one .main-container .products-toprow .col-md-7:hover {
+  transition: 0.5s;
+  transform: scale(1.5);
+}
 .section-one .main-container .products-toprow .col-md-7 .chair-text-container {
   position: absolute;
   line-height: 0.5;
-  left: -80px;
+  left: -65px;
   top: 18%;
   text-align: left;
 }
@@ -325,6 +329,7 @@ nav .login-checkout-container ul li button {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: left;
+  padding: 12px 0px 12px 0px;
 }
 .section-one .main-container .products-toprow .product-chair {
   width: 35em;

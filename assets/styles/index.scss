@@ -318,11 +318,14 @@ nav {
         margin-bottom: 45px;
         position: relative;
         padding: 0px 15px;
-
+        &:hover {
+          transition: 0.5s;
+          transform: scale(1.5);
+        }
         .chair-text-container {
           position: absolute;
           line-height: 0.5;
-          left: -80px;
+          left: -65px;
           top: 18%;
           text-align: left;
           a {
@@ -346,6 +349,7 @@ nav {
               text-transform: uppercase;
               letter-spacing: 2px;
               text-align: left;
+              padding: 12px 0px 12px 0px;
             }
           }
         }
