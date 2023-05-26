@@ -212,9 +212,20 @@ nav {
     }
     h2 {
       font-size: 72px;
+      margin-bottom: 1.5rem;
     }
     img {
       max-height: 500px;
+    }
+    .start-shopping-btn {
+      border-radius: 0;
+      font-weight: bold;
+      color: $secondary-color;
+      border-color: $secondary-color;
+      text-align: center;
+      padding: 8px 12px;
+      letter-spacing: 0.3em;
+      font-size: smaller;
     }
   }
 }
