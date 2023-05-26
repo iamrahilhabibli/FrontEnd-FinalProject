@@ -108,7 +108,7 @@ nav .index-btn {
 }
 nav .search-bar {
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 3rem;
   width: 300px;
 }
 nav .search-bar button {
