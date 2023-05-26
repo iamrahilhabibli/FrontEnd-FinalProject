@@ -96,20 +96,41 @@
   padding: 0.5rem;
 }
 
+nav {
+  padding: 1rem 2rem !important;
+}
 nav .container-fluid {
   background-color: transparent;
 }
-nav .indexBtn {
+nav .index-btn {
   font-size: 16px;
   font-weight: 400;
 }
-nav .searchNav {
+nav .search-bar {
+  margin-left: auto;
+  margin-right: auto;
+}
+nav .search-bar button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+nav .search-bar button i {
+  font-size: 20px;
+  position: relative;
+  right: 20px;
+}
+nav .search-bar .search-nav {
   outline: 0;
   border-right: none;
   border-top: none;
   border-left: none;
   border-bottom: 1px solid black;
   border-radius: 0;
+}
+nav .login-checkout-container ul {
+  font-size: 26px;
+  list-style-type: none;
 }
 
 @media (min-width: 768px) {
