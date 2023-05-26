@@ -290,6 +290,7 @@ nav {
     max-width: 1140px;
 
     .col-xl-8 {
+      margin-bottom: 75px;
       .p-top {
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -306,6 +307,27 @@ nav {
         font-family: 300;
         line-height: 32px;
         color: $navbar-color;
+      }
+    }
+    .products-toprow {
+      .product-book {
+        width: 100%;
+      }
+      .col-md-7 {
+        margin-left: auto;
+        position: relative;
+
+        .chair-text-container {
+          position: absolute;
+          line-height: 0.5;
+          left: -20px;
+          top: 15%;
+        }
+      }
+      .product-chair {
+        width: 100%;
+        max-height: 100%;
+        object-fit: cover;
       }
     }
   }
