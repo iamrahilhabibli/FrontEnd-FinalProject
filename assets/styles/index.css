@@ -104,7 +104,7 @@ nav .container-fluid {
 }
 nav .index-btn {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
 }
 nav .navbar-nav {
   color: #8a8a8a;
@@ -154,6 +154,20 @@ nav .login-checkout-container ul .shopping-cart-items-count {
   font-size: 12px;
   right: 80px;
   color: white;
+}
+nav .login-checkout-container ul li button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.custom-svg-blob {
+  height: 800px;
+  width: 800px;
+  position: absolute;
+  top: -250px;
+  left: -225px;
+  z-index: -100;
 }
 
 @media (min-width: 768px) {
