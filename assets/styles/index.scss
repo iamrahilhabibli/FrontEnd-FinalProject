@@ -1,7 +1,7 @@
 $primary-color: #e9ecef;
 $secondary-color: #bcac76;
 $icons-color: #343a40;
-
+$navbar-color: #8a8a8a;
 @font-face {
   font-family: "VremenaGrotesk";
   src: url("/vremena-grotesk/") format("truetype");
@@ -116,6 +116,11 @@ nav {
     font-size: 16px;
     font-weight: 400;
   }
+  .navbar-nav {
+    color: $navbar-color;
+    font-size: 16px;
+    font-weight: 500;
+  }
   .search-bar {
     margin-left: auto;
     margin-right: 3rem;
@@ -148,6 +153,18 @@ nav {
       margin-bottom: 0 !important;
       font-size: 24px;
       list-style-type: none;
+      gap: 20px;
+      .shopping-cart-items-count {
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        background-color: $secondary-color;
+        position: absolute;
+        font-size: 12px;
+        right: 80px;
+        color: white;
+      }
     }
   }
 }
