@@ -96,6 +96,10 @@
   padding: 0.5rem;
 }
 
+nav .indexBtn {
+  font-size: 14px;
+}
+
 @media (min-width: 768px) {
   .animate {
     animation-duration: 0.3s;
