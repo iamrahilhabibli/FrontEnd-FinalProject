@@ -306,6 +306,7 @@ nav {
       }
     }
     .products-toprow {
+      flex-wrap: wrap;
       .col-md-4 {
         padding: 15px 15px 0px 15px;
       }
@@ -350,7 +351,7 @@ nav {
         }
       }
       .product-chair {
-        width: 100%;
+        width: 35em;
         max-height: 100%;
         object-fit: cover;
       }
