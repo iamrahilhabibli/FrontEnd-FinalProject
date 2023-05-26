@@ -184,8 +184,19 @@ nav {
   z-index: -100;
 }
 .swiper-container {
-  width: 600px;
-  height: 300px;
+  width: 100vw;
+  height: 50vh;
+  min-height: 500px;
+
+  .col-sm-4 img {
+    max-height: 500px;
+  }
+}
+.slide-container {
+  max-width: 1140px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (min-width: 768px) {
