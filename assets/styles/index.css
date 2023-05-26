@@ -212,6 +212,10 @@ nav .login-checkout-container ul li button {
   letter-spacing: 0.3em;
   font-size: smaller;
 }
+.swiper-container .col-sm-6 .start-shopping-btn:hover {
+  color: black !important;
+  background-color: #bcac76 !important;
+}
 
 .slide-container {
   max-width: 1140px;

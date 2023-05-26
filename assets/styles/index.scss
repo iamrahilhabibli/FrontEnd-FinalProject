@@ -226,6 +226,11 @@ nav {
       padding: 8px 12px;
       letter-spacing: 0.3em;
       font-size: smaller;
+
+      &:hover {
+        color: black !important;
+        background-color: $secondary-color !important;
+      }
     }
   }
 }
