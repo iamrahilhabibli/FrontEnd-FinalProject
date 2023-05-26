@@ -187,7 +187,7 @@ nav .login-checkout-container ul li button {
   top: 0 !important;
   height: 450px;
   z-index: -10;
-  left: 150px;
+  left: 160px;
 }
 .swiper-container .col-sm-6 p {
   letter-spacing: 3px;
@@ -197,6 +197,7 @@ nav .login-checkout-container ul li button {
 }
 .swiper-container .col-sm-6 h2 {
   font-size: 72px;
+  font-weight: 600;
   margin-bottom: 1.5rem;
 }
 .swiper-container .col-sm-6 img {
