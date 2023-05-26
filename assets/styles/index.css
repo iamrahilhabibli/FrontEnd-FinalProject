@@ -287,12 +287,16 @@ nav .login-checkout-container ul li button {
   line-height: 32px;
   color: #8a8a8a;
 }
+.section-one .main-container .products-toprow .col-md-4 {
+  padding: 15px 15px 0px 15px;
+}
 .section-one .main-container .products-toprow .product-book {
   width: 100%;
 }
 .section-one .main-container .products-toprow .col-md-7 {
   margin-left: auto;
   position: relative;
+  padding: 0px 15px;
 }
 .section-one .main-container .products-toprow .col-md-7 .chair-text-container {
   position: absolute;
