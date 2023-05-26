@@ -192,6 +192,9 @@ nav {
   .swiper-pagination {
     position: relative;
   }
+  .swiper-slide {
+    transition: transform 3s ease;
+  }
   .clock-section {
     text-align: center;
     position: relative;
@@ -199,6 +202,30 @@ nav {
     svg {
       position: absolute;
       top: 0 !important;
+      height: 450px;
+      z-index: -10;
+      left: 160px;
+    }
+  }
+  .chair-section {
+    text-align: center;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: -35px !important;
+      height: 450px;
+      z-index: -10;
+      left: 160px;
+    }
+  }
+  .box-section {
+    text-align: center;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: 0px !important;
       height: 450px;
       z-index: -10;
       left: 160px;

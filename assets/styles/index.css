@@ -179,6 +179,9 @@ nav .login-checkout-container ul li button {
 .swiper-container .swiper-pagination {
   position: relative;
 }
+.swiper-container .swiper-slide {
+  transition: transform 3s ease;
+}
 .swiper-container .clock-section {
   text-align: center;
   position: relative;
@@ -186,6 +189,28 @@ nav .login-checkout-container ul li button {
 .swiper-container .clock-section svg {
   position: absolute;
   top: 0 !important;
+  height: 450px;
+  z-index: -10;
+  left: 160px;
+}
+.swiper-container .chair-section {
+  text-align: center;
+  position: relative;
+}
+.swiper-container .chair-section svg {
+  position: absolute;
+  top: -35px !important;
+  height: 450px;
+  z-index: -10;
+  left: 160px;
+}
+.swiper-container .box-section {
+  text-align: center;
+  position: relative;
+}
+.swiper-container .box-section svg {
+  position: absolute;
+  top: 0px !important;
   height: 450px;
   z-index: -10;
   left: 160px;
