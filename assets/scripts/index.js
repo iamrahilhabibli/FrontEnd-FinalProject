@@ -7,10 +7,7 @@ new simpleParallax(clockImage, {
 const swiper = new Swiper(".swiper-container", {
   direction: "horizontal",
   loop: true,
-  slidesPerView: "auto",
-  initialSlide: 2,
   speed: 2000,
-  spaceBetween: 32,
   centeredSlides: true,
   roundLengths: true,
   pagination: {
