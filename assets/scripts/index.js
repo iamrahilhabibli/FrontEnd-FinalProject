@@ -14,6 +14,7 @@ var mySwiper = new Swiper(".swiper-container", {
   zoom: true,
   autoplay: {
     delay: 2000,
+    disableOnInteraction: false,
   },
   loop: true,
 });
