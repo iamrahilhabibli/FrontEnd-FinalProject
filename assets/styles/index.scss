@@ -241,7 +241,7 @@ nav {
     h2 {
       font-size: 72px;
       font-weight: 600;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
     img {
       max-height: 500px;
@@ -269,8 +269,21 @@ nav {
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-}
 
+  .text-slider {
+    .text-muted {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: normal;
+      text-transform: none;
+      margin-bottom: 1rem;
+    }
+  }
+}
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (min-width: 768px) {
   .animate {
     animation-duration: 0.3s;
