@@ -96,8 +96,20 @@
   padding: 0.5rem;
 }
 
+nav .container-fluid {
+  background-color: transparent;
+}
 nav .indexBtn {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 400;
+}
+nav .searchNav {
+  outline: 0;
+  border-right: none;
+  border-top: none;
+  border-left: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
 }
 
 @media (min-width: 768px) {
