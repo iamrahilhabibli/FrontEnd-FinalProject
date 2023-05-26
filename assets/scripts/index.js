@@ -4,24 +4,16 @@ new simpleParallax(clockImage, {
   overflow: true,
 });
 // needs parallax fixing
-const swiper = new Swiper(".swiper-container", {
-  direction: "horizontal",
-  loop: true,
+var mySwiper = new Swiper(".swiper-container", {
   speed: 2000,
-  centeredSlides: true,
-  roundLengths: true,
+  direction: "horizontal",
   pagination: {
     el: ".swiper-pagination",
+    dynamicBullets: true,
   },
-  effect: "slide", // (e.g., 'slide', 'fade', 'cube', 'coverflow', 'flip')
-  fadeEffect: {
-    crossFade: true,
+  zoom: true,
+  autoplay: {
+    delay: 2000,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+  loop: true,
 });

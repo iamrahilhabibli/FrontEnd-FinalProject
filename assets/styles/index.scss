@@ -187,13 +187,9 @@ nav {
   width: 100vw;
   height: 50vh;
   min-height: 500px;
-  transition: 0.5s;
 
   .swiper-pagination {
     position: relative;
-  }
-  .swiper-slide {
-    transition: transform 3s ease;
   }
   .clock-section {
     text-align: center;
@@ -318,14 +314,39 @@ nav {
       }
       .col-md-7 {
         margin-left: auto;
+        margin-bottom: 45px;
         position: relative;
         padding: 0px 15px;
 
         .chair-text-container {
           position: absolute;
           line-height: 0.5;
-          left: -20px;
-          top: 15%;
+          left: -80px;
+          top: 18%;
+          text-align: left;
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 0%;
+            h2 {
+              font-weight: 700;
+              margin-bottom: 16px !important;
+            }
+            .chair-price {
+              font-size: 16px;
+              margin-bottom: 26px;
+            }
+          }
+          p {
+            .shop-now-btn {
+              font-size: 12px;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              text-align: left;
+            }
+          }
         }
       }
       .product-chair {

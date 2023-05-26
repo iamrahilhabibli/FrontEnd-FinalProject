@@ -174,13 +174,9 @@ nav .login-checkout-container ul li button {
   width: 100vw;
   height: 50vh;
   min-height: 500px;
-  transition: 0.5s;
 }
 .swiper-container .swiper-pagination {
   position: relative;
-}
-.swiper-container .swiper-slide {
-  transition: transform 3s ease;
 }
 .swiper-container .clock-section {
   text-align: center;
@@ -295,14 +291,37 @@ nav .login-checkout-container ul li button {
 }
 .section-one .main-container .products-toprow .col-md-7 {
   margin-left: auto;
+  margin-bottom: 45px;
   position: relative;
   padding: 0px 15px;
 }
 .section-one .main-container .products-toprow .col-md-7 .chair-text-container {
   position: absolute;
   line-height: 0.5;
-  left: -20px;
-  top: 15%;
+  left: -80px;
+  top: 18%;
+  text-align: left;
+}
+.section-one .main-container .products-toprow .col-md-7 .chair-text-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 0%;
+}
+.section-one .main-container .products-toprow .col-md-7 .chair-text-container a h2 {
+  font-weight: 700;
+  margin-bottom: 16px !important;
+}
+.section-one .main-container .products-toprow .col-md-7 .chair-text-container a .chair-price {
+  font-size: 16px;
+  margin-bottom: 26px;
+}
+.section-one .main-container .products-toprow .col-md-7 .chair-text-container p .shop-now-btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
 }
 .section-one .main-container .products-toprow .product-chair {
   width: 100%;
