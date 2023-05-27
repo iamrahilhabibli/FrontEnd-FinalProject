@@ -256,7 +256,7 @@ nav .login-checkout-container ul li button {
 }
 
 .section-one {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 .section-one .main-container {
   margin-left: auto;
@@ -539,13 +539,17 @@ nav .login-checkout-container ul li button {
 
 .ondeal-item-container {
   width: 100vw;
-  height: 50vh;
+  height: 75vh;
   background-color: #ebf7ff;
   position: relative;
+  padding: 3rem 0rem;
 }
 .ondeal-item-container .custom-blue-blob {
   height: 600px;
   width: 600px;
+  position: absolute;
+  top: -40px;
+  left: -200px;
 }
 
 @media (min-width: 768px) {
