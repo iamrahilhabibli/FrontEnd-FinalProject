@@ -564,14 +564,23 @@ nav .login-checkout-container ul li button {
   margin-right: -15px;
   align-items: center !important;
 }
-.ondeal-item-container .content-container .deal-item-section .text-center img {
+.ondeal-item-container .content-container .deal-item-section .countdown-img-container {
+  position: relative;
+  width: 50%;
+  text-align: center !important;
+  max-width: 50%;
+}
+.ondeal-item-container .content-container .deal-item-section .countdown-img-container img {
   max-height: 450px;
+  max-width: 100%;
+  height: auto;
 }
 .ondeal-item-container .content-container .deal-item-section .col-lg-6 {
   position: relative;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  flex: 0 0 50% !important;
 }
 .ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container p {
   text-transform: uppercase;
