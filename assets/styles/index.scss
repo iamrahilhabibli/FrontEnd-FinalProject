@@ -736,12 +736,26 @@ nav {
         padding-left: 15px;
         padding-right: 15px;
         box-sizing: border-box;
+        position: relative;
+        width: 100%;
 
         .product {
-          .greenchair-image {
-            img {
-              max-width: 100%;
-              height: auto;
+          margin-bottom: 30px;
+          .greenchaircontainer {
+            margin-bottom: 15px;
+            .product-badge {
+              position: absolute;
+              z-index: 10;
+              top: 22px;
+              left: 24px;
+              background-color: #877f64;
+              color: white;
+            }
+            .greenchair-image {
+              img {
+                max-width: 100%;
+                height: auto;
+              }
             }
           }
         }

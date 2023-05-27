@@ -681,8 +681,24 @@ nav .login-checkout-container ul li button {
   padding-left: 15px;
   padding-right: 15px;
   box-sizing: border-box;
+  position: relative;
+  width: 100%;
 }
-.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchair-image img {
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product {
+  margin-bottom: 30px;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer {
+  margin-bottom: 15px;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .product-badge {
+  position: absolute;
+  z-index: 10;
+  top: 22px;
+  left: 24px;
+  background-color: #877f64;
+  color: white;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .greenchair-image img {
   max-width: 100%;
   height: auto;
 }
