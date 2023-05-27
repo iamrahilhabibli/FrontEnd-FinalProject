@@ -415,6 +415,39 @@ nav .login-checkout-container ul li button {
 .section-one .main-container .products-midrow .col-md-7 .clock-image-container {
   margin-left: 6rem;
 }
+.section-one .main-container .products-midrow .col-md-4 {
+  padding: 15px 15px 0px 15px;
+  margin-left: auto;
+  transition: 0.5s ease-in-out;
+}
+.section-one .main-container .products-midrow .col-md-4 .product-box {
+  width: 100%;
+}
+.section-one .main-container .products-midrow .col-md-4:hover {
+  transform: scale(1.05);
+}
+.section-one .main-container .products-midrow .col-md-4 .box-text-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 0%;
+}
+.section-one .main-container .products-midrow .col-md-4 .box-text-container a h3 {
+  font-weight: 700;
+  margin-bottom: 16px !important;
+}
+.section-one .main-container .products-midrow .col-md-4 .box-text-container .box-price {
+  font-size: 16px;
+  font-weight: 600;
+}
+.section-one .main-container .products-midrow .col-md-4 .box-text-container p .shop-now-btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+  padding: 12px 0px 12px 0px;
+}
 
 @media (min-width: 768px) {
   .animate {
