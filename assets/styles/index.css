@@ -626,12 +626,14 @@ nav .login-checkout-container ul li button {
 }
 
 .new-arrival-items-container {
-  width: 100vw;
+  position: relative;
 }
 .new-arrival-items-container .custom-yellow-blob {
   height: 600px;
   width: 600px;
   position: absolute;
+  right: -200px;
+  top: 400px;
 }
 
 @media (min-width: 768px) {

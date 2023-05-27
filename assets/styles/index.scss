@@ -676,12 +676,14 @@ nav {
   }
 }
 .new-arrival-items-container {
-  width: 100vw;
+  position: relative;
 
   .custom-yellow-blob {
     height: 600px;
     width: 600px;
     position: absolute;
+    right: -200px;
+    top: 400px;
   }
 }
 
