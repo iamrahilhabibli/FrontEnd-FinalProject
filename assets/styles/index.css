@@ -671,6 +671,21 @@ nav .login-checkout-container ul li button {
   text-decoration: underline;
   filter: brightness(0.8);
 }
+.new-arrival-main-container .new-arrival-container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchair-image img {
+  max-width: 100%;
+  height: auto;
+}
 
 @media (min-width: 768px) {
   .animate {
