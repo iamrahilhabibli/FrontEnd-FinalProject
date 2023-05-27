@@ -553,9 +553,25 @@ nav .login-checkout-container ul li button {
 }
 .ondeal-item-container .content-container {
   max-width: 1140px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0px 15px;
+}
+.ondeal-item-container .content-container .deal-item-section {
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  align-items: center !important;
+}
+.ondeal-item-container .content-container .deal-item-section .col-lg-6 {
+  position: relative;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container p {
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
