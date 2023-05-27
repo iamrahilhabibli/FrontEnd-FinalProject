@@ -583,7 +583,6 @@ nav {
 
 .ondeal-item-container {
   width: 100vw;
-  height: 75vh;
   background-color: #ebf7ff;
   position: relative;
   padding: 3rem 0rem;
@@ -596,6 +595,7 @@ nav {
     left: -200px;
   }
   .content-container {
+    position: relative;
     max-width: 1140px;
     width: 100%;
     margin-left: auto;
@@ -607,6 +607,12 @@ nav {
       margin-left: -15px;
       margin-right: -15px;
       align-items: center !important;
+
+      .text-center {
+        img {
+          max-height: 450px;
+        }
+      }
 
       .col-lg-6 {
         position: relative;
@@ -659,6 +665,9 @@ nav {
           }
         }
       }
+    }
+    .new-arrival-items-container {
+      width: 100vw;
     }
   }
 }
