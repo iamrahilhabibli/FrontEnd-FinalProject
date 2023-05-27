@@ -532,26 +532,34 @@ nav {
         }
       }
       .col-md-8 {
-        transition: 0.5s ease-in-out;
         margin-left: auto;
+        margin-bottom: 45px;
+        position: relative;
+        padding: 0px 15px;
+        transition: 0.5s ease-in-out;
         &:hover {
           transform: scale(1.05);
         }
         .koronachair-text-container {
+          position: absolute;
+          line-height: 0.5;
+          left: -65px;
+          top: 18%;
+          text-align: left;
           a {
             text-decoration: none;
             color: black;
             font-size: 32px;
             font-weight: 700;
             line-height: 0%;
-            h3 {
+            h2 {
               font-weight: 700;
               margin-bottom: 16px !important;
             }
-          }
-          .koronachair-price {
-            font-size: 16px;
-            font-weight: 600;
+            .koronachair-price {
+              font-size: 16px;
+              margin-bottom: 26px;
+            }
           }
           p {
             .shop-now-btn {
@@ -564,7 +572,9 @@ nav {
           }
         }
         .product-koronachair {
-          width: 100%;
+          width: 40em;
+          max-height: 100%;
+          object-fit: cover;
         }
       }
     }
