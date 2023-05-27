@@ -741,6 +741,33 @@ nav {
 
         .product {
           margin-bottom: 30px;
+          .position-relative {
+            h3 {
+              .product-name {
+                text-decoration: none;
+                color: #212529;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 21px;
+              }
+            }
+            .text-gray-500 {
+              font-size: 14px;
+              color: #adb5bd;
+            }
+            .stars-container {
+              position: absolute;
+              right: 0;
+              bottom: 5px;
+              font-size: 11px;
+              .fa-star {
+                color: #868e96 !important;
+              }
+              .fa-star:nth-child(-n + 3) {
+                color: #bcac76 !important;
+              }
+            }
+          }
           .greenchaircontainer {
             margin-bottom: 15px;
             .product-badge {

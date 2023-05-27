@@ -687,6 +687,29 @@ nav .login-checkout-container ul li button {
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product {
   margin-bottom: 30px;
 }
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .position-relative h3 .product-name {
+  text-decoration: none;
+  color: #212529;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .position-relative .text-gray-500 {
+  font-size: 14px;
+  color: #adb5bd;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .position-relative .stars-container {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  font-size: 11px;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .position-relative .stars-container .fa-star {
+  color: #868e96 !important;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .position-relative .stars-container .fa-star:nth-child(-n+3) {
+  color: #bcac76 !important;
+}
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer {
   margin-bottom: 15px;
 }
