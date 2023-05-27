@@ -292,6 +292,12 @@ nav .login-checkout-container ul li button {
 .section-one .main-container .products-toprow .product-book {
   width: 100%;
 }
+.section-one .main-container .products-toprow .col-md-4 {
+  transition: 0.5s ease-in-out;
+}
+.section-one .main-container .products-toprow .col-md-4:hover {
+  transform: scale(1.05);
+}
 .section-one .main-container .products-toprow .col-md-4 .books-text-container a {
   text-decoration: none;
   color: black;
@@ -302,6 +308,10 @@ nav .login-checkout-container ul li button {
 .section-one .main-container .products-toprow .col-md-4 .books-text-container a h3 {
   font-weight: 700;
   margin-bottom: 16px !important;
+}
+.section-one .main-container .products-toprow .col-md-4 .books-text-container .book-price {
+  font-size: 16px;
+  font-weight: 600;
 }
 .section-one .main-container .products-toprow .col-md-4 .books-text-container p .shop-now-btn {
   font-size: 12px;
@@ -315,7 +325,7 @@ nav .login-checkout-container ul li button {
   margin-bottom: 45px;
   position: relative;
   padding: 0px 15px;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 .section-one .main-container .products-toprow .col-md-7:hover {
   transform: scale(1.05);
@@ -353,6 +363,35 @@ nav .login-checkout-container ul li button {
   width: 35em;
   max-height: 100%;
   object-fit: cover;
+}
+.section-one .main-container .products-midrow {
+  flex-wrap: wrap;
+}
+.section-one .main-container .products-midrow .col-md-7 {
+  padding: 15px 15px 0px 15px;
+}
+.section-one .main-container .products-midrow .product-clock {
+  width: 100%;
+}
+.section-one .main-container .products-midrow .col-md-7 {
+  margin-bottom: 45px;
+  position: relative;
+  padding: 0px 15px;
+  transition: 0.5s ease-in-out;
+}
+.section-one .main-container .products-midrow .col-md-7:hover {
+  transform: scale(1.05);
+}
+.section-one .main-container .products-midrow .col-md-7 .clock-text-container {
+  position: absolute;
+  line-height: 0.5;
+  left: 0px;
+  top: 18%;
+  text-align: left;
+  z-index: 10;
+}
+.section-one .main-container .products-midrow .col-md-7 .clock-image-container {
+  margin-left: 6rem;
 }
 
 @media (min-width: 768px) {

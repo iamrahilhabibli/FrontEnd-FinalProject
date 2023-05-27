@@ -314,6 +314,10 @@ nav {
         width: 100%;
       }
       .col-md-4 {
+        transition: 0.5s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+        }
         .books-text-container {
           a {
             text-decoration: none;
@@ -325,6 +329,10 @@ nav {
               font-weight: 700;
               margin-bottom: 16px !important;
             }
+          }
+          .book-price {
+            font-size: 16px;
+            font-weight: 600;
           }
           p {
             .shop-now-btn {
@@ -342,7 +350,7 @@ nav {
         margin-bottom: 45px;
         position: relative;
         padding: 0px 15px;
-        transition: 0.5s;
+        transition: 0.5s ease-in-out;
         &:hover {
           transform: scale(1.05);
         }
@@ -382,6 +390,35 @@ nav {
         width: 35em;
         max-height: 100%;
         object-fit: cover;
+      }
+    }
+    .products-midrow {
+      flex-wrap: wrap;
+      .col-md-7 {
+        padding: 15px 15px 0px 15px;
+      }
+      .product-clock {
+        width: 100%;
+      }
+      .col-md-7 {
+        margin-bottom: 45px;
+        position: relative;
+        padding: 0px 15px;
+        transition: 0.5s ease-in-out;
+        &:hover {
+          transform: scale(1.05);
+        }
+        .clock-text-container {
+          position: absolute;
+          line-height: 0.5;
+          left: 0px;
+          top: 18%;
+          text-align: left;
+          z-index: 10;
+        }
+        .clock-image-container {
+          margin-left: 6rem;
+        }
       }
     }
   }
