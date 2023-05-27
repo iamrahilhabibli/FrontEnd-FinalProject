@@ -600,6 +600,10 @@ nav .login-checkout-container ul li button {
   padding: 1.5rem 3rem;
   box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.15);
   background-color: white;
+  text-align: center;
+}
+.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .countdown-container h4 {
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
