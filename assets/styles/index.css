@@ -581,6 +581,11 @@ nav .login-checkout-container ul li button {
   font-weight: 700;
   line-height: 52px;
 }
+.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .text-muted {
+  color: #868e96 !important;
+  font-weight: 600;
+  font-size: 16px;
+}
 
 @media (min-width: 768px) {
   .animate {
