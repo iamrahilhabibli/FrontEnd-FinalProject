@@ -625,15 +625,29 @@ nav .login-checkout-container ul li button {
   letter-spacing: 2px;
 }
 
-.new-arrival-items-container {
+.new-arrival-main-container {
   position: relative;
+  padding-top: 6rem;
 }
-.new-arrival-items-container .custom-yellow-blob {
+.new-arrival-main-container .custom-yellow-blob {
   height: 600px;
   width: 600px;
   position: absolute;
   right: -200px;
   top: 400px;
+}
+.new-arrival-main-container .new-arrival-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.new-arrival-main-container .new-arrival-container h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+.new-arrival-main-container .new-arrival-container p {
+  line-height: 32px;
+  font-weight: 200;
+  font-size: 20px;
 }
 
 @media (min-width: 768px) {
