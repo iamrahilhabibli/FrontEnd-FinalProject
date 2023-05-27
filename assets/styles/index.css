@@ -692,15 +692,29 @@ nav .login-checkout-container ul li button {
 }
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .product-badge {
   position: absolute;
-  z-index: 10;
+  z-index: 11;
   top: 22px;
   left: 24px;
   background-color: #877f64;
   color: white;
 }
-.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .greenchair-image img {
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .greenchair-image .zoomedout-chair {
   max-width: 100%;
   height: auto;
+  position: relative;
+  z-index: 10;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .greenchair-image .zoomedin-chair {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .product-hover {
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @media (min-width: 768px) {
