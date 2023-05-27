@@ -853,6 +853,7 @@ nav {
                 height: auto;
                 position: relative;
                 z-index: 10;
+                transition: transform 0.5s, opacity 0.5s, visibility 0.5s;
               }
 
               .zoomedin-chair {
@@ -861,6 +862,7 @@ nav {
                 position: absolute;
                 top: 0;
                 left: 0;
+                transition: transform 0.5s, opacity 0.5s, visibility 0.5s;
               }
             }
           }

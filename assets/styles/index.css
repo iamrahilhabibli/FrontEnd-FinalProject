@@ -779,6 +779,7 @@ nav .login-checkout-container ul li button {
   height: auto;
   position: relative;
   z-index: 10;
+  transition: transform 0.5s, opacity 0.5s, visibility 0.5s;
 }
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .greenchair-image .zoomedin-chair {
   max-width: 100%;
@@ -786,6 +787,7 @@ nav .login-checkout-container ul li button {
   position: absolute;
   top: 0;
   left: 0;
+  transition: transform 0.5s, opacity 0.5s, visibility 0.5s;
 }
 
 @media (min-width: 768px) {
