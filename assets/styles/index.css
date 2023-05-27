@@ -596,6 +596,11 @@ nav .login-checkout-container ul li button {
   letter-spacing: normal;
   text-transform: none;
 }
+.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .countdown-container {
+  padding: 1.5rem 3rem;
+  box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
 
 @media (min-width: 768px) {
   .animate {
