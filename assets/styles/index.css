@@ -9,6 +9,12 @@
   font-family: VremenaGrotesk, sans-serif;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .top-row {
   width: 100vw;
   height: 55px;
@@ -745,7 +751,7 @@ nav .login-checkout-container ul li button {
   font-weight: 400;
   line-height: 22px;
 }
-.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .product-hover:hover {
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .product-hover span:hover {
   text-decoration: underline;
 }
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .product-hover .product-hover-item-container a {

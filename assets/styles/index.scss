@@ -12,6 +12,11 @@ $navbar-color: #8a8a8a;
   padding: 0;
   font-family: VremenaGrotesk, sans-serif;
 }
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .top-row {
   width: 100vw;
@@ -741,6 +746,7 @@ nav {
 
         .product {
           margin-bottom: 30px;
+
           .position-relative {
             h3 {
               .product-name {
@@ -803,10 +809,17 @@ nav {
               font-size: 14px;
               font-weight: 400;
               line-height: 22px;
-
-              &:hover {
-                text-decoration: underline;
+              // position: absolute;
+              // bottom: 0;
+              // left: 0;
+              // visibility: hidden;
+              // opacity: 0;
+              span {
+                &:hover {
+                  text-decoration: underline;
+                }
               }
+
               .product-hover-item-container {
                 a {
                   font-size: 18px;
