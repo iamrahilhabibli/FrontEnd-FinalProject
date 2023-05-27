@@ -415,6 +415,31 @@ nav {
           top: 18%;
           text-align: left;
           z-index: 10;
+
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 0%;
+            h2 {
+              font-weight: 700;
+              margin-bottom: 16px !important;
+            }
+            .chair-price {
+              font-size: 16px;
+              margin-bottom: 26px;
+            }
+          }
+          p {
+            .shop-now-btn {
+              font-size: 12px;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              text-align: left;
+              padding: 12px 0px 12px 0px;
+            }
+          }
         }
         .clock-image-container {
           margin-left: 6rem;
