@@ -727,12 +727,17 @@ nav .login-checkout-container ul li button {
   opacity: 1;
   visibility: visible;
   background-color: white;
-  transition: 0.3s;
+  transition: 0.5s;
+  z-index: 16;
 }
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product:hover .stars-container {
   transform: translateY(-1rem);
-  transition: 0.3s;
+  transition: 0.5s;
   opacity: 1 !important;
+}
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product:hover .zoomedin-chair {
+  z-index: 15;
+  transition: 0.5s;
 }
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .position-relative h3 .product-name {
   text-decoration: none;
@@ -763,7 +768,7 @@ nav .login-checkout-container ul li button {
 }
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .product-badge {
   position: absolute;
-  z-index: 11;
+  z-index: 16;
   top: 22px;
   left: 24px;
   background-color: #877f64;

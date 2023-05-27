@@ -788,12 +788,17 @@ nav {
               opacity: 1;
               visibility: visible;
               background-color: white;
-              transition: 0.3s;
+              transition: 0.5s;
+              z-index: 16;
             }
             .stars-container {
               transform: translateY(-1rem);
-              transition: 0.3s;
+              transition: 0.5s;
               opacity: 1 !important;
+            }
+            .zoomedin-chair {
+              z-index: 15;
+              transition: 0.5s;
             }
           }
 
@@ -835,7 +840,7 @@ nav {
 
             .product-badge {
               position: absolute;
-              z-index: 11;
+              z-index: 16;
               top: 22px;
               left: 24px;
               background-color: #877f64;
