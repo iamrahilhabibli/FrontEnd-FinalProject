@@ -537,6 +537,17 @@ nav .login-checkout-container ul li button {
   object-fit: cover;
 }
 
+.ondeal-item-container {
+  width: 100vw;
+  height: 50vh;
+  background-color: #ebf7ff;
+  position: relative;
+}
+.ondeal-item-container .custom-blue-blob {
+  height: 600px;
+  width: 600px;
+}
+
 @media (min-width: 768px) {
   .animate {
     animation-duration: 0.3s;
