@@ -595,6 +595,12 @@ nav {
     top: -40px;
     left: -200px;
   }
+  .content-container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 15px;
+  }
 }
 
 @media (min-width: 768px) {
