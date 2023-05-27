@@ -40,7 +40,3 @@ function updateCountdown() {
   document.getElementById("minutes").textContent = minutes;
   document.getElementById("seconds").textContent = seconds;
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  AOS.refresh();
-});

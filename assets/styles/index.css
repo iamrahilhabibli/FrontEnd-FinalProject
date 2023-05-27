@@ -634,6 +634,7 @@ nav .login-checkout-container ul li button {
 .new-arrival-main-container {
   position: relative;
   padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .new-arrival-main-container .custom-yellow-blob {
   height: 600px;
