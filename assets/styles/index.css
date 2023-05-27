@@ -572,6 +572,14 @@ nav .login-checkout-container ul li button {
 }
 .ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container p {
   text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 16px;
+}
+.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
 }
 
 @media (min-width: 768px) {
