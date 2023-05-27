@@ -727,6 +727,7 @@ nav .login-checkout-container ul li button {
   opacity: 1;
   visibility: visible;
   background-color: white;
+  transition: 0.3s;
 }
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .position-relative h3 .product-name {
   text-decoration: none;
