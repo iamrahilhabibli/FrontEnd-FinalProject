@@ -292,6 +292,17 @@ nav .login-checkout-container ul li button {
 .section-one .main-container .products-toprow .product-book {
   width: 100%;
 }
+.section-one .main-container .products-toprow .col-md-4 .books-text-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 0%;
+}
+.section-one .main-container .products-toprow .col-md-4 .books-text-container a h3 {
+  font-weight: 700;
+  margin-bottom: 16px !important;
+}
 .section-one .main-container .products-toprow .col-md-7 {
   margin-left: auto;
   margin-bottom: 45px;
