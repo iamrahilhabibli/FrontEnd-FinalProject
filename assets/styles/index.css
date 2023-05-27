@@ -639,15 +639,37 @@ nav .login-checkout-container ul li button {
 .new-arrival-main-container .new-arrival-container {
   margin-left: auto;
   margin-right: auto;
+  max-width: 1140px;
 }
 .new-arrival-main-container .new-arrival-container h2 {
   font-weight: 700;
   font-size: 32px;
+  margin-bottom: 1rem;
 }
 .new-arrival-main-container .new-arrival-container p {
   line-height: 32px;
   font-weight: 200;
   font-size: 20px;
+  margin-bottom: 3rem;
+}
+.new-arrival-main-container .new-arrival-container .products-filter-container .col-12 a {
+  text-decoration: none;
+}
+.new-arrival-main-container .new-arrival-container .products-filter-container .col-12 .list-inline li:first-child a {
+  color: black;
+  font-weight: 600;
+}
+.new-arrival-main-container .new-arrival-container .products-filter-container .col-12 .btn-link {
+  color: #bcac76;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 13px;
+  transition: filter 0.5s;
+}
+.new-arrival-main-container .new-arrival-container .products-filter-container .col-12 .btn-link:hover {
+  text-decoration: underline;
+  filter: brightness(0.8);
 }
 
 @media (min-width: 768px) {
