@@ -624,8 +624,14 @@ nav .login-checkout-container ul li button {
   font-weight: 600;
   letter-spacing: 2px;
 }
-.ondeal-item-container .content-container .new-arrival-items-container {
+
+.new-arrival-items-container {
   width: 100vw;
+}
+.new-arrival-items-container .custom-yellow-blob {
+  height: 600px;
+  width: 600px;
+  position: absolute;
 }
 
 @media (min-width: 768px) {

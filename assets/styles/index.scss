@@ -673,9 +673,15 @@ nav {
         }
       }
     }
-    .new-arrival-items-container {
-      width: 100vw;
-    }
+  }
+}
+.new-arrival-items-container {
+  width: 100vw;
+
+  .custom-yellow-blob {
+    height: 600px;
+    width: 600px;
+    position: absolute;
   }
 }
 
