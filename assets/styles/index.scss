@@ -318,9 +318,9 @@ nav {
         margin-bottom: 45px;
         position: relative;
         padding: 0px 15px;
+        transition: 0.5s;
         &:hover {
-          transition: 0.5s;
-          transform: scale(1.5);
+          transform: scale(1.05);
         }
         .chair-text-container {
           position: absolute;

@@ -297,10 +297,10 @@ nav .login-checkout-container ul li button {
   margin-bottom: 45px;
   position: relative;
   padding: 0px 15px;
+  transition: 0.5s;
 }
 .section-one .main-container .products-toprow .col-md-7:hover {
-  transition: 0.5s;
-  transform: scale(1.5);
+  transform: scale(1.05);
 }
 .section-one .main-container .products-toprow .col-md-7 .chair-text-container {
   position: absolute;
