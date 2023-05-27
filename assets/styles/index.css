@@ -601,9 +601,16 @@ nav .login-checkout-container ul li button {
   box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.15);
   background-color: white;
   text-align: center;
+  margin-bottom: 25px;
 }
 .ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .countdown-container h4 {
   font-weight: 600;
+}
+.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .btn {
+  border-radius: 0;
+  padding: 0.5rem 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 @media (min-width: 768px) {
