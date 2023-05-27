@@ -295,7 +295,7 @@ nav .login-checkout-container ul li button {
   width: 100%;
 }
 .section-one .main-container .products-toprow .col-md-4 {
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .section-one .main-container .products-toprow .col-md-4:hover {
   transform: scale(1.05);
@@ -327,7 +327,7 @@ nav .login-checkout-container ul li button {
   margin-bottom: 45px;
   position: relative;
   padding: 0px 15px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .section-one .main-container .products-toprow .col-md-7:hover {
   transform: scale(1.05);
@@ -381,7 +381,7 @@ nav .login-checkout-container ul li button {
   margin-bottom: 90px;
   position: relative;
   padding: 0px 15px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .section-one .main-container .products-midrow .col-md-7:hover {
   transform: scale(1.05);
@@ -422,7 +422,7 @@ nav .login-checkout-container ul li button {
 .section-one .main-container .products-midrow .col-md-4 {
   padding: 15px 15px 0px 15px;
   margin-left: auto;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .section-one .main-container .products-midrow .col-md-4 .product-box {
   width: 100%;
@@ -459,13 +459,13 @@ nav .login-checkout-container ul li button {
 }
 .section-one .main-container .products-botrow .col-md-3 {
   padding: 15px 15px 0px 15px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .section-one .main-container .products-botrow .product-swissblack {
   width: 100%;
 }
 .section-one .main-container .products-botrow .col-md-3 {
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .section-one .main-container .products-botrow .col-md-3:hover {
   transform: scale(1.05);
@@ -497,7 +497,7 @@ nav .login-checkout-container ul li button {
   margin-bottom: 45px;
   position: relative;
   padding: 0px 15px;
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .section-one .main-container .products-botrow .col-md-8:hover {
   transform: scale(1.05);
