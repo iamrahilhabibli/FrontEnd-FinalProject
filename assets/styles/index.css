@@ -492,6 +492,38 @@ nav .login-checkout-container ul li button {
   text-align: left;
   padding: 12px 0px 12px 0px;
 }
+.section-one .main-container .products-botrow .col-md-8 {
+  transition: 0.5s ease-in-out;
+  margin-left: auto;
+}
+.section-one .main-container .products-botrow .col-md-8:hover {
+  transform: scale(1.05);
+}
+.section-one .main-container .products-botrow .col-md-8 .koronachair-text-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 0%;
+}
+.section-one .main-container .products-botrow .col-md-8 .koronachair-text-container a h3 {
+  font-weight: 700;
+  margin-bottom: 16px !important;
+}
+.section-one .main-container .products-botrow .col-md-8 .koronachair-text-container .koronachair-price {
+  font-size: 16px;
+  font-weight: 600;
+}
+.section-one .main-container .products-botrow .col-md-8 .koronachair-text-container p .shop-now-btn {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: left;
+  padding: 12px 0px 12px 0px;
+}
+.section-one .main-container .products-botrow .col-md-8 .product-koronachair {
+  width: 100%;
+}
 
 @media (min-width: 768px) {
   .animate {
