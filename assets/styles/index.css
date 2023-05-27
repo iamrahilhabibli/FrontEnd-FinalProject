@@ -729,6 +729,11 @@ nav .login-checkout-container ul li button {
   background-color: white;
   transition: 0.3s;
 }
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product:hover .stars-container {
+  transform: translateY(-1rem);
+  transition: 0.3s;
+  opacity: 1 !important;
+}
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .position-relative h3 .product-name {
   text-decoration: none;
   color: #212529;
@@ -745,6 +750,7 @@ nav .login-checkout-container ul li button {
   right: 0;
   bottom: 5px;
   font-size: 11px;
+  opacity: 0;
 }
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .position-relative .stars-container .fa-star {
   color: #868e96 !important;

@@ -790,6 +790,11 @@ nav {
               background-color: white;
               transition: 0.3s;
             }
+            .stars-container {
+              transform: translateY(-1rem);
+              transition: 0.3s;
+              opacity: 1 !important;
+            }
           }
 
           .position-relative {
@@ -813,6 +818,7 @@ nav {
               right: 0;
               bottom: 5px;
               font-size: 11px;
+              opacity: 0;
 
               .fa-star {
                 color: #868e96 !important;
