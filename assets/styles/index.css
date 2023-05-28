@@ -867,7 +867,9 @@ footer .bg-gray-100 .footer-container {
 }
 footer .bg-gray-100 .footer-container .row .col-lg-3 {
   display: flex;
-  align-items: center;
+  align-items: center !important;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 footer .bg-gray-100 .footer-container .row .col-lg-3 i {
   font-size: 24px;
@@ -878,6 +880,8 @@ footer .bg-gray-100 .footer-container .row .col-lg-3 .service-text {
 }
 footer .bg-gray-100 .footer-container .row .col-lg-3 .service-text .text-sm {
   font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
 }
 
 @media (min-width: 768px) {

@@ -950,7 +950,9 @@ footer {
       .row {
         .col-lg-3 {
           display: flex;
-          align-items: center;
+          align-items: center !important;
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
           i {
             font-size: 24px;
             margin-right: 1rem;
@@ -958,6 +960,8 @@ footer {
           .service-text {
             .text-sm {
               font-size: 14px;
+              font-weight: 700;
+              line-height: 18px;
             }
             font-size: 14px;
           }
