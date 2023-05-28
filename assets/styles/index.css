@@ -892,6 +892,38 @@ footer .footer-last .footer-last-container {
   margin-right: auto;
   max-width: 1140px;
 }
+footer .footer-last .footer-last-container .row {
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 {
+  padding-right: 6rem;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 h6 {
+  margin-bottom: 1.5rem;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 p {
+  font-size: 0.87rem;
+  font-weight: 400;
+  color: #868e96;
+  margin-bottom: 0.875rem;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-underlined {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-underlined input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 90%;
+  border-bottom: 1px solid grey;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-underlined i {
+  font-size: 26px;
+}
 
 @media (min-width: 768px) {
   .animate {
