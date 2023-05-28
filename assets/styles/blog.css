@@ -167,4 +167,10 @@ nav .login-checkout-container ul li button {
   outline: none;
 }
 
+.blog-main-image {
+  padding-top: 240px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
 /*# sourceMappingURL=blog.css.map */
