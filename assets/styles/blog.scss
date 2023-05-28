@@ -1,0 +1,182 @@
+$primary-color: #e9ecef;
+$secondary-color: #bcac76;
+$icons-color: #343a40;
+$navbar-color: #8a8a8a;
+@font-face {
+  font-family: "VremenaGrotesk";
+  src: url("/vremena-grotesk/") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: VremenaGrotesk, sans-serif;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.top-row {
+  width: 100vw;
+  height: 55px;
+  position: relative;
+  background-color: $primary-color;
+  .container-fluid {
+    position: relative;
+    padding: 20px 20px;
+  }
+  .contacts-list {
+    list-style-type: none;
+    font-size: 15px;
+    .fa-twitter {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+    .fa-phone {
+      margin-left: 20px;
+      background-color: transparent;
+      font-size: 18px;
+    }
+    .phone-number {
+      margin-left: 10px;
+      font-size: 14px;
+    }
+    li i {
+      color: $icons-color;
+    }
+    :hover:not(.phone-number):not(.fa-phone) {
+      transition: 0.2s;
+      color: $secondary-color;
+    }
+  }
+  .top-row-content {
+    .left-side-contacts-container {
+      padding-top: 10px;
+    }
+    .text-container {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      color: #343a40;
+      padding-top: 10px;
+    }
+    .language {
+      .dropdown-toggle {
+        border: transparent;
+        border-right: 1px solid rgba($color: #dee2e6, $alpha: 1);
+        border-radius: 0px;
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      .dropdown-menu {
+        border: transparent;
+        background-color: white;
+        transition: 0.5s;
+        text-align: left;
+        box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
+        border-radius: 0px;
+        padding: 0.5rem 0;
+        .dropdown-item {
+          color: #868e96;
+          font-size: 14px;
+          font-weight: 600;
+          padding: 0.5rem;
+        }
+      }
+    }
+    .currency {
+      .dropdown-toggle {
+        border: transparent;
+        border-radius: 0px;
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      .dropdown-menu {
+        border: transparent;
+        background-color: white;
+        text-align: left;
+        box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
+        border-radius: 0px;
+        padding: 0.5rem 0;
+        .dropdown-item {
+          color: #868e96;
+          font-size: 14px;
+          font-weight: 600;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+nav {
+  padding: 1rem 2rem !important;
+  .container-fluid {
+    background-color: transparent;
+  }
+  .index-btn {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .navbar-nav {
+    color: $navbar-color;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .search-bar {
+    margin-left: auto;
+    margin-right: 3rem;
+    width: 300px;
+    button {
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid black;
+      outline: none;
+      background-color: transparent;
+      margin-left: -10px;
+      i {
+        position: relative;
+        top: 4px;
+        font-size: 24px;
+      }
+    }
+    .search-nav {
+      outline: 0;
+      border-right: none;
+      border-top: none;
+      border-left: none;
+      border-bottom: 1px solid black;
+      border-radius: 0;
+    }
+  }
+  .login-checkout-container {
+    ul {
+      margin-bottom: 0 !important;
+      font-size: 24px;
+      list-style-type: none;
+      gap: 20px;
+      .shopping-cart-items-count {
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        background-color: $secondary-color;
+        position: absolute;
+        font-size: 12px;
+        right: 80px;
+        color: white;
+      }
+      li {
+        button {
+          border: none;
+          background-color: transparent;
+          outline: none;
+        }
+      }
+    }
+  }
+}
