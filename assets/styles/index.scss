@@ -873,6 +873,32 @@ nav {
   }
 }
 
+.summer-sales-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 3rem;
+  height: 430px;
+  .position-relative {
+    background-color: #eae0bd;
+    height: 100%;
+    width: 100%;
+    .position-absolute {
+      width: 100%;
+      height: 100%;
+      .summer-sales-blob {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        top: -73px;
+        left: -193px;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .animate {
     animation-duration: 0.3s;
