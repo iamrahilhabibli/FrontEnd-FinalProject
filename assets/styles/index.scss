@@ -969,6 +969,15 @@ footer {
       }
     }
   }
+  .footer-last {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    .footer-last-container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1140px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
