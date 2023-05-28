@@ -837,7 +837,15 @@ nav .login-checkout-container ul li button {
 .summer-sales-container .summer-sales-text-container .summer-sales-inner-container h5 {
   font-weight: 300 !important;
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
+}
+.summer-sales-container .summer-sales-text-container .summer-sales-inner-container a {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  border-radius: 0;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.75rem;
 }
 
 @media (min-width: 768px) {
