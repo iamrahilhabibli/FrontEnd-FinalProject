@@ -168,16 +168,20 @@ nav .login-checkout-container ul li button {
 }
 
 .parallax-mirror {
-  position: fixed;
-  height: 572px;
-  width: 100vw;
+  visibility: visible;
+  position: fixed !important;
   top: 0;
   left: 0;
+  overflow: hidden;
+  height: 572px;
+  width: 100vw;
+  z-index: -1;
 }
-.parallax-mirror img {
-  position: absolute;
+.parallax-mirror .parallaxmainimage {
   height: 100%;
   width: 100%;
+  max-width: none;
+  top: 0;
   object-fit: cover;
 }
 
@@ -185,10 +189,12 @@ nav .login-checkout-container ul li button {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .blog-main-image .container .container-paragraph {
   position: relative;
-  z-index: 13;
   font-size: 20px;
   font-weight: 300;
   color: #212529;
@@ -202,7 +208,6 @@ nav .login-checkout-container ul li button {
   list-style-type: none;
   text-decoration: none;
   position: relative;
-  z-index: 10;
   display: flex;
   justify-content: center;
 }
@@ -219,7 +224,6 @@ nav .login-checkout-container ul li button {
 }
 .blog-main-image .container .blog-main-container {
   position: relative;
-  z-index: 11;
 }
 .blog-main-image .container .blog-main-container h1 {
   font-size: 3.5rem;
@@ -236,6 +240,15 @@ nav .login-checkout-container ul li button {
   margin-left: auto;
   margin-right: auto;
   max-width: 1140px;
+}
+.blog-cards .row .col-lg-4 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 3rem;
+}
+.blog-cards .row .col-lg-4 .aos-init a .img1 {
+  height: auto;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=blog.css.map */
