@@ -946,6 +946,23 @@ footer {
       margin-right: auto;
       padding-right: 15px;
       padding-left: 15px;
+
+      .row {
+        .col-lg-3 {
+          display: flex;
+          align-items: center;
+          i {
+            font-size: 24px;
+            margin-right: 1rem;
+          }
+          .service-text {
+            .text-sm {
+              font-size: 14px;
+            }
+            font-size: 14px;
+          }
+        }
+      }
     }
   }
 }

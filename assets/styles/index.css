@@ -865,6 +865,20 @@ footer .bg-gray-100 .footer-container {
   padding-right: 15px;
   padding-left: 15px;
 }
+footer .bg-gray-100 .footer-container .row .col-lg-3 {
+  display: flex;
+  align-items: center;
+}
+footer .bg-gray-100 .footer-container .row .col-lg-3 i {
+  font-size: 24px;
+  margin-right: 1rem;
+}
+footer .bg-gray-100 .footer-container .row .col-lg-3 .service-text {
+  font-size: 14px;
+}
+footer .bg-gray-100 .footer-container .row .col-lg-3 .service-text .text-sm {
+  font-size: 14px;
+}
 
 @media (min-width: 768px) {
   .animate {
