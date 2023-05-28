@@ -180,6 +180,19 @@ nav {
     }
   }
 }
+.parallax-mirror {
+  position: fixed;
+  height: 572px;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
 .blog-main-image {
   padding-top: 240px;
   padding-bottom: 100px;
