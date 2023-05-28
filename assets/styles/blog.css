@@ -228,4 +228,14 @@ nav .login-checkout-container ul li button {
   line-height: 73px;
 }
 
+.blog-cards {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.blog-cards .blog-cards-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+
 /*# sourceMappingURL=blog.css.map */
