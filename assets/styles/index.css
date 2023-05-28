@@ -829,6 +829,9 @@ nav .login-checkout-container ul li button {
   height: 430px;
   z-index: 11;
 }
+.summer-sales-container .summer-sales-text-container .summer-sales-inner-container {
+  background-color: transparent;
+}
 .summer-sales-container .summer-sales-text-container .summer-sales-inner-container h4 {
   font-weight: 700 !important;
   font-size: 4.5rem;
