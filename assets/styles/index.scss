@@ -932,6 +932,23 @@ nav {
     }
   }
 }
+footer {
+  .bg-gray-100 {
+    background-color: #f8f9fa;
+    height: 285px;
+    width: 100%;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .footer-container {
+      max-width: 1140px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+}
 
 @media (min-width: 768px) {
   .animate {
