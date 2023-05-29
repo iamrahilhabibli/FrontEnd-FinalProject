@@ -179,6 +179,9 @@ nav .collapse .dropdown.show #menu3 .icons-bottomtext {
 nav .collapse .dropdown.show #menu3 .icons-bottomtext p {
   margin-bottom: 0;
 }
+nav .collapse .dropdown.show #menu4 {
+  width: 1300px;
+}
 nav .collapse .dropdown.show .dropdown-menu {
   margin-top: 1.2rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
