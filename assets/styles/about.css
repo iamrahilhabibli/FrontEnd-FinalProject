@@ -432,4 +432,14 @@ nav .login-checkout-container ul li button {
   font-size: 0.87rem;
 }
 
+.slider {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.slider .slider-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*# sourceMappingURL=about.css.map */

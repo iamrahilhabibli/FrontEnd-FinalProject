@@ -452,3 +452,12 @@ nav {
     }
   }
 }
+.slider {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  .slider-container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
