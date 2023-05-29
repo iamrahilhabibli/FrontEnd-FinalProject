@@ -277,4 +277,15 @@ nav .login-checkout-container ul li button {
   vertical-align: middle;
 }
 
+.milestones-section {
+  background-color: #f8f9fa;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.milestones-section .milestones-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*# sourceMappingURL=about.css.map */
