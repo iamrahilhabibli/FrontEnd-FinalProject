@@ -111,6 +111,10 @@ nav .collapse .dropdown.show .btn {
   background-color: transparent;
   color: black;
 }
+nav .collapse .dropdown.show #menu2 {
+  min-width: 750px;
+  position: absolute;
+}
 nav .collapse .dropdown.show .dropdown-menu {
   margin-top: 1.2rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);

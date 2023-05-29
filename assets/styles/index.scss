@@ -121,6 +121,10 @@ nav {
         background-color: transparent;
         color: black;
       }
+      #menu2 {
+        min-width: 750px;
+        position: absolute;
+      }
       .dropdown-menu {
         margin-top: 1.2rem;
         box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
