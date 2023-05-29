@@ -503,6 +503,16 @@ nav {
       flex-wrap: wrap;
       margin-right: -15px;
       margin-left: -15px;
+      .col-lg-10 {
+        margin-left: auto;
+        margin-right: auto;
+        h2 {
+          margin-bottom: 6rem;
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 1.3;
+        }
+      }
     }
   }
 }

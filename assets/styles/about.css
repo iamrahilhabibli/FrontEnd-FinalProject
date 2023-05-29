@@ -487,5 +487,15 @@ nav .login-checkout-container ul li button {
   margin-right: -15px;
   margin-left: -15px;
 }
+.prefooter .prefootercontainer .row .col-lg-10 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.prefooter .prefootercontainer .row .col-lg-10 h2 {
+  margin-bottom: 6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
 
 /*# sourceMappingURL=about.css.map */
