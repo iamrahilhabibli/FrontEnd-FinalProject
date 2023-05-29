@@ -138,6 +138,7 @@ nav .search-bar button i {
 }
 nav .search-bar .search-nav {
   outline: 0;
+  background-color: transparent;
   border-right: none;
   border-top: none;
   border-left: none;
