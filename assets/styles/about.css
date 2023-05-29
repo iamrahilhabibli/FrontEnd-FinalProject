@@ -264,5 +264,17 @@ nav .login-checkout-container ul li button {
   font-weight: 400;
   line-height: 26px;
 }
+.historycontainer .r3 .col-sm-8 {
+  display: flex;
+  align-items: center;
+}
+.historycontainer .r3 .col-sm-4 {
+  margin-left: 8.5%;
+}
+.historycontainer .r3 .col-sm-4 .historyvarkalaimage2 {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
 
 /*# sourceMappingURL=about.css.map */
