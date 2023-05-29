@@ -184,6 +184,8 @@ nav .login-checkout-container ul li button {
   max-width: none;
   top: 0;
   object-fit: cover;
+  vertical-align: middle;
+  position: absolute;
 }
 
 .blog-main-image {
@@ -193,6 +195,9 @@ nav .login-checkout-container ul li button {
   position: sticky;
   top: 0;
   z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 .blog-main-image .container .container-paragraph {
   position: relative;
