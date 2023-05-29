@@ -177,8 +177,35 @@ nav .login-checkout-container ul li button {
   margin-left: auto;
   margin-right: auto;
 }
+.varkalacontainer .row {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .varkalacontainer .row .col-xl-2 {
   width: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.varkalacontainer .row .col-xl-6 h6 {
+  color: #bcac76 !important;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 1rem;
+}
+.varkalacontainer .row .col-xl-6 h1 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 94px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.varkalacontainer .row .col-xl-6 p {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #868e96 !important;
 }
 
 /*# sourceMappingURL=about.css.map */
