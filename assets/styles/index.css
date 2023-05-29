@@ -139,6 +139,18 @@ nav .collapse .dropdown.show #menu2 img {
 nav .collapse .dropdown.show #menu3 {
   min-width: 750px;
 }
+nav .collapse .dropdown.show #menu3 .row {
+  padding: 3rem 1.5rem;
+  flex-wrap: wrap;
+}
+nav .collapse .dropdown.show #menu3 .row .top-row {
+  margin-bottom: 3rem;
+  background-color: transparent;
+}
+nav .collapse .dropdown.show #menu3 .row .col-6 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
 nav .collapse .dropdown.show #menu3 img {
   height: 48px;
   width: 48px;
