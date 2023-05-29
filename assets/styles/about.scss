@@ -397,3 +397,33 @@ nav {
     }
   }
 }
+.our-teamcontainer {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  .row {
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    .col-xl-2 {
+      width: 100px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .col-xl-10 {
+      h6 {
+        color: #bcac76 !important;
+        font-weight: 700;
+        letter-spacing: 6px;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 94px;
+      }
+    }
+  }
+}
