@@ -115,6 +115,27 @@ nav .collapse .dropdown.show #menu2 {
   min-width: 750px;
   position: absolute;
 }
+nav .collapse .dropdown.show #menu2 .row {
+  flex-wrap: wrap;
+}
+nav .collapse .dropdown.show #menu2 .row .col-lg-4.item-links {
+  padding: 3rem !important;
+}
+nav .collapse .dropdown.show #menu2 .row .col-lg-4.item-links h6 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #212529;
+  padding: 0.5rem 1.5rem;
+  padding-left: 0 !important;
+}
+nav .collapse .dropdown.show #menu2 .row .col-lg-4.item-links .dropdown-item {
+  padding-left: 0 !important;
+}
+nav .collapse .dropdown.show #menu2 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 nav .collapse .dropdown.show .dropdown-menu {
   margin-top: 1.2rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
