@@ -113,6 +113,12 @@ body {
   }
 }
 nav {
+  .collapse {
+    .navbar-navigation {
+      display: flex;
+      flex-direction: row;
+    }
+  }
   padding: 1rem 2rem !important;
   .container-fluid {
     background-color: transparent;
@@ -179,32 +185,32 @@ nav {
       }
     }
   }
-  .dropdown-toggle {
-    outline: none;
-    border: none;
-    color: gray;
-    font-size: 16px;
-    font-weight: 400;
-    &:hover {
-      color: black;
-      cursor: default;
-    }
-  }
-  .dropdown-menu {
-    border: transparent;
-    background-color: white;
-    transition: 0.5s;
-    text-align: left;
-    box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
-    border-radius: 0px;
-    padding: 0.5rem 0;
-    .dropdown-item {
-      color: #868e96;
-      font-size: 14px;
-      font-weight: 600;
-      padding: 0.5rem;
-    }
-  }
+  // .dropdown-toggle {
+  //   outline: none;
+  //   border: none;
+  //   color: gray;
+  //   font-size: 16px;
+  //   font-weight: 400;
+  //   &:hover {
+  //     color: black;
+  //     cursor: default;
+  //   }
+  // }
+  // .dropdown-menu {
+  //   border: transparent;
+  //   background-color: white;
+  //   transition: 0.5s;
+  //   text-align: left;
+  //   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
+  //   border-radius: 0px;
+  //   padding: 0.5rem 0;
+  //   .dropdown-item {
+  //     color: #868e96;
+  //     font-size: 14px;
+  //     font-weight: 600;
+  //     padding: 0.5rem;
+  //   }
+  // }
 }
 .custom-svg-blob {
   height: 800px;

@@ -105,6 +105,10 @@ body {
 nav {
   padding: 1rem 2rem !important;
 }
+nav .collapse .navbar-navigation {
+  display: flex;
+  flex-direction: row;
+}
 nav .container-fluid {
   background-color: transparent;
 }
@@ -165,32 +169,6 @@ nav .login-checkout-container ul li button {
   border: none;
   background-color: transparent;
   outline: none;
-}
-nav .dropdown-toggle {
-  outline: none;
-  border: none;
-  color: gray;
-  font-size: 16px;
-  font-weight: 400;
-}
-nav .dropdown-toggle:hover {
-  color: black;
-  cursor: default;
-}
-nav .dropdown-menu {
-  border: transparent;
-  background-color: white;
-  transition: 0.5s;
-  text-align: left;
-  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
-  border-radius: 0px;
-  padding: 0.5rem 0;
-}
-nav .dropdown-menu .dropdown-item {
-  color: #868e96;
-  font-size: 14px;
-  font-weight: 600;
-  padding: 0.5rem;
 }
 
 .custom-svg-blob {
