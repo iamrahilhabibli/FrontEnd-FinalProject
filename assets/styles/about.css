@@ -435,11 +435,40 @@ nav .login-checkout-container ul li button {
 .slider {
   padding-top: 6rem;
   padding-bottom: 6rem;
+  background-color: #f8f9fa;
 }
 .slider .slider-container {
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.slider .slider-container .swiper-container {
+  position: relative;
+  overflow: hidden;
+}
+.slider .slider-container .swiper-container .swiper-wrapper {
+  display: flex;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 3rem;
+  box-sizing: content-box;
+}
+.slider .slider-container .swiper-container .swiper-wrapper .swiper-slide {
+  display: flex;
+  width: 210px;
+  margin-right: 15px;
+  height: auto !important;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slider-container .swiper-container .swiper-wrapper .swiper-slide img {
+  opacity: 0.7;
+  width: 6rem;
+  max-width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=about.css.map */
