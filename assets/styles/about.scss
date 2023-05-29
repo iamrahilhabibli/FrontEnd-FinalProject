@@ -368,6 +368,21 @@ nav {
           }
         }
       }
+      .col-lg-6 {
+        padding-right: 15px;
+        padding-left: 15px;
+        .blockquotecontainer {
+          .icon {
+            padding-top: 1rem;
+            background-image: url(/assets/images/blockquoteicon.svg);
+            p {
+              font-family: "Playfair Display", serif !important;
+              font-size: 2rem;
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
     }
   }
 }

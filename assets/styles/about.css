@@ -353,5 +353,18 @@ nav .login-checkout-container ul li button {
   max-width: 100%;
   height: auto;
 }
+.foundersquote .foundersquotecontainer .row .col-lg-6 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.foundersquote .foundersquotecontainer .row .col-lg-6 .blockquotecontainer .icon {
+  padding-top: 1rem;
+  background-image: url(/assets/images/blockquoteicon.svg);
+}
+.foundersquote .foundersquotecontainer .row .col-lg-6 .blockquotecontainer .icon p {
+  font-family: "Playfair Display", serif !important;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
 
 /*# sourceMappingURL=about.css.map */
