@@ -329,4 +329,29 @@ nav .login-checkout-container ul li button {
   margin-bottom: 1.5rem;
 }
 
+.foundersquote {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.foundersquote .foundersquotecontainer {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.foundersquote .foundersquotecontainer .row {
+  flex-wrap: wrap;
+}
+.foundersquote .foundersquotecontainer .row .col-lg-5 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.foundersquote .foundersquotecontainer .row .col-lg-5 .foundersphoto {
+  padding: 3rem;
+}
+.foundersquote .foundersquotecontainer .row .col-lg-5 .foundersphoto img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=about.css.map */
