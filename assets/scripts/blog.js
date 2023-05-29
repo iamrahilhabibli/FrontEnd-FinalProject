@@ -10,5 +10,6 @@
 
 var image = document.getElementsByClassName("parallaxmainimage");
 new simpleParallax(image, {
-  maxTransition: 60,
+  orientation: "right",
 });
+console.log(image);
