@@ -373,9 +373,10 @@ nav {
         padding-left: 15px;
         .blockquotecontainer {
           .icon {
+            margin-bottom: 3rem;
             padding-top: 1rem;
             background-image: url(/assets/images/blockquoteicon.svg);
-            p {
+            .text-xl {
               font-family: "Playfair Display", serif !important;
               font-size: 2rem;
               margin-bottom: 1.5rem;
@@ -385,6 +386,7 @@ nav {
               font-size: 1.25rem;
               letter-spacing: 4px;
               font-weight: 700;
+              margin-bottom: 0.5rem;
             }
           }
         }
