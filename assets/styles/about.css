@@ -471,4 +471,21 @@ nav .login-checkout-container ul li button {
   height: auto;
 }
 
+.prefooter {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.prefooter .prefootercontainer {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.prefooter .prefootercontainer .row {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 /*# sourceMappingURL=about.css.map */
