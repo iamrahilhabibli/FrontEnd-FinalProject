@@ -7,7 +7,8 @@
 // new simpleParallax(image, {
 //   scale: 1.5,
 // });
+
 var image = document.getElementsByClassName("parallaxmainimage");
 new simpleParallax(image, {
-  overflow: true,
+  maxTransition: 60,
 });
