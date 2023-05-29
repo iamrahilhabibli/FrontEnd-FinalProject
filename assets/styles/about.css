@@ -215,30 +215,54 @@ nav .login-checkout-container ul li button {
   padding-top: 1.5rem;
   padding-bottom: 6rem;
 }
-.historycontainer .row {
+.historycontainer .r1 {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
   margin-bottom: 3rem;
 }
-.historycontainer .row .col-xl-2 {
+.historycontainer .r1 .col-xl-2 {
   width: 100px;
   padding-left: 15px;
   padding-right: 15px;
 }
-.historycontainer .row .col-xl-8 h6 {
+.historycontainer .r1 .col-xl-8 h6 {
   color: #bcac76 !important;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 6px;
   margin-bottom: 1rem;
 }
-.historycontainer .row .col-xl-8 h2 {
+.historycontainer .r1 .col-xl-8 h2 {
   font-weight: 700;
   font-size: 72px;
   line-height: 94px;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+.historycontainer .r2 .historyimg {
+  width: 100%;
+  height: auto;
+}
+.historycontainer .r2 .col-sm-8 {
+  display: flex;
+  align-items: center;
+  margin-left: 8.5%;
+}
+.historycontainer .r2 .col-sm-8 h6 {
+  letter-spacing: 6px;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+.historycontainer .r2 .col-sm-8 h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 1.5rem;
+}
+.historycontainer .r2 .col-sm-8 p {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 /*# sourceMappingURL=about.css.map */
