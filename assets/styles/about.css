@@ -177,5 +177,8 @@ nav .login-checkout-container ul li button {
   margin-left: auto;
   margin-right: auto;
 }
+.varkalacontainer .row .col-xl-2 {
+  width: 100px;
+}
 
 /*# sourceMappingURL=about.css.map */
