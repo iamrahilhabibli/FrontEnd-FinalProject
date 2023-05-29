@@ -102,56 +102,38 @@
           </div>
         </div>
       </div>
-      <!-- <nav class="navbar-responsive navbar-expand-lg bg-transparent d-flex">
-        <div
-          class="container-fluid-responsive d-flex flex-row justify-content-space-between"
-        >
-          <a class="navbar-brand index-btn" href="index.html">Varkala</a>
-          <div class="login-checkout-container">
-            <ul
-              class="d-flex flex-row icons-list justify-content-space-between"
-            >
-              <li>
-                <button><i class="fa-regular fa-user"></i></button>
-              </li>
-              <li>
-                <button><i class="fa-regular fa-heart"></i></button>
-              </li>
-              <li>
-                <button><i class="fa-solid fa-bag-shopping"></i></button>
-              </li>
-              <!-- <span class="shopping-cart-items-count">1</span> -->
-      <!-- </ul>
-          </div>
-          <li>
-            <button><i class="fa-solid fa-bars-staggered"></i></button>
-          </li>
-        </div>
-      </nav> -->
 
       <nav class="navbar navbar-expand-lg bg-transparent d-flex">
         <div class="container-fluid">
           <a class="navbar-brand index-btn" href="index.html">Varkala</a>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-navigation">
-              <li class="item-nav">
-                <a class="nav-item-link" href=""> Home </a>
-                <div class="nav-dropdown">
-                  <a class="dropdown-item" href="">Home 1 - Fashion </a>
-                  <a class="dropdown-item" href="">Home 2 - Fashion </a>
-                  <a class="dropdown-item" href=""
-                    >Home 3 - Design
-                    <span>New</span>
-                  </a>
-                  <a class="dropdown-item" href=""
-                    >Home 4 - Design
-                    <span>New</span>
-                  </a>
-                </div>
-              </li>
-            </ul>
+            <div class="dropdown show">
+              <a
+                class="btn btn-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home
+              </a>
 
-            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="index.html">Home 1 - Fashion </a
+                ><a class="dropdown-item" href="index-2.html"
+                  >Home 2 - Fashion </a
+                ><a class="dropdown-item" href="index-3.html"
+                  >Home 3 - Design
+                  <span class="badge badge-primary-light ml-1">New</span> </a
+                ><a class="dropdown-item" href="index-4.html"
+                  >Home 4 - Design
+                  <span class="badge badge-primary-light ml-1">New</span>
+                </a>
+              </div>
+            </div>
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -164,8 +146,7 @@
               <li class="nav-item">
                 <a class="nav-link">Contact</a>
               </li>
-            </ul> -->
-
+            </ul>
             <form class="d-flex search-bar" role="search">
               <input
                 class="search-nav form-control me-2"

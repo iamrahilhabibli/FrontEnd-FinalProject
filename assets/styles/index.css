@@ -105,9 +105,32 @@ body {
 nav {
   padding: 1rem 2rem !important;
 }
-nav .collapse .navbar-navigation {
-  display: flex;
-  flex-direction: row;
+nav .collapse .dropdown.show .btn {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: black;
+}
+nav .collapse .dropdown.show .dropdown-menu {
+  margin-top: 1.2rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
+  border: none;
+  border-radius: 0;
+}
+nav .collapse .dropdown.show .dropdown-menu .dropdown-item {
+  padding: 0.4rem 1.5rem;
+  color: #868e96;
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 400;
+}
+nav .collapse .dropdown.show .dropdown-menu .dropdown-item:hover {
+  color: black;
+  background-color: transparent;
+}
+nav .collapse .dropdown.show .dropdown-menu .dropdown-item .badge-primary-light {
+  color: #bcac76;
+  background-color: #f7f5ef;
 }
 nav .container-fluid {
   background-color: transparent;
