@@ -503,8 +503,83 @@ nav .login-checkout-container ul li button {
 }
 .prefooter .prefootercontainer .row .col-lg-5 p {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 22px;
+  color: #868e96 !important;
+}
+
+footer .bg-gray-100 {
+  background-color: #f8f9fa;
+  height: 285px;
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+footer .bg-gray-100 .footer-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+footer .bg-gray-100 .footer-container .row .col-lg-3 {
+  display: flex;
+  align-items: center !important;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+footer .bg-gray-100 .footer-container .row .col-lg-3 i {
+  font-size: 24px;
+  margin-right: 1rem;
+}
+footer .bg-gray-100 .footer-container .row .col-lg-3 .service-text {
+  font-size: 14px;
+}
+footer .bg-gray-100 .footer-container .row .col-lg-3 .service-text .text-sm {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+footer .footer-last {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+footer .footer-last .footer-last-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+footer .footer-last .footer-last-container .row {
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 {
+  padding-right: 6rem;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 h6 {
+  margin-bottom: 1.5rem;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 p {
+  font-size: 0.87rem;
+  font-weight: 400;
+  color: #868e96;
+  margin-bottom: 0.875rem;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-underlined {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-underlined input {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  width: 90%;
+  border-bottom: 1px solid grey;
+}
+footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-underlined i {
+  font-size: 26px;
 }
 
 /*# sourceMappingURL=about.css.map */
