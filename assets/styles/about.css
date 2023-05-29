@@ -374,5 +374,8 @@ nav .login-checkout-container ul li button {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
+.foundersquote .foundersquotecontainer .row .col-lg-6 .blockquotecontainer p {
+  margin-bottom: 1rem;
+}
 
 /*# sourceMappingURL=about.css.map */
