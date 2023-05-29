@@ -208,4 +208,37 @@ nav .login-checkout-container ul li button {
   color: #868e96 !important;
 }
 
+.historycontainer {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 6rem;
+}
+.historycontainer .row {
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 3rem;
+}
+.historycontainer .row .col-xl-2 {
+  width: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.historycontainer .row .col-xl-8 h6 {
+  color: #bcac76 !important;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  margin-bottom: 1rem;
+}
+.historycontainer .row .col-xl-8 h2 {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 94px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 /*# sourceMappingURL=about.css.map */
