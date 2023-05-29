@@ -139,6 +139,10 @@ nav .collapse .dropdown.show #menu2 img {
 nav .collapse .dropdown.show #menu3 {
   min-width: 750px;
 }
+nav .collapse .dropdown.show #menu3 img {
+  height: 48px;
+  width: 48px;
+}
 nav .collapse .dropdown.show .dropdown-menu {
   margin-top: 1.2rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
