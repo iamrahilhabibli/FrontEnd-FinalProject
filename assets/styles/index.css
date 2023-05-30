@@ -331,6 +331,9 @@ nav .login-checkout-container ul li button {
 .swiper-container .swiper-pagination {
   position: relative;
 }
+.swiper-container .swiper-pagination .swiper-pagination-bullet {
+  background-color: #bcac76;
+}
 .swiper-container .clock-section {
   text-align: center;
   position: relative;
@@ -1091,6 +1094,11 @@ footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-unde
 @media (max-width: 575px) {
   .col-md-4.col-sm-6.language-currency {
     display: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .collapse.navbar-collapse {
+    display: none;
   }
 }
 @keyframes slideIn {

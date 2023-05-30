@@ -378,6 +378,9 @@ nav {
 
   .swiper-pagination {
     position: relative;
+    .swiper-pagination-bullet {
+      background-color: #bcac76;
+    }
   }
   .clock-section {
     text-align: center;
@@ -1217,6 +1220,11 @@ footer {
 @media (max-width: 575px) {
   .col-md-4.col-sm-6.language-currency {
     display: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .collapse.navbar-collapse {
+    display: none;
   }
 }
 
