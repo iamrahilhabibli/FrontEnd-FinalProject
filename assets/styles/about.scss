@@ -787,3 +787,24 @@ footer {
     }
   }
 }
+@media (min-width: 768px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+@media (max-width: 767px) {
+  .left-side-contacts-container {
+    display: none;
+  }
+  .text-container {
+    text-align: left !important;
+  }
+}
+@media (max-width: 575px) {
+  .col-md-4.col-sm-6.language-currency {
+    display: none !important;
+  }
+}
