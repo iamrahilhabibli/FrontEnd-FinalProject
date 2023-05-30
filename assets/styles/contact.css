@@ -495,5 +495,20 @@ nav .login-checkout-container ul li button {
 .getintouch-section .getintouch-container .row .col-lg-8 {
   margin-left: auto;
 }
+.getintouch-section .getintouch-container .row .col-lg-8 form .row {
+  flex-wrap: wrap;
+}
+.getintouch-section .getintouch-container .row .col-lg-8 form .row .col-sm-6 .formname {
+  margin-bottom: 1rem;
+}
+.getintouch-section .getintouch-container .row .col-lg-8 form .row .col-sm-6 .formname label {
+  font-weight: bold;
+}
+.getintouch-section .getintouch-container .row .col-lg-8 form .row .col-sm-6 .formname .formcontrol {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+}
 
 /*# sourceMappingURL=contact.css.map */
