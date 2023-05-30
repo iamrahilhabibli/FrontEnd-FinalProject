@@ -321,7 +321,7 @@ nav .login-checkout-container ul li button {
   top: 0px;
   left: 0px;
   overflow: hidden;
-  height: 528.698px;
+  height: 500px;
   width: 100%;
 }
 .simpleParallax img {
@@ -454,6 +454,46 @@ nav .login-checkout-container ul li button {
   font-size: 14px !important;
   color: #212529;
   font-weight: 400;
+}
+
+.getintouch-section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: white;
+}
+.getintouch-section .getintouch-container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.getintouch-section .getintouch-container .row {
+  flex-wrap: wrap;
+}
+.getintouch-section .getintouch-container .row .col-lg-3 {
+  flex: 0 0 25%;
+}
+.getintouch-section .getintouch-container .row .col-lg-3 h5 {
+  line-height: 1;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  font-size: 5.5rem;
+}
+.getintouch-section .getintouch-container .row .col-lg-3 ul {
+  font-size: 2rem;
+}
+.getintouch-section .getintouch-container .row .col-lg-3 ul li {
+  margin-right: 1.5rem;
+}
+.getintouch-section .getintouch-container .row .col-lg-3 ul li a {
+  color: #bcac76;
+}
+.getintouch-section .getintouch-container .row .col-lg-3 ul li a:hover {
+  color: #ab9754;
+}
+.getintouch-section .getintouch-container .row .col-lg-8 {
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=contact.css.map */
