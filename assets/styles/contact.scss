@@ -375,9 +375,10 @@ nav {
 
   img {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     max-width: none;
+    object-fit: cover;
   }
 }
 
@@ -469,6 +470,20 @@ nav {
             color: #868e96 !important;
             font-weight: 700;
           }
+        }
+      }
+    }
+  }
+}
+.map {
+  background-color: #e9ecef !important;
+  .container-fluid {
+    .row {
+      .col-lg-6 {
+        #map {
+          min-height: 500px;
+          height: 100%;
+          position: relative;
         }
       }
     }

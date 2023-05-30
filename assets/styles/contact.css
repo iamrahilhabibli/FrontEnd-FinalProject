@@ -326,9 +326,10 @@ nav .login-checkout-container ul li button {
 }
 .simpleParallax img {
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   max-width: none;
+  object-fit: cover;
 }
 
 .blog-main-image {
@@ -414,6 +415,15 @@ nav .login-checkout-container ul li button {
 .contactsection .container .row .col-md-4 ul li {
   color: #868e96 !important;
   font-weight: 700;
+}
+
+.map {
+  background-color: #e9ecef !important;
+}
+.map .container-fluid .row .col-lg-6 #map {
+  min-height: 500px;
+  height: 100%;
+  position: relative;
 }
 
 /*# sourceMappingURL=contact.css.map */
