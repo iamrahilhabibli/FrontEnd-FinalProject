@@ -1118,6 +1118,176 @@ nav {
     }
   }
 }
+
+// MODALS
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0px 0 0 auto;
+  z-index: 999;
+  .modal-dialog {
+    max-width: 500px;
+    margin: 0px 0 0 auto;
+    height: 100vh;
+
+    .modal-content {
+      display: flex;
+      overflow-x: hidden;
+      overflow-y: auto;
+      border-radius: 0;
+      height: 100%;
+      .modal-header {
+        display: flex;
+        .closebtn {
+          margin: -1rem -1rem -1rem auto !important;
+          padding: 1rem;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          font-size: 26px;
+          i {
+            &:hover {
+              transform: rotate(90deg);
+              transition: all linear 0.1s;
+            }
+          }
+        }
+      }
+      .modal-body {
+        padding: 1rem 3rem;
+        .sidebar-cart-product-wrapper {
+          overflow-y: auto;
+          margin-right: -3rem;
+          padding-right: 2.6rem;
+          .customscrollbox {
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            max-width: 100%;
+            outline: none;
+            direction: ltr;
+            max-height: 592px;
+            .customscrollbox-container {
+              position: relative;
+              top: 0px;
+              left: 0px;
+              overflow: hidden;
+              width: auto;
+              height: auto;
+              margin-right: 30px;
+              .navbar-cart-product {
+                .item-container {
+                  display: flex;
+                  a {
+                    .itemimg {
+                      height: auto;
+                      max-width: 80px;
+                    }
+                  }
+                  .item-content {
+                    width: 100%;
+                    .closebtn {
+                      float: right;
+                      font-size: 1rem;
+                      line-height: 1;
+                      border: none;
+                      opacity: 0.5;
+                      background-color: transparent;
+                      &:hover {
+                        opacity: 1;
+                      }
+                    }
+                    .pl-3 {
+                      padding-left: 1rem;
+                      a {
+                        text-decoration: none;
+                        color: black;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+            .customscrolltool {
+              display: block;
+              opacity: 0.75;
+              position: absolute;
+              width: 16px;
+              height: auto;
+              left: auto;
+              top: 0;
+              right: 0;
+              bottom: 0;
+              .draggercontainer {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                height: auto;
+                .dragger-vertical {
+                  position: absolute;
+                  min-height: 30px;
+                  top: 0px;
+                  display: block;
+                  height: 435px;
+                  max-height: 582px;
+                  z-index: 1;
+                  .draggerbar {
+                    line-height: 30px;
+                    background-color: black;
+                    background-color: rgba(0, 0, 0, 0.75);
+                    width: 2px;
+                    height: 435px;
+                  }
+                  .draggerrail {
+                    height: 100%;
+                    background-color: black;
+                    background-color: rgba(0, 0, 0, 0.15);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .modal-footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 200px;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        border: none;
+        justify-content: flex-start;
+        align-content: center;
+        .w-100 {
+          margin: 0.25rem;
+          h5 {
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+            font-weight: 700;
+            span {
+              float: right;
+            }
+          }
+          .btn {
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 1rem !important;
+            width: 100%;
+            border-radius: 0;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
 footer {
   .bg-gray-100 {
     background-color: #f8f9fa;
