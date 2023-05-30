@@ -243,6 +243,10 @@ nav .login-checkout-container ul li button {
   padding-top: 10rem !important;
   padding-bottom: 6rem;
   position: relative;
+  height: max-content;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: white;
 }
 .blog-cards .blog-cards-container {
   margin-left: auto;
