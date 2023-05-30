@@ -1169,6 +1169,44 @@ nav .login-checkout-container ul li button {
   font-size: 13px;
 }
 
+.sidebar-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+.sidebar-modal .modal-dialog {
+  max-width: 500px;
+  height: 100vh;
+}
+.sidebar-modal .modal-dialog .modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 0;
+  outline: 0;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-header {
+  display: flex;
+  padding: 1rem 1rem;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-header button {
+  margin: -1rem -1rem -1rem auto !important;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 26px;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-header button i:hover {
+  transform: rotate(90deg);
+  transition: all linear 0.1s;
+}
+
 footer .bg-gray-100 {
   background-color: #f8f9fa;
   height: 285px;

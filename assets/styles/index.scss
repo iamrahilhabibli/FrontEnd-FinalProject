@@ -1293,6 +1293,45 @@ nav {
     }
   }
 }
+.sidebar-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  .modal-dialog {
+    max-width: 500px;
+    height: 100vh;
+    .modal-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: #fff;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0);
+      border-radius: 0;
+      outline: 0;
+      .modal-header {
+        display: flex;
+        padding: 1rem 1rem;
+        button {
+          margin: -1rem -1rem -1rem auto !important;
+          padding: 1rem;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          font-size: 26px;
+          i {
+            &:hover {
+              transform: rotate(90deg);
+              transition: all linear 0.1s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 footer {
   .bg-gray-100 {
