@@ -322,6 +322,13 @@ nav {
         color: white;
       }
       li {
+        &:hover {
+          cursor: pointer;
+          i {
+            transition: 0.3s;
+            color: #bcac76;
+          }
+        }
         button {
           border: none;
           background-color: transparent;
@@ -1121,17 +1128,16 @@ nav {
 
 // MODALS
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   margin: 0px 0 0 auto;
-  z-index: 999;
   .modal-dialog {
     max-width: 500px;
     margin: 0px 0 0 auto;
     height: 100vh;
-
+    display: none;
     .modal-content {
       display: flex;
       overflow-x: hidden;

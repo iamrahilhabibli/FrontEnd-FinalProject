@@ -308,6 +308,13 @@ nav .login-checkout-container ul .shopping-cart-items-count {
   right: 80px;
   color: white;
 }
+nav .login-checkout-container ul li:hover {
+  cursor: pointer;
+}
+nav .login-checkout-container ul li:hover i {
+  transition: 0.3s;
+  color: #bcac76;
+}
 nav .login-checkout-container ul li button {
   border: none;
   background-color: transparent;
@@ -1002,17 +1009,17 @@ nav .login-checkout-container ul li button {
 }
 
 .modal {
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   margin: 0px 0 0 auto;
-  z-index: 999;
 }
 .modal .modal-dialog {
   max-width: 500px;
   margin: 0px 0 0 auto;
   height: 100vh;
+  display: none;
 }
 .modal .modal-dialog .modal-content {
   display: flex;

@@ -1,5 +1,4 @@
 const clockImage = document.querySelector(".clock-section .clockimg");
-console.log(clockImage);
 new simpleParallax(clockImage, {
   overflow: true,
 });
@@ -40,3 +39,19 @@ function updateCountdown() {
   document.getElementById("minutes").textContent = minutes;
   document.getElementById("seconds").textContent = seconds;
 }
+const shoppingCartIcon = document.querySelector(".fa-bag-shopping");
+const modalCart = document.querySelector(".modal-dialog");
+const modal = document.querySelector(".modal");
+const closeBtn = document
+  .querySelector(".modal-header")
+  .querySelector(".closebtn");
+
+shoppingCartIcon.addEventListener("click", () => {
+  modal.style.display = "block";
+  modalCart.style.display = "block";
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.style.display = "none";
+  modalCart.style.display = "none";
+});
