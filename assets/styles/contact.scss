@@ -373,4 +373,70 @@ nav {
   transform: translate3d(0px, 0px, 0px);
   height: 528.698px;
   width: 100%;
+  img {
+    position: absolute;
+    height: 842px;
+    width: 1263.33px;
+    max-width: none;
+    object-fit: cover;
+  }
+}
+
+.blog-main-image {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  top: 0;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .container {
+    .container-paragraph {
+      position: relative;
+      font-size: 20px;
+      font-weight: 300;
+      color: #212529;
+    }
+    .breadcrumb {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .breadcrumb-list {
+      list-style-type: none;
+      text-decoration: none;
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      .breadcrumb-item {
+        a {
+          text-decoration: none;
+          color: black;
+        }
+        .home-item {
+          color: #bcac76;
+
+          &:hover {
+            text-decoration: underline;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+    .blog-main-container {
+      position: relative;
+
+      h1 {
+        font-size: 3.5rem;
+        margin: 0.7em;
+        font-weight: 700;
+        line-height: 73px;
+      }
+    }
+  }
 }
