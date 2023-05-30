@@ -570,6 +570,19 @@ nav {
               }
             }
           }
+          .formname {
+            margin-bottom: 1rem;
+            label {
+              font-weight: bold;
+            }
+            .formcontrol {
+              border-top: none;
+              border-right: none;
+              border-left: none;
+              outline: none;
+              width: 100%;
+            }
+          }
         }
       }
     }

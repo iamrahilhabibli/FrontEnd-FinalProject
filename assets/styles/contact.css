@@ -510,5 +510,18 @@ nav .login-checkout-container ul li button {
   border-left: none;
   outline: none;
 }
+.getintouch-section .getintouch-container .row .col-lg-8 form .formname {
+  margin-bottom: 1rem;
+}
+.getintouch-section .getintouch-container .row .col-lg-8 form .formname label {
+  font-weight: bold;
+}
+.getintouch-section .getintouch-container .row .col-lg-8 form .formname .formcontrol {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  width: 100%;
+}
 
 /*# sourceMappingURL=contact.css.map */
