@@ -314,23 +314,23 @@ nav .login-checkout-container ul li button {
   outline: none;
 }
 
-.parallax-mirror {
+.simpleParallax {
   visibility: visible;
   z-index: -100;
   position: fixed;
   top: 0px;
   left: 0px;
   overflow: hidden;
-  transform: translate3d(0px, 0px, 0px);
   height: 528.698px;
   width: 100%;
 }
-.parallax-mirror img {
+.simpleParallax img {
   position: absolute;
-  height: 842px;
-  width: 1263.33px;
+  height: 100vh;
+  width: 100%;
   max-width: none;
   object-fit: cover;
+  transform: scale(1) !important;
 }
 
 .blog-main-image {
@@ -382,6 +382,15 @@ nav .login-checkout-container ul li button {
   margin: 0.7em;
   font-weight: 700;
   line-height: 73px;
+}
+
+.containersection .container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.containersection .container .row {
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=contact.css.map */
