@@ -441,7 +441,9 @@ nav {
   }
 }
 .contactsection {
-  height: 500px;
+  height: max-content;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-color: white;
   .container {
     max-width: 1140px;
@@ -449,6 +451,8 @@ nav {
     margin-right: auto;
     .row {
       flex-wrap: wrap;
+      margin-left: -15px;
+      margin-right: -15px;
     }
   }
 }

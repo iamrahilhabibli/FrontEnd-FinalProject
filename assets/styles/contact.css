@@ -384,7 +384,9 @@ nav .login-checkout-container ul li button {
 }
 
 .contactsection {
-  height: 500px;
+  height: max-content;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-color: white;
 }
 .contactsection .container {
@@ -394,6 +396,8 @@ nav .login-checkout-container ul li button {
 }
 .contactsection .container .row {
   flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 /*# sourceMappingURL=contact.css.map */
