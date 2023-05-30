@@ -1306,11 +1306,8 @@ nav {
       display: flex;
       flex-direction: column;
       width: 100%;
-      background-color: #fff;
-      background-clip: padding-box;
-      border: 1px solid rgba(0, 0, 0, 0);
-      border-radius: 0;
-      outline: 0;
+      background-color: white;
+      height: 100%;
       .modal-header {
         display: flex;
         padding: 1rem 1rem;
