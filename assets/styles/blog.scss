@@ -273,15 +273,41 @@ nav {
     max-width: 1140px;
     overflow: hidden !important;
     .row {
+      flex-wrap: wrap;
       .col-lg-4 {
         padding-left: 3rem;
         padding-right: 3rem;
         margin-bottom: 3rem;
         .aos-init {
           a {
+            margin-bottom: 1.5rem;
             .img1 {
               height: auto;
               max-width: 100%;
+            }
+          }
+          h5 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+            margin-top: 0;
+            a {
+              color: #212529;
+              text-decoration: none;
+              font-weight: 700;
+            }
+          }
+          p {
+            color: #adb5bd;
+            font-size: 0.87rem;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            a {
+              font-size: 0.7rem;
+              letter-spacing: 0.15em;
+              text-transform: uppercase;
+              margin-right: 0.5rem;
+              color: #bcac76;
+              text-decoration: none;
             }
           }
         }

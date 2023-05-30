@@ -254,14 +254,44 @@ nav .login-checkout-container ul li button {
   max-width: 1140px;
   overflow: hidden !important;
 }
+.blog-cards .blog-cards-container .row {
+  flex-wrap: wrap;
+}
 .blog-cards .blog-cards-container .row .col-lg-4 {
   padding-left: 3rem;
   padding-right: 3rem;
   margin-bottom: 3rem;
 }
+.blog-cards .blog-cards-container .row .col-lg-4 .aos-init a {
+  margin-bottom: 1.5rem;
+}
 .blog-cards .blog-cards-container .row .col-lg-4 .aos-init a .img1 {
   height: auto;
   max-width: 100%;
+}
+.blog-cards .blog-cards-container .row .col-lg-4 .aos-init h5 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+.blog-cards .blog-cards-container .row .col-lg-4 .aos-init h5 a {
+  color: #212529;
+  text-decoration: none;
+  font-weight: 700;
+}
+.blog-cards .blog-cards-container .row .col-lg-4 .aos-init p {
+  color: #adb5bd;
+  font-size: 0.87rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.blog-cards .blog-cards-container .row .col-lg-4 .aos-init p a {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-right: 0.5rem;
+  color: #bcac76;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=blog.css.map */
