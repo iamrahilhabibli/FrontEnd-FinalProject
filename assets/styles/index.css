@@ -1079,7 +1079,7 @@ nav .login-checkout-container ul li button {
 .modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrollbox-container .navbar-cart-product .item-container .item-content {
   width: 100%;
 }
-.modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrollbox-container .navbar-cart-product .item-container .item-content .closebtn {
+.modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrollbox-container .navbar-cart-product .item-container .item-content .closebtn-deleteitem {
   float: right;
   font-size: 1rem;
   line-height: 1;
@@ -1087,7 +1087,7 @@ nav .login-checkout-container ul li button {
   opacity: 0.5;
   background-color: transparent;
 }
-.modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrollbox-container .navbar-cart-product .item-container .item-content .closebtn:hover {
+.modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrollbox-container .navbar-cart-product .item-container .item-content .closebtn-deleteitem:hover {
   opacity: 1;
 }
 .modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrollbox-container .navbar-cart-product .item-container .item-content .pl-3 {
