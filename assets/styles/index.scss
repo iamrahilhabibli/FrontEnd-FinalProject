@@ -1294,11 +1294,13 @@ nav {
   }
 }
 .sidebar-modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1000;
   .modal-dialog {
+    display: none;
     max-width: 500px;
     height: 100vh;
     .modal-content {
@@ -1324,6 +1326,55 @@ nav {
               transition: all linear 0.1s;
             }
           }
+        }
+      }
+      .modal-body {
+        padding-top: 1rem;
+
+        h5 {
+          font-size: 20px;
+          font-weight: 700;
+          margin-bottom: 48px;
+        }
+        .nav {
+          margin-bottom: 8rem;
+
+          .nav-item {
+            .nav-link {
+              color: #868e96;
+              font-weight: 500;
+              &:hover {
+                color: #bcac76;
+              }
+            }
+          }
+          .dropdown.show {
+            a {
+              border: none;
+              background-color: transparent;
+              color: #868e96;
+              &:hover {
+                color: #bcac76;
+              }
+            }
+            .dropdown-menu {
+              border: none;
+              position: relative;
+              margin-bottom: 50px;
+              a {
+                &:hover {
+                  color: #bcac76;
+                }
+              }
+            }
+          }
+        }
+        .list-inline {
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 0.87rem;
+          font-weight: 600;
         }
       }
     }

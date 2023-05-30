@@ -1170,12 +1170,14 @@ nav .login-checkout-container ul li button {
 }
 
 .sidebar-modal {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1000;
 }
 .sidebar-modal .modal-dialog {
+  display: none;
   max-width: 500px;
   height: 100vh;
 }
@@ -1202,6 +1204,47 @@ nav .login-checkout-container ul li button {
 .sidebar-modal .modal-dialog .modal-content .modal-header button i:hover {
   transform: rotate(90deg);
   transition: all linear 0.1s;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body {
+  padding-top: 1rem;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body .nav {
+  margin-bottom: 8rem;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body .nav .nav-item .nav-link {
+  color: #868e96;
+  font-weight: 500;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body .nav .nav-item .nav-link:hover {
+  color: #bcac76;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body .nav .dropdown.show a {
+  border: none;
+  background-color: transparent;
+  color: #868e96;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body .nav .dropdown.show a:hover {
+  color: #bcac76;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body .nav .dropdown.show .dropdown-menu {
+  border: none;
+  position: relative;
+  margin-bottom: 50px;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body .nav .dropdown.show .dropdown-menu a:hover {
+  color: #bcac76;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body .list-inline {
+  margin-bottom: 1rem;
+}
+.sidebar-modal .modal-dialog .modal-content .modal-body p {
+  font-size: 0.87rem;
+  font-weight: 600;
 }
 
 footer .bg-gray-100 {
