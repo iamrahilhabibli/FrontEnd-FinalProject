@@ -1196,6 +1196,20 @@ footer {
             }
           }
         }
+        .col-lg-7 {
+          .row {
+            flex-wrap: wrap;
+            .col-lg-4 {
+              .expand-lg-collapse {
+                h6 {
+                  letter-spacing: 0.1em;
+                  margin-bottom: 1.5rem;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

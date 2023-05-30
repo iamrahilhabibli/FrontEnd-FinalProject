@@ -1074,6 +1074,14 @@ footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-unde
 footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-underlined i {
   font-size: 26px;
 }
+footer .footer-last .footer-last-container .row .col-lg-7 .row {
+  flex-wrap: wrap;
+}
+footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand-lg-collapse h6 {
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
 
 @media (min-width: 768px) {
   .animate {
