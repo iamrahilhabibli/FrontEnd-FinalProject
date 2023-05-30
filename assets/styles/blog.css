@@ -180,7 +180,7 @@ nav .login-checkout-container ul li button {
 }
 .simpleParallax .parallaxmainimage {
   position: absolute;
-  top: 0;
+  top: -150px;
   left: 0;
   width: 100%;
   height: auto;
