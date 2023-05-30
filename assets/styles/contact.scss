@@ -506,9 +506,11 @@ nav {
               margin-top: 0;
               font-weight: 700;
             }
-            .text-sm {
-              font-size: 0.87rem;
-            }
+          }
+          .text-sm {
+            font-size: 14px !important;
+            color: #212529;
+            font-weight: 400;
           }
         }
       }

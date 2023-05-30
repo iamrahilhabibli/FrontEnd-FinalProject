@@ -450,8 +450,10 @@ nav .login-checkout-container ul li button {
   margin-top: 0;
   font-weight: 700;
 }
-.map .container-fluid .row .stores .row .col-6 .text-sm {
-  font-size: 0.87rem;
+.map .container-fluid .row .stores .row .text-sm {
+  font-size: 14px !important;
+  color: #212529;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=contact.css.map */
