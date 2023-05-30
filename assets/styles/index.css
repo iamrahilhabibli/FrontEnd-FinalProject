@@ -228,6 +228,9 @@ nav .collapse .dropdown.show #menu4 .row .col-lg-3 .megamenu-list li a span {
 nav .collapse .dropdown.show #menu4 .row .col-lg-3 .mb-lg-0 {
   margin-bottom: 0;
 }
+nav .collapse .dropdown.show .menu5 {
+  min-width: 10rem;
+}
 nav .collapse .dropdown.show .dropdown-menu {
   margin-top: 1.2rem;
   box-shadow: 0 0.2rem 1.2rem rgba(0, 0, 0, 0.175);
