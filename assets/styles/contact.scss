@@ -372,6 +372,7 @@ nav {
   overflow: hidden;
   height: 528.698px;
   width: 100%;
+
   img {
     position: absolute;
     height: 100vh;
@@ -439,7 +440,9 @@ nav {
     }
   }
 }
-.containersection {
+.contactsection {
+  height: 500px;
+  background-color: white;
   .container {
     max-width: 1140px;
     margin-left: auto;
