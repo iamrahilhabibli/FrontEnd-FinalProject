@@ -453,6 +453,25 @@ nav {
       flex-wrap: wrap;
       margin-left: -15px;
       margin-right: -15px;
+      .col-md-4 {
+        text-align: left;
+        h4 {
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 1.3;
+          margin-top: 0;
+        }
+        p {
+          color: #868e96 !important;
+          font-weight: 700;
+        }
+        ul {
+          li {
+            color: #868e96 !important;
+            font-weight: 700;
+          }
+        }
+      }
     }
   }
 }
