@@ -330,7 +330,6 @@ nav .login-checkout-container ul li button {
   width: 100%;
   max-width: none;
   object-fit: cover;
-  transform: scale(1) !important;
 }
 
 .blog-main-image {
