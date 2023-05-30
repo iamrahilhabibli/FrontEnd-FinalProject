@@ -180,7 +180,21 @@ nav .collapse .dropdown.show #menu3 .icons-bottomtext p {
   margin-bottom: 0;
 }
 nav .collapse .dropdown.show #menu4 {
-  width: 1300px;
+  position: absolute;
+  left: -425%;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1300px;
+  width: max-content;
+}
+nav .collapse .dropdown.show #menu4 .row {
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+nav .collapse .dropdown.show #menu4 .row .col-lg-3 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 nav .collapse .dropdown.show .dropdown-menu {
   margin-top: 1.2rem;
