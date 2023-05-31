@@ -1485,6 +1485,29 @@ footer {
       }
     }
   }
+  .footer-end-container {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #868e96 !important;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    .row {
+      font-size: 0.87rem;
+      color: #adb5bd;
+      .col-lg-8 {
+        text-align: right !important;
+        ul {
+          li {
+            margin-right: 0.5rem;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {

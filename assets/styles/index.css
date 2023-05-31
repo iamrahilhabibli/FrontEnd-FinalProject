@@ -1328,6 +1328,27 @@ footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand
 footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand-lg-collapse ul li a:hover::before {
   transform: scaleX(1);
 }
+footer .footer-end-container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #868e96 !important;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .footer-end-container .row {
+  font-size: 0.87rem;
+  color: #adb5bd;
+}
+footer .footer-end-container .row .col-lg-8 {
+  text-align: right !important;
+}
+footer .footer-end-container .row .col-lg-8 ul li {
+  margin-right: 0.5rem;
+}
+footer .footer-end-container .row .col-lg-8 ul li a {
+  text-decoration: none;
+}
 
 @media (min-width: 768px) {
   .animate {
