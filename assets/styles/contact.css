@@ -292,6 +292,10 @@ nav .search-bar .search-nav {
   border-radius: 0;
   background-color: transparent;
 }
+nav .search-bar .search-nav:focus {
+  outline: none;
+  box-shadow: none;
+}
 nav .login-checkout-container ul {
   margin-bottom: 0 !important;
   font-size: 24px;
