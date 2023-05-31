@@ -164,6 +164,7 @@ function updateCartItemsCount() {
     ".shopping-cart-items-count"
   );
   itemsCountElement.innerText = cart.length.toString();
+  saveCart();
 }
 
 addToCartButtons.forEach((button) => {
@@ -212,6 +213,11 @@ function renderCartItem(product) {
     </div>
   `;
 
+  const deleteButton = itemContainer.querySelector(".closebtn-deleteitem");
+  deleteButton.addEventListener("click", () => {
+    removeCartItem(product.id);
+  });
+
   productContainer.appendChild(itemContainer);
 }
 
@@ -223,6 +229,7 @@ function updateCartItemQuantity(cartItem) {
     const quantityElement = itemContainer.querySelector(".text-muted");
     quantityElement.textContent = `Quantity: ${cartItem.count}`;
   }
+  saveCart();
 }
 
 function saveCart() {
@@ -244,6 +251,22 @@ function loadCart() {
   updateCartItemsCount();
 }
 
+function removeCartItem(productId) {
+  const cartItemIndex = cart.findIndex((item) => item.id === productId);
+  if (cartItemIndex !== -1) {
+    const removedItem = cart.splice(cartItemIndex, 1)[0];
+    const itemContainer = document.querySelector(
+      `.item-container[data-id="${removedItem.id}"]`
+    );
+    if (itemContainer) {
+      itemContainer.remove();
+    }
+    updateSubtotal();
+    updateCartItemsCount();
+    saveCart();
+  }
+}
+
 function updateSubtotal() {
   let total = 0;
   for (const item of cart) {
@@ -251,6 +274,7 @@ function updateSubtotal() {
   }
   cartSubtotal = total;
   subtotal.innerText = "$" + cartSubtotal.toFixed(2);
+  saveCart();
 }
 
 function clearCart() {

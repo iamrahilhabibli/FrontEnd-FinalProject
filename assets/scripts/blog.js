@@ -1,5 +1,11 @@
 var image = document.getElementsByClassName("parallaxmainimage");
 new simpleParallax(image);
+function updateCartItemsCount() {
+  const itemsCountElement = document.querySelector(
+    ".shopping-cart-items-count"
+  );
+  itemsCountElement.innerText = cart.length.toString();
+}
 
 function loadCart() {
   const savedCart = JSON.parse(localStorage.getItem("shoppingCart"));
@@ -7,15 +13,17 @@ function loadCart() {
     cart = savedCart;
     displayCartItems(cart);
     updateSubtotal(cart);
+    updateCartItemsCount();
   }
 }
 
 window.addEventListener("storage", (event) => {
   if (event.key === "shoppingCart") {
-    const savedCart = JSON.parse(localStorage.getItem("shoppingCart"));
+    const savedCart = JSON.parse(event.newValue); // Get the updated cart from event.newValue
 
     displayCartItems(savedCart);
     updateSubtotal(savedCart);
+    updateCartItemsCount();
   }
 });
 
