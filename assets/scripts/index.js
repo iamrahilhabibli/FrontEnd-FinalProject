@@ -85,6 +85,7 @@ const products = [
     name: "Norwegg Chair",
     price: 40.0,
     category: "Chairs",
+    image: "./assets/images/greenchairzoomedout.jpg",
   },
   {
     id: 2,
@@ -97,6 +98,7 @@ const products = [
     name: "Another Chair",
     price: 40.0,
     category: "Chairs",
+    image: "",
   },
   {
     id: 4,
@@ -133,7 +135,7 @@ const products = [
 function generateProduct(products) {
   const product = document.createElement("div");
   product.innerHTML = `<div class="item-container">
-  <a href=""><img class="itemimg" src="" alt="" /></a>
+  <a href=""><img class="itemimg" src="${products.image}" alt="" /></a>
   <div class="item-content">
     <a class="closebtn-deleteitem" href="#">
       <button class="closebtn-deleteitem" type="button">
@@ -156,4 +158,4 @@ function renderAllProducts() {
     productContainer.appendChild(apartmentCard);
   });
 }
-renderAllProducts();
+// renderAllProducts();

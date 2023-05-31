@@ -1190,9 +1190,15 @@ nav {
               .navbar-cart-product {
                 .item-container {
                   display: flex;
+                  align-items: center;
+                  padding-top: 2rem;
+                  height: 80px;
+                  padding-bottom: 2rem;
+                  border-bottom: 1px solid grey;
+                  overflow: hidden;
                   a {
                     .itemimg {
-                      height: auto;
+                      height: 100%;
                       max-width: 80px;
                     }
                   }
