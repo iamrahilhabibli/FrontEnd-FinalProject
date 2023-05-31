@@ -76,6 +76,8 @@ sideBarCloseBtn.addEventListener("click", () => {
   sideBarModal.style.display = "none";
   sideBarModalDialog.style.display = "none";
 });
+
+const itemContainer = document.querySelector(".item-container");
 const products = [
   {
     id: 1,
@@ -126,3 +128,31 @@ const products = [
     category: "Accessories",
   },
 ];
+
+function generateProduct(products) {
+  const product = document.createElement("div");
+  product.innerHTML = `<div class="item-container">
+  <a href=""><img class="itemimg" src="" alt="" /></a>
+  <div class="item-content">
+    <a class="closebtn-deleteitem" href="#">
+      <button class="closebtn-deleteitem" type="button">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </a>
+    <div class="pl-3">
+      <a class="navbar-cart-product" href="">${products.name}</a
+      ><small class="d-block text-muted">Quantity: 1 </small
+      ><strong class="d-block text-sm">${products.price}</strong>
+    </div>
+  </div>
+</div>`;
+  return product;
+}
+
+function renderAllProducts() {
+  products.forEach((product) => {
+    const apartmentCard = generateProduct(product);
+    itemContainer.appendChild(apartmentCard);
+  });
+}
+// renderAllProducts();
