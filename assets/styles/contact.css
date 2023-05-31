@@ -603,6 +603,70 @@ footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-unde
 footer .footer-last .footer-last-container .row .col-lg-5 form .email-input-underlined i {
   font-size: 26px;
 }
+footer .footer-last .footer-last-container .row .col-lg-7 .row {
+  flex-wrap: wrap;
+}
+footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand-lg-collapse h6 {
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand-lg-collapse ul {
+  font-size: 0.87rem;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0 !important;
+}
+footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand-lg-collapse ul li {
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand-lg-collapse ul li a {
+  text-decoration: none;
+  color: #868e96;
+  font-weight: 600;
+  position: relative;
+}
+footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand-lg-collapse ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in;
+}
+footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand-lg-collapse ul li a:hover::before {
+  transform: scaleX(1);
+}
+footer .footer-end-container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #868e96 !important;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+footer .footer-end-container .row {
+  font-size: 0.87rem;
+  color: #adb5bd;
+}
+footer .footer-end-container .row .col-lg-8 {
+  text-align: right !important;
+}
+footer .footer-end-container .row .col-lg-8 ul li {
+  margin-right: 0.5rem;
+}
+footer .footer-end-container .row .col-lg-8 ul li a {
+  text-decoration: none;
+}
+footer .footer-end-container .row .col-lg-8 ul li a:hover {
+  text-decoration: underline;
+}
 
 @media (min-width: 768px) {
   .animate {
