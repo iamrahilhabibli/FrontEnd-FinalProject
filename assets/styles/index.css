@@ -1097,46 +1097,6 @@ nav .login-checkout-container ul li button {
   text-decoration: none;
   color: black;
 }
-.modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrolltool {
-  display: block;
-  opacity: 0.75;
-  position: absolute;
-  width: 16px;
-  height: auto;
-  left: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-.modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrolltool .draggercontainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: auto;
-}
-.modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrolltool .draggercontainer .dragger-vertical {
-  position: absolute;
-  min-height: 30px;
-  top: 0px;
-  display: block;
-  height: 400px;
-  max-height: 582px;
-  z-index: 1;
-}
-.modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrolltool .draggercontainer .dragger-vertical .draggerbar {
-  line-height: 30px;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.75);
-  width: 2px;
-  height: 130px;
-}
-.modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrolltool .draggercontainer .dragger-vertical .draggerrail {
-  height: 100%;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.15);
-}
 .modal .modal-dialog .modal-content .modal-footer {
   position: absolute;
   bottom: 0;
