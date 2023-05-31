@@ -95,4 +95,34 @@ const products = [
     price: 40.0,
     category: "Chairs",
   },
+  {
+    id: 4,
+    name: "Your new chair",
+    price: 40.0,
+    category: "Chairs",
+  },
+  {
+    id: 5,
+    name: "Clock",
+    price: 40.0,
+    category: "Accessories",
+  },
+  {
+    id: 6,
+    name: "Clock",
+    price: 40.0,
+    category: "Accessories",
+  },
+  {
+    id: 7,
+    name: "Accessory box",
+    price: 40.0,
+    category: "Accessories",
+  },
+  {
+    id: 8,
+    name: "Beige",
+    price: 40.0,
+    category: "Accessories",
+  },
 ];
