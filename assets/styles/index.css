@@ -1231,24 +1231,113 @@ nav .login-checkout-container ul li button {
   display: block;
   max-height: 600px;
   margin: 1.75rem auto;
+  overflow: hidden;
+  width: auto;
 }
 .login-modal .modal-dialog .modal-content {
   display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
 }
-.login-modal .modal-dialog .modal-content button {
-  margin: auto 1rem -1rem auto;
+.login-modal .modal-dialog .modal-content .closebtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1111;
   padding: 1rem;
   background-color: transparent;
   border: none;
   outline: none;
   font-size: 26px;
 }
-.login-modal .modal-dialog .modal-content button i:hover {
+.login-modal .modal-dialog .modal-content .closebtn i:hover {
   transform: rotate(90deg);
   transition: all linear 0.1s;
 }
 .login-modal .modal-dialog .modal-content .modal-body {
-  padding: 1rem;
+  padding: 3rem;
+}
+.login-modal .modal-dialog .modal-content .modal-body ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+.login-modal .modal-dialog .modal-content .modal-body ul li {
+  margin-right: 0.5rem;
+}
+.login-modal .modal-dialog .modal-content .modal-body ul li .nav-link {
+  color: #868e96;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+.login-modal .modal-dialog .modal-content .modal-body ul li .nav-link:hover {
+  color: black;
+}
+.login-modal .modal-dialog .modal-content .modal-body hr {
+  margin-top: 1rem;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel {
+  display: block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel form .form-group {
+  margin-bottom: 0.5rem;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel form .form-group label {
+  color: black;
+  font-weight: bold;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel form .form-group input {
+  border-radius: 0;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel form .form-group .row {
+  flex-wrap: wrap;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel form .form-group .row .col-auto a {
+  color: #bcac76;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel form .form-group .checkbox .control-input span {
+  color: #868e96 !important;
+  font-size: 0.875rem;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel form .form-group .btn {
+  width: 100%;
+  border: 1px solid black;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem !important;
+  font-size: 13px;
+  border-radius: 0;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel form .form-group .btn:hover {
+  background-color: black;
+  color: white;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel .hr-text {
+  color: #868e96;
+  position: relative;
+  text-align: center;
+  margin: 1.5em 0;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel .hr-text::before, .login-modal .modal-dialog .modal-content .modal-body .container .tab-panel .hr-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  height: 1px;
+  background-color: #868e96;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel .hr-text::before {
+  right: 0.25em;
+  margin-right: 15px;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel .hr-text::after {
+  left: 0.25em;
+  margin-left: 15px;
 }
 
 footer .bg-gray-100 {

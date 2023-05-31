@@ -1368,10 +1368,18 @@ nav {
     display: block;
     max-height: 600px;
     margin: 1.75rem auto;
+    overflow: hidden;
+    width: auto;
     .modal-content {
       display: flex;
-      button {
-        margin: auto 1rem -1rem auto;
+      flex-direction: column;
+      overflow: hidden;
+      width: 100%;
+      .closebtn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1111;
         padding: 1rem;
         background-color: transparent;
         border: none;
@@ -1385,7 +1393,102 @@ nav {
         }
       }
       .modal-body {
-        padding: 1rem;
+        padding: 3rem;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 0;
+          li {
+            margin-right: 0.5rem;
+            .nav-link {
+              color: #868e96;
+              font-size: 1.5rem;
+              font-weight: bold;
+              padding: 0.5rem 1rem;
+              &:hover {
+                color: black;
+              }
+            }
+          }
+        }
+        hr {
+          margin-top: 1rem;
+        }
+        .container {
+          .tab-panel {
+            display: block;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            form {
+              .form-group {
+                margin-bottom: 0.5rem;
+                label {
+                  color: black;
+                  font-weight: bold;
+                }
+                input {
+                  border-radius: 0;
+                }
+                .row {
+                  flex-wrap: wrap;
+                  .col-auto {
+                    a {
+                      color: #bcac76;
+                    }
+                  }
+                }
+                .checkbox {
+                  .control-input {
+                    span {
+                      color: #868e96 !important;
+                      font-size: 0.875rem;
+                    }
+                  }
+                }
+                .btn {
+                  width: 100%;
+                  border: 1px solid black;
+                  letter-spacing: 0.3em;
+                  text-transform: uppercase;
+                  font-weight: bold;
+                  padding: 0.5rem !important;
+                  font-size: 13px;
+                  border-radius: 0;
+                  &:hover {
+                    background-color: black;
+                    color: white;
+                  }
+                }
+              }
+            }
+            .hr-text {
+              color: #868e96;
+              position: relative;
+              text-align: center;
+              margin: 1.5em 0;
+
+              &::before,
+              &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                width: 50%;
+                height: 1px;
+                background-color: #868e96;
+              }
+
+              &::before {
+                right: 0.25em;
+                margin-right: 15px;
+              }
+
+              &::after {
+                left: 0.25em;
+                margin-left: 15px;
+              }
+            }
+          }
+        }
       }
     }
   }

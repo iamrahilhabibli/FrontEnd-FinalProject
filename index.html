@@ -1579,21 +1579,15 @@
                   data-toggle="tab"
                   href="#"
                   role="tab"
-                  aria-controls="loginModalTabRegister"
                   aria-selected="false"
                   >Register</a
                 >
               </li>
             </ul>
-            <hr class="mb-3" />
-            <div class="tab-content">
-              <div
-                class="tab-pane active fade show px-3"
-                id="loginModalTabLogin"
-                role="tabpanel"
-                aria-labelledby="loginModalLinkLogin"
-              >
-                <form action="customer-orders.html" method="get">
+            <hr />
+            <div class="container">
+              <div class="tab-panel" role="tabpanel">
+                <form action="" method="">
                   <div class="form-group">
                     <label class="form-label" for="email">Email</label>
                     <input class="form-control" id="email" type="text" />
@@ -1611,23 +1605,15 @@
                     </div>
                     <input
                       class="form-control"
-                      name="loginPassword"
-                      id="loginPassword"
                       placeholder="Password"
                       type="password"
-                      required=""
-                      data-msg="Please enter your password"
                     />
                   </div>
                   <div class="form-group">
-                    <div class="custom-control custom-checkbox">
-                      <input
-                        class="custom-control-input"
-                        id="loginRemember"
-                        type="checkbox"
-                      />
+                    <div class="checkbox">
+                      <input class="control-input" type="checkbox" />
                       <label
-                        class="custom-control-label text-muted"
+                        class="control-input text-muted"
                         for="loginRemember"
                       >
                         <span class="text-sm"
