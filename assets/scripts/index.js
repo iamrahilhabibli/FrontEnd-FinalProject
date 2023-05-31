@@ -78,6 +78,7 @@ sideBarCloseBtn.addEventListener("click", () => {
 });
 
 const itemContainer = document.querySelector(".item-container");
+const productContainer = document.querySelector(".navbar-cart-product");
 const products = [
   {
     id: 1,
@@ -152,7 +153,7 @@ function generateProduct(products) {
 function renderAllProducts() {
   products.forEach((product) => {
     const apartmentCard = generateProduct(product);
-    itemContainer.appendChild(apartmentCard);
+    productContainer.appendChild(apartmentCard);
   });
 }
 // renderAllProducts();
