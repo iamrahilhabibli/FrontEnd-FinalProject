@@ -158,13 +158,20 @@ const subtotal = document.querySelector(".float-right");
 
 const addToCartButtons = document.querySelectorAll(".add-to-cart");
 
+let cart = [];
+
 addToCartButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     const productId = parseInt(event.target.dataset.productId);
     const product = products.find((p) => p.id === productId);
 
     if (product) {
-      product.count++;
+      const cartItem = cart.find((item) => item.id === productId);
+      if (cartItem) {
+        cartItem.count++;
+      } else {
+        cart.push({ id: productId, count: 1, ...product });
+      }
 
       const itemContainer = document.createElement("div");
       itemContainer.classList.add("item-container");
@@ -188,6 +195,8 @@ addToCartButtons.forEach((button) => {
       `;
 
       productContainer.appendChild(itemContainer);
+
+      saveCart();
     } else {
       console.log(`Product with ID ${productId} not found.`);
     }
@@ -195,13 +204,39 @@ addToCartButtons.forEach((button) => {
 });
 
 function saveCart() {
-  sessionStorage.setItem("shoppingCart", JSON.stringify(cart));
+  localStorage.setItem("shoppingCart", JSON.stringify(cart));
 }
 
 function loadCart() {
-  cart = JSON.parse(sessionStorage.getItem("shoppingCart"));
+  const savedCart = JSON.parse(localStorage.getItem("shoppingCart"));
+  if (savedCart) {
+    cart = savedCart;
+    for (const item of cart) {
+      const itemContainer = document.createElement("div");
+      itemContainer.classList.add("item-container");
+
+      itemContainer.innerHTML = `
+        <a href=""><img class="itemimg" src="${item.image}" alt="" /></a>
+        <div class="item-content">
+          <a class="closebtn-deleteitem" href="#">
+            <button class="closebtn-deleteitem" type="button">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </a>
+          <div class="pl-3">
+            <a class="navbar-cart-product" href="">${item.name}</a>
+            <small class="d-block text-muted">Quantity: ${item.count}</small>
+            <strong class="d-block text-sm">$${item.price.toFixed(2)}</strong>
+          </div>
+        </div>
+      `;
+
+      productContainer.appendChild(itemContainer);
+    }
+  }
 }
-if (sessionStorage.getItem("shoppingCart") != null) {
+
+if (localStorage.getItem("shoppingCart") != null) {
   loadCart();
 }
 
