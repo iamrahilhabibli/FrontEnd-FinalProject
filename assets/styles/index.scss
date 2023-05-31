@@ -1443,6 +1443,41 @@ footer {
                   margin-bottom: 1.5rem;
                   font-weight: 700;
                 }
+                ul {
+                  font-size: 0.87rem;
+                  list-style-type: none;
+                  text-align: left;
+                  padding-left: 0 !important;
+
+                  li {
+                    margin-bottom: 0.5rem;
+                    text-align: left;
+
+                    a {
+                      text-decoration: none;
+                      color: #868e96;
+                      font-weight: 600;
+                      position: relative;
+
+                      &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: -2px;
+                        width: 100%;
+                        height: 2px;
+                        background-color: black;
+                        transform-origin: left;
+                        transform: scaleX(0);
+                        transition: transform 0.3s ease-in;
+                      }
+
+                      &:hover::before {
+                        transform: scaleX(1);
+                      }
+                    }
+                  }
+                }
               }
             }
           }
