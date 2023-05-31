@@ -76,3 +76,23 @@ sideBarCloseBtn.addEventListener("click", () => {
   sideBarModal.style.display = "none";
   sideBarModalDialog.style.display = "none";
 });
+const products = [
+  {
+    id: 1,
+    name: "Norwegg Chair",
+    price: 40.0,
+    category: "Chairs",
+  },
+  {
+    id: 2,
+    name: "Book",
+    price: 40.0,
+    category: "Books",
+  },
+  {
+    id: 3,
+    name: "Another Chair",
+    price: 40.0,
+    category: "Chairs",
+  },
+];

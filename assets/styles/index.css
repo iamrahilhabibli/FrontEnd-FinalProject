@@ -1011,9 +1011,6 @@ nav .login-checkout-container ul li button {
 .modal {
   display: block;
   position: fixed;
-  top: 0;
-  left: 0;
-  margin: 0px 0 0 auto;
   pointer-events: none;
 }
 .modal .modal-dialog {
@@ -1021,9 +1018,8 @@ nav .login-checkout-container ul li button {
   pointer-events: none;
   transition: transform 0.3s ease-in-out;
   max-width: 500px;
-  margin: 0px 0 0 auto;
   height: 100vh;
-  display: none;
+  margin: 0px 0 0 auto;
 }
 .modal .modal-dialog .modal-content {
   display: flex;
