@@ -92,7 +92,7 @@ const products = [
     price: 40.0,
     category: "Chairs",
     image1: "./assets/images/greenchairzoomedout.jpg",
-    count: 0,
+    count: 1,
   },
   {
     id: 2,
@@ -100,7 +100,7 @@ const products = [
     price: 40.0,
     category: "Books",
     image: "./assets/images/books1.jpg",
-    count: 0,
+    count: 1,
   },
   {
     id: 3,
@@ -108,7 +108,7 @@ const products = [
     price: 40.0,
     category: "Chairs",
     image: "./assets/images/anotherchair1.jpg",
-    count: 0,
+    count: 1,
   },
   {
     id: 4,
@@ -116,7 +116,7 @@ const products = [
     price: 40.0,
     category: "Chairs",
     image: "./assets/images/yournewchair1.jpg",
-    count: 0,
+    count: 1,
   },
   {
     id: 5,
@@ -124,7 +124,7 @@ const products = [
     price: 40.0,
     category: "Accessories",
     image: "./assets/images/clock1.jpg",
-    count: 0,
+    count: 1,
   },
   {
     id: 6,
@@ -132,7 +132,7 @@ const products = [
     price: 40.0,
     category: "Accessories",
     image: "./assets/images/clock2-1.jpg",
-    count: 0,
+    count: 1,
   },
   {
     id: 7,
@@ -140,7 +140,7 @@ const products = [
     price: 40.0,
     category: "Accessories",
     image: "./assets/images/accessorybox-1.jpg",
-    count: 0,
+    count: 1,
   },
   {
     id: 8,
@@ -148,12 +148,14 @@ const products = [
     price: 40.0,
     category: "Accessories",
     image: "./assets/images/beige1.jpg",
-    count: 0,
+    count: 1,
   },
 ];
 const itemContainer = document.querySelector(".item-container");
+
 const productContainer = document.querySelector(".navbar-cart-product");
 const addToCartButtons = document.querySelectorAll(".add-to-cart");
+const subtotal = document.querySelector(".float-right");
 let cart = [];
 
 addToCartButtons.forEach((button) => {
@@ -165,12 +167,14 @@ addToCartButtons.forEach((button) => {
       const cartItem = cart.find((item) => item.id === productId);
       if (cartItem) {
         cartItem.count++;
+        updateCartItemQuantity(cartItem);
       } else {
         cart.push({ id: productId, count: 1, ...product });
+        renderCartItem(product);
       }
 
-      renderCartItem(product);
       saveCart();
+      updateSubtotal();
     } else {
       console.log(`Product with ID ${productId} not found.`);
     }
@@ -180,6 +184,7 @@ addToCartButtons.forEach((button) => {
 function renderCartItem(product) {
   const itemContainer = document.createElement("div");
   itemContainer.classList.add("item-container");
+  itemContainer.setAttribute("data-id", product.id);
 
   itemContainer.innerHTML = `
     <a href=""><img class="itemimg" src="${product.image}" alt="" /></a>
@@ -200,6 +205,16 @@ function renderCartItem(product) {
   productContainer.appendChild(itemContainer);
 }
 
+function updateCartItemQuantity(cartItem) {
+  const itemContainer = document.querySelector(
+    `.item-container[data-id="${cartItem.id}"]`
+  );
+  if (itemContainer) {
+    const quantityElement = itemContainer.querySelector(".text-muted");
+    quantityElement.textContent = `Quantity: ${cartItem.count}`;
+  }
+}
+
 function saveCart() {
   localStorage.setItem("shoppingCart", JSON.stringify(cart));
 }
@@ -214,24 +229,28 @@ function loadCart() {
   }
 }
 
+function updateSubtotal() {
+  let total = 0;
+  for (const item of cart) {
+    total += item.price * item.count;
+  }
+  subtotal.innerText = "$" + total.toFixed(2);
+}
+
+function clearCart() {
+  cart = [];
+  localStorage.removeItem("shoppingCart");
+  productContainer.innerHTML = "";
+  subtotal.innerText = "$0";
+}
+
 if (localStorage.getItem("shoppingCart") != null) {
   loadCart();
 }
 
-const clearCartButton = document.querySelector(".btn-danger");
+updateSubtotal();
 
+const clearCartButton = document.querySelector(".btn-danger");
 clearCartButton.addEventListener("click", () => {
   clearCart();
 });
-
-function clearCart() {
-  cart = [];
-
-  localStorage.removeItem("shoppingCart");
-
-  const productContainer = document.querySelector(".navbar-cart-product");
-  productContainer.innerHTML = "";
-
-  const subtotal = document.querySelector(".float-right");
-  subtotal.innerText = "$0";
-}
