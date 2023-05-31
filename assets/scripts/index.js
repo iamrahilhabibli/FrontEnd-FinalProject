@@ -55,6 +55,9 @@ const sideBarCloseBtn = document
   .querySelector(".modal-header")
   .querySelector(".closebtn");
 const staggeredBar = document.querySelector(".fa-bars-staggered");
+const modalContent = document
+  .querySelector(".modal-dialog")
+  .querySelector("modal-content");
 
 shoppingCartIcon.addEventListener("click", () => {
   modal.style.display = "block";
