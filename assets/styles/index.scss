@@ -1358,7 +1358,38 @@ nav {
     }
   }
 }
-
+.login-modal {
+  display: block !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  .modal-dialog {
+    display: block;
+    max-height: 600px;
+    margin: 1.75rem auto;
+    .modal-content {
+      display: flex;
+      button {
+        margin: auto 1rem -1rem auto;
+        padding: 1rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 26px;
+        i {
+          &:hover {
+            transform: rotate(90deg);
+            transition: all linear 0.1s;
+          }
+        }
+      }
+      .modal-body {
+        padding: 1rem;
+      }
+    }
+  }
+}
 footer {
   .bg-gray-100 {
     background-color: #f8f9fa;

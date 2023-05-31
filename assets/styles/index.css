@@ -1220,6 +1220,37 @@ nav .login-checkout-container ul li button {
   font-weight: 600;
 }
 
+.login-modal {
+  display: block !important;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+.login-modal .modal-dialog {
+  display: block;
+  max-height: 600px;
+  margin: 1.75rem auto;
+}
+.login-modal .modal-dialog .modal-content {
+  display: flex;
+}
+.login-modal .modal-dialog .modal-content button {
+  margin: auto 1rem -1rem auto;
+  padding: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 26px;
+}
+.login-modal .modal-dialog .modal-content button i:hover {
+  transform: rotate(90deg);
+  transition: all linear 0.1s;
+}
+.login-modal .modal-dialog .modal-content .modal-body {
+  padding: 1rem;
+}
+
 footer .bg-gray-100 {
   background-color: #f8f9fa;
   height: 285px;
