@@ -156,41 +156,4 @@ function renderAllProducts() {
     productContainer.appendChild(apartmentCard);
   });
 }
-// renderAllProducts();
-
-// Get the necessary elements
-// Get the necessary elements
-const draggerContainer = document.querySelector(".draggercontainer");
-const draggerBar = document.querySelector(".draggerbar");
-const draggerRail = document.querySelector(".draggerrail");
-
-// Set initial variables
-let isScrolling = false;
-
-// Event listener for scrolling on the dragger container
-draggerContainer.addEventListener("wheel", (event) => {
-  event.preventDefault();
-
-  // Calculate the scroll amount based on the wheel event
-  const scrollAmount = event.deltaY * 0.2;
-
-  // Update the scrollTop position of the dragger container
-  draggerContainer.scrollTop += scrollAmount;
-
-  // Update the position of the dragger bar based on the scroll percentage
-  const scrollPercentage =
-    (draggerContainer.scrollTop /
-      (draggerContainer.scrollHeight - draggerContainer.clientHeight)) *
-    100;
-  draggerBar.style.top = `${scrollPercentage}%`;
-});
-
-// Event listener for scroll on the dragger container
-draggerContainer.addEventListener("scroll", () => {
-  // Update the position of the dragger bar based on the scroll percentage
-  const scrollPercentage =
-    (draggerContainer.scrollTop /
-      (draggerContainer.scrollHeight - draggerContainer.clientHeight)) *
-    100;
-  draggerBar.style.top = `${scrollPercentage}%`;
-});
+renderAllProducts();
