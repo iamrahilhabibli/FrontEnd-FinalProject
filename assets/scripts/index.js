@@ -164,7 +164,6 @@ addToCartButtons.forEach((button) => {
     const product = products.find((p) => p.id === productId);
 
     if (product) {
-      // Increment the quantity of the selected product
       product.count++;
 
       const itemContainer = document.createElement("div");
