@@ -151,8 +151,10 @@ const products = [
 ];
 
 function generateProduct(products) {
-  const product = document.createElement("div");
-  product.innerHTML = `<div class="item-container">
+  const itemContainer = document.createElement("div");
+  itemContainer.className = "item-container";
+
+  itemContainer.innerHTML = `<div class="item-container">
   <a href=""><img class="itemimg" src="${products.image}" alt="" /></a>
   <div class="item-content">
     <a class="closebtn-deleteitem" href="#">
@@ -167,16 +169,78 @@ function generateProduct(products) {
     </div>
   </div>
 </div>`;
-  return product;
+  return itemContainer;
 }
 
-function renderAllProducts() {
-  products.forEach((product) => {
-    const apartmentCard = generateProduct(product);
-    productContainer.appendChild(apartmentCard);
-  });
+function createProduct(product) {
+  const itemContainer = document.createElement("div");
+  itemContainer.classList.add("item-container");
+
+  const imageLink = document.createElement("a");
+  imageLink.href = "";
+
+  const itemImage = document.createElement("img");
+  itemImage.classList.add("itemimg");
+  itemImage.src = product.image;
+  itemImage.alt = "";
+  imageLink.appendChild(itemImage);
+
+  itemContainer.appendChild(imageLink);
+
+  const itemContent = document.createElement("div");
+  itemContent.classList.add("item-content");
+
+  const closeBtnLink = document.createElement("a");
+  closeBtnLink.classList.add("closebtn-deleteitem");
+  closeBtnLink.href = "#";
+
+  const closeBtn = document.createElement("button");
+  closeBtn.classList.add("closebtn-deleteitem");
+  closeBtn.type = "button";
+
+  const closeIcon = document.createElement("i");
+  closeIcon.classList.add("fa-solid", "fa-xmark");
+  closeBtn.appendChild(closeIcon);
+
+  closeBtnLink.appendChild(closeBtn);
+
+  itemContent.appendChild(closeBtnLink);
+
+  const itemDetails = document.createElement("div");
+  itemDetails.classList.add("pl-3");
+
+  const productLink = document.createElement("a");
+  productLink.classList.add("navbar-cart-product");
+  productLink.href = "";
+  productLink.innerText = product.name;
+
+  const quantity = document.createElement("small");
+  quantity.classList.add("d-block", "text-muted");
+  quantity.innerText = `Quantity: ${product.count}`;
+
+  const price = document.createElement("strong");
+  price.classList.add("d-block", "text-sm");
+  price.innerText = `$${product.price}.00`;
+
+  itemDetails.appendChild(productLink);
+  itemDetails.appendChild(quantity);
+  itemDetails.appendChild(price);
+
+  itemContent.appendChild(itemDetails);
+
+  itemContainer.appendChild(itemContent);
+
+  productContainer.appendChild(itemContainer);
 }
-renderAllProducts();
+
+// function renderAllProducts() {
+//   products.forEach((product) => {
+//     const productItem = generateProduct(product);
+//     productContainer.appendChild(productItem);
+//   });
+// }
+// renderAllProducts();
+
 const deleteBtn = document
   .querySelector(".closebtn-deleteitem")
   .querySelector(".fa-xmark");
