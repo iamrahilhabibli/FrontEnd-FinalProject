@@ -151,13 +151,9 @@ const products = [
     count: 0,
   },
 ];
-
 const itemContainer = document.querySelector(".item-container");
 const productContainer = document.querySelector(".navbar-cart-product");
-const subtotal = document.querySelector(".float-right");
-
 const addToCartButtons = document.querySelectorAll(".add-to-cart");
-
 let cart = [];
 
 addToCartButtons.forEach((button) => {
@@ -173,35 +169,36 @@ addToCartButtons.forEach((button) => {
         cart.push({ id: productId, count: 1, ...product });
       }
 
-      const itemContainer = document.createElement("div");
-      itemContainer.classList.add("item-container");
-
-      itemContainer.innerHTML = `
-        <a href=""><img class="itemimg" src="${product.image}" alt="" /></a>
-        <div class="item-content">
-          <a class="closebtn-deleteitem" href="#">
-            <button class="closebtn-deleteitem" type="button">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </a>
-          <div class="pl-3">
-            <a class="navbar-cart-product" href="">${product.name}</a>
-            <small class="d-block text-muted">Quantity: ${product.count}</small>
-            <strong class="d-block text-sm">$${product.price.toFixed(
-              2
-            )}</strong>
-          </div>
-        </div>
-      `;
-
-      productContainer.appendChild(itemContainer);
-
+      renderCartItem(product);
       saveCart();
     } else {
       console.log(`Product with ID ${productId} not found.`);
     }
   });
 });
+
+function renderCartItem(product) {
+  const itemContainer = document.createElement("div");
+  itemContainer.classList.add("item-container");
+
+  itemContainer.innerHTML = `
+    <a href=""><img class="itemimg" src="${product.image}" alt="" /></a>
+    <div class="item-content">
+      <a class="closebtn-deleteitem" href="#">
+        <button class="closebtn-deleteitem" type="button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </a>
+      <div class="pl-3">
+        <a class="navbar-cart-product" href="">${product.name}</a>
+        <small class="d-block text-muted">Quantity: ${product.count}</small>
+        <strong class="d-block text-sm">$${product.price.toFixed(2)}</strong>
+      </div>
+    </div>
+  `;
+
+  productContainer.appendChild(itemContainer);
+}
 
 function saveCart() {
   localStorage.setItem("shoppingCart", JSON.stringify(cart));
@@ -212,26 +209,7 @@ function loadCart() {
   if (savedCart) {
     cart = savedCart;
     for (const item of cart) {
-      const itemContainer = document.createElement("div");
-      itemContainer.classList.add("item-container");
-
-      itemContainer.innerHTML = `
-        <a href=""><img class="itemimg" src="${item.image}" alt="" /></a>
-        <div class="item-content">
-          <a class="closebtn-deleteitem" href="#">
-            <button class="closebtn-deleteitem" type="button">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </a>
-          <div class="pl-3">
-            <a class="navbar-cart-product" href="">${item.name}</a>
-            <small class="d-block text-muted">Quantity: ${item.count}</small>
-            <strong class="d-block text-sm">$${item.price.toFixed(2)}</strong>
-          </div>
-        </div>
-      `;
-
-      productContainer.appendChild(itemContainer);
+      renderCartItem(item);
     }
   }
 }
@@ -240,100 +218,20 @@ if (localStorage.getItem("shoppingCart") != null) {
   loadCart();
 }
 
-// function generateProduct(products) {
-//   const itemContainer = document.createElement("div");
-//   itemContainer.className = "item-container";
+const clearCartButton = document.querySelector(".btn-danger");
 
-//   itemContainer.innerHTML = `<div class="item-container">
-//   <a href=""><img class="itemimg" src="${products.image}" alt="" /></a>
-//   <div class="item-content">
-//     <a class="closebtn-deleteitem" href="#">
-//       <button class="closebtn-deleteitem" type="button">
-//         <i class="fa-solid fa-xmark"></i>
-//       </button>
-//     </a>
-//     <div class="pl-3">
-//       <a class="navbar-cart-product" href="">${products.name}</a
-//       ><small class="d-block text-muted">Quantity: ${products.count} </small
-//       ><strong class="d-block text-sm">$${products.price}.00</strong>
-//     </div>
-//   </div>
-// </div>`;
-//   return itemContainer;
-// }
+clearCartButton.addEventListener("click", () => {
+  clearCart();
+});
 
-// function createProduct(product) {
-//   const itemContainer = document.createElement("div");
-//   itemContainer.classList.add("item-container");
+function clearCart() {
+  cart = [];
 
-//   const imageLink = document.createElement("a");
-//   imageLink.href = "";
+  localStorage.removeItem("shoppingCart");
 
-//   const itemImage = document.createElement("img");
-//   itemImage.classList.add("itemimg");
-//   itemImage.src = product.image;
-//   itemImage.alt = "";
-//   imageLink.appendChild(itemImage);
+  const productContainer = document.querySelector(".navbar-cart-product");
+  productContainer.innerHTML = "";
 
-//   itemContainer.appendChild(imageLink);
-
-//   const itemContent = document.createElement("div");
-//   itemContent.classList.add("item-content");
-
-//   const closeBtnLink = document.createElement("a");
-//   closeBtnLink.classList.add("closebtn-deleteitem");
-//   closeBtnLink.href = "#";
-
-//   const closeBtn = document.createElement("button");
-//   closeBtn.classList.add("closebtn-deleteitem");
-//   closeBtn.type = "button";
-
-//   const closeIcon = document.createElement("i");
-//   closeIcon.classList.add("fa-solid", "fa-xmark");
-//   closeBtn.appendChild(closeIcon);
-
-//   closeBtnLink.appendChild(closeBtn);
-
-//   itemContent.appendChild(closeBtnLink);
-
-//   const itemDetails = document.createElement("div");
-//   itemDetails.classList.add("pl-3");
-
-//   const productLink = document.createElement("a");
-//   productLink.classList.add("navbar-cart-product");
-//   productLink.href = "";
-//   productLink.innerText = product.name;
-
-//   const quantity = document.createElement("small");
-//   quantity.classList.add("d-block", "text-muted");
-//   quantity.innerText = `Quantity: ${product.count}`;
-
-//   const price = document.createElement("strong");
-//   price.classList.add("d-block", "text-sm");
-//   price.innerText = `$${product.price}.00`;
-
-//   itemDetails.appendChild(productLink);
-//   itemDetails.appendChild(quantity);
-//   itemDetails.appendChild(price);
-
-//   itemContent.appendChild(itemDetails);
-
-//   itemContainer.appendChild(itemContent);
-
-//   productContainer.appendChild(itemContainer);
-
-//   return productContainer;
-// }
-
-// function renderAllProducts() {
-//   products.forEach((product) => {
-//     const productItem = createProduct(product);
-//     productContainer.appendChild(productItem);
-//   });
-// }
-// renderAllProducts();
-
-// const deleteBtn = document
-//   .querySelector(".closebtn-deleteitem")
-//   .querySelector(".fa-xmark");
-// console.log(deleteBtn);
+  const subtotal = document.querySelector(".float-right");
+  subtotal.innerText = "$0";
+}
