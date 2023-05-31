@@ -47,21 +47,35 @@ sideBarCloseBtn.addEventListener("click", () => {
   sideBarModalDialog.style.display = "none";
 });
 
+function updateCartItemsCount() {
+  const itemsCountElement = document.querySelector(
+    ".shopping-cart-items-count"
+  );
+  itemsCountElement.innerText = cart.length.toString();
+}
+
+function saveCart() {
+  localStorage.setItem("shoppingCart", JSON.stringify(cart));
+  localStorage.setItem("subtotal", cartSubtotal.toFixed(2));
+}
+
 function loadCart() {
   const savedCart = JSON.parse(localStorage.getItem("shoppingCart"));
   if (savedCart) {
     cart = savedCart;
     displayCartItems(cart);
     updateSubtotal(cart);
+    updateCartItemsCount();
   }
 }
 
 window.addEventListener("storage", (event) => {
   if (event.key === "shoppingCart") {
-    const savedCart = JSON.parse(localStorage.getItem("shoppingCart"));
+    const savedCart = JSON.parse(event.newValue); // Get the updated cart from event.newValue
 
     displayCartItems(savedCart);
     updateSubtotal(savedCart);
+    updateCartItemsCount();
   }
 });
 
@@ -90,6 +104,11 @@ function displayCartItems(cart) {
       </div>
     `;
 
+    const deleteButton = itemContainer.querySelector(".closebtn-deleteitem");
+    deleteButton.addEventListener("click", () => {
+      removeCartItem(item.id);
+    });
+
     productContainer.appendChild(itemContainer);
   }
 }
@@ -104,6 +123,18 @@ function updateSubtotal(cart) {
   }
 
   subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
+}
+
+function removeCartItem(itemId) {
+  const itemIndex = cart.findIndex((item) => item.id === itemId);
+
+  if (itemIndex !== -1) {
+    cart.splice(itemIndex, 1);
+    displayCartItems(cart);
+    updateSubtotal(cart);
+    updateCartItemsCount();
+    saveCart();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {

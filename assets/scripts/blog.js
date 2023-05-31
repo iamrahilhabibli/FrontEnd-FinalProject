@@ -1,10 +1,16 @@
 var image = document.getElementsByClassName("parallaxmainimage");
 new simpleParallax(image);
+
 function updateCartItemsCount() {
   const itemsCountElement = document.querySelector(
     ".shopping-cart-items-count"
   );
   itemsCountElement.innerText = cart.length.toString();
+}
+
+function saveCart() {
+  localStorage.setItem("shoppingCart", JSON.stringify(cart));
+  localStorage.setItem("subtotal", cartSubtotal.toFixed(2));
 }
 
 function loadCart() {
@@ -37,20 +43,25 @@ function displayCartItems(cart) {
     itemContainer.classList.add("item-container");
 
     itemContainer.innerHTML = `
-        <a href=""><img class="itemimg" src="${item.image}" alt="" /></a>
-        <div class="item-content">
-          <a class="closebtn-deleteitem" href="#">
-            <button class="closebtn-deleteitem" type="button">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </a>
-          <div class="pl-3">
-            <a class="navbar-cart-product" href="">${item.name}</a>
-            <small class="d-block text-muted">Quantity: ${item.count}</small>
-            <strong class="d-block text-sm">$${item.price.toFixed(2)}</strong>
-          </div>
+      <a href=""><img class="itemimg" src="${item.image}" alt="" /></a>
+      <div class="item-content">
+        <a class="closebtn-deleteitem" href="#">
+          <button class="closebtn-deleteitem" type="button">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </a>
+        <div class="pl-3">
+          <a class="navbar-cart-product" href="">${item.name}</a>
+          <small class="d-block text-muted">Quantity: ${item.count}</small>
+          <strong class="d-block text-sm">$${item.price.toFixed(2)}</strong>
         </div>
-      `;
+      </div>
+    `;
+
+    const deleteButton = itemContainer.querySelector(".closebtn-deleteitem");
+    deleteButton.addEventListener("click", () => {
+      removeCartItem(item.id);
+    });
 
     productContainer.appendChild(itemContainer);
   }
@@ -66,6 +77,18 @@ function updateSubtotal(cart) {
   }
 
   subtotalElement.textContent = `$${subtotal.toFixed(2)}`;
+}
+
+function removeCartItem(itemId) {
+  const itemIndex = cart.findIndex((item) => item.id === itemId);
+
+  if (itemIndex !== -1) {
+    cart.splice(itemIndex, 1);
+    displayCartItems(cart);
+    updateSubtotal(cart);
+    updateCartItemsCount();
+    saveCart();
+  }
 }
 
 document.addEventListener("DOMContentLoaded", () => {
