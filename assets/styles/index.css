@@ -1349,6 +1349,9 @@ footer .footer-end-container .row .col-lg-8 ul li {
 footer .footer-end-container .row .col-lg-8 ul li a {
   text-decoration: none;
 }
+footer .footer-end-container .row .col-lg-8 ul li a:hover {
+  text-decoration: underline;
+}
 
 @media (min-width: 768px) {
   .animate {
