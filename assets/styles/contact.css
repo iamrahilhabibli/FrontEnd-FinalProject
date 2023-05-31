@@ -290,6 +290,7 @@ nav .search-bar .search-nav {
   border-left: none;
   border-bottom: 1px solid black;
   border-radius: 0;
+  background-color: transparent;
 }
 nav .login-checkout-container ul {
   margin-bottom: 0 !important;
