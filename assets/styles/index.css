@@ -1064,10 +1064,10 @@ nav .login-checkout-container ul li button {
   position: relative;
   top: 0px;
   left: 0px;
-  overflow: hidden;
   width: auto;
-  height: auto;
+  height: 400px;
   margin-right: 30px;
+  overflow: scroll;
 }
 .modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrollbox-container .navbar-cart-product .item-container {
   display: flex;
@@ -1121,7 +1121,7 @@ nav .login-checkout-container ul li button {
   min-height: 30px;
   top: 0px;
   display: block;
-  height: 435px;
+  height: 400px;
   max-height: 582px;
   z-index: 1;
 }
@@ -1130,7 +1130,7 @@ nav .login-checkout-container ul li button {
   background-color: black;
   background-color: rgba(0, 0, 0, 0.75);
   width: 2px;
-  height: 435px;
+  height: 130px;
 }
 .modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrolltool .draggercontainer .dragger-vertical .draggerrail {
   height: 100%;
