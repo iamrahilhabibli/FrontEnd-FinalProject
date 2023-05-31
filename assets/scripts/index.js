@@ -159,6 +159,13 @@ const subtotal = document.querySelector(".float-right");
 let cart = [];
 let cartSubtotal = 0;
 
+function updateCartItemsCount() {
+  const itemsCountElement = document.querySelector(
+    ".shopping-cart-items-count"
+  );
+  itemsCountElement.innerText = cart.length.toString();
+}
+
 addToCartButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     const productId = parseInt(event.target.dataset.productId);
@@ -169,6 +176,7 @@ addToCartButtons.forEach((button) => {
       if (cartItem) {
         cartItem.count++;
         updateCartItemQuantity(cartItem);
+        updateCartItemsCount();
       } else {
         cart.push({ id: productId, count: 1, ...product });
         renderCartItem(product);
@@ -176,6 +184,7 @@ addToCartButtons.forEach((button) => {
 
       saveCart();
       updateSubtotal();
+      updateCartItemsCount();
     } else {
       console.log(`Product with ID ${productId} not found.`);
     }
@@ -232,6 +241,7 @@ function loadCart() {
     }
   }
   updateSubtotal();
+  updateCartItemsCount();
 }
 
 function updateSubtotal() {
@@ -250,6 +260,7 @@ function clearCart() {
   localStorage.removeItem("subtotal");
   productContainer.innerHTML = "";
   subtotal.innerText = "$0";
+  updateCartItemsCount();
 }
 
 if (localStorage.getItem("shoppingCart") != null) {
