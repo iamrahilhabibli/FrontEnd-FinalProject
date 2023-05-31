@@ -924,6 +924,9 @@ nav .login-checkout-container ul li button {
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer {
   margin-bottom: 15px;
 }
+.new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .product-hover span {
+  cursor: pointer;
+}
 .new-arrival-main-container .new-arrival-container .row .col-xl-3 .product .greenchaircontainer .product-badge {
   position: absolute;
   z-index: 16;

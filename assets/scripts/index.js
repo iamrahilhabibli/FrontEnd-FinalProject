@@ -77,8 +77,12 @@ sideBarCloseBtn.addEventListener("click", () => {
   sideBarModalDialog.style.display = "none";
 });
 
+// BASKET START
+
 const itemContainer = document.querySelector(".item-container");
 const productContainer = document.querySelector(".navbar-cart-product");
+const subtotal = document.querySelector(".float-right");
+
 const products = [
   {
     id: 1,
@@ -86,6 +90,7 @@ const products = [
     price: 40.0,
     category: "Chairs",
     image: "./assets/images/greenchairzoomedout.jpg",
+    count: 0,
   },
   {
     id: 2,
@@ -93,6 +98,7 @@ const products = [
     price: 40.0,
     category: "Books",
     image: "./assets/images/books1.jpg",
+    count: 0,
   },
   {
     id: 3,
@@ -100,6 +106,7 @@ const products = [
     price: 40.0,
     category: "Chairs",
     image: "./assets/images/anotherchair1.jpg",
+    count: 0,
   },
   {
     id: 4,
@@ -107,6 +114,7 @@ const products = [
     price: 40.0,
     category: "Chairs",
     image: "./assets/images/yournewchair1.jpg",
+    count: 0,
   },
   {
     id: 5,
@@ -114,6 +122,7 @@ const products = [
     price: 40.0,
     category: "Accessories",
     image: "./assets/images/clock1.jpg",
+    count: 0,
   },
   {
     id: 6,
@@ -121,6 +130,7 @@ const products = [
     price: 40.0,
     category: "Accessories",
     image: "./assets/images/clock2-1.jpg",
+    count: 0,
   },
   {
     id: 7,
@@ -128,6 +138,7 @@ const products = [
     price: 40.0,
     category: "Accessories",
     image: "./assets/images/accessorybox-1.jpg",
+    count: 0,
   },
   {
     id: 8,
@@ -135,6 +146,7 @@ const products = [
     price: 40.0,
     category: "Accessories",
     image: "./assets/images/beige1.jpg",
+    count: 0,
   },
 ];
 
@@ -150,8 +162,8 @@ function generateProduct(products) {
     </a>
     <div class="pl-3">
       <a class="navbar-cart-product" href="">${products.name}</a
-      ><small class="d-block text-muted">Quantity: 1 </small
-      ><strong class="d-block text-sm">${products.price}</strong>
+      ><small class="d-block text-muted">Quantity: ${products.count} </small
+      ><strong class="d-block text-sm">$${products.price}.00</strong>
     </div>
   </div>
 </div>`;
@@ -164,4 +176,8 @@ function renderAllProducts() {
     productContainer.appendChild(apartmentCard);
   });
 }
-// renderAllProducts();
+renderAllProducts();
+const deleteBtn = document
+  .querySelector(".closebtn-deleteitem")
+  .querySelector(".fa-xmark");
+console.log(deleteBtn);

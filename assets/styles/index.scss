@@ -1031,7 +1031,11 @@ nav {
 
           .greenchaircontainer {
             margin-bottom: 15px;
-
+            .product-hover {
+              span {
+                cursor: pointer;
+              }
+            }
             .product-badge {
               position: absolute;
               z-index: 16;
