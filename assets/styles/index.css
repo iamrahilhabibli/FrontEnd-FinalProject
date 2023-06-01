@@ -719,42 +719,45 @@ nav .login-checkout-container ul li button {
   object-fit: cover;
 }
 
-.ondeal-item-container {
+.position-relative {
   width: 100vw;
   background-color: #ebf7ff;
+}
+.position-relative .ondeal-item-container {
+  width: 100%;
   position: relative;
   padding: 3rem 0rem;
   overflow: hidden;
 }
 @media (min-width: 576px) and (max-width: 767px) {
-  .ondeal-item-container {
+  .position-relative .ondeal-item-container {
     max-width: 540px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .ondeal-item-container {
+  .position-relative .ondeal-item-container {
     max-width: 720px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .ondeal-item-container {
+  .position-relative .ondeal-item-container {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
   }
 }
-.ondeal-item-container .custom-blue-blob {
+.position-relative .ondeal-item-container .custom-blue-blob {
   height: 600px;
   width: 600px;
   position: absolute;
   top: -40px;
   left: -200px;
 }
-.ondeal-item-container .content-container {
+.position-relative .ondeal-item-container .content-container {
   position: relative;
   max-width: 1140px;
   width: 100%;
@@ -762,47 +765,47 @@ nav .login-checkout-container ul li button {
   margin-right: auto;
   padding: 0px 15px;
 }
-.ondeal-item-container .content-container .deal-item-section {
+.position-relative .ondeal-item-container .content-container .deal-item-section {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
   align-items: center !important;
 }
-.ondeal-item-container .content-container .deal-item-section .countdown-img-container {
+.position-relative .ondeal-item-container .content-container .deal-item-section .countdown-img-container {
   position: relative;
   width: 50%;
   text-align: center !important;
   max-width: 50%;
 }
-.ondeal-item-container .content-container .deal-item-section .countdown-img-container img {
+.position-relative .ondeal-item-container .content-container .deal-item-section .countdown-img-container img {
   max-height: 450px;
   max-width: 100%;
   height: auto;
 }
-.ondeal-item-container .content-container .deal-item-section .col-lg-6 {
+.position-relative .ondeal-item-container .content-container .deal-item-section .col-lg-6 {
   position: relative;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   flex: 0 0 50% !important;
 }
-.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container p {
+.position-relative .ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container p {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
   font-size: 16px;
 }
-.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container h3 {
+.position-relative .ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container h3 {
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
 }
-.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .text-muted {
+.position-relative .ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .text-muted {
   color: #868e96 !important;
   font-weight: 600;
   font-size: 16px;
 }
-.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .badge-danger {
+.position-relative .ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .badge-danger {
   background-color: #dc3545;
   color: white;
   padding: 1rem;
@@ -812,17 +815,17 @@ nav .login-checkout-container ul li button {
   letter-spacing: normal;
   text-transform: none;
 }
-.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .countdown-container {
+.position-relative .ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .countdown-container {
   padding: 1.5rem 3rem;
   box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.15);
   background-color: white;
   text-align: center;
   margin-bottom: 25px;
 }
-.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .countdown-container h4 {
+.position-relative .ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .countdown-container h4 {
   font-weight: 600;
 }
-.ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .btn {
+.position-relative .ondeal-item-container .content-container .deal-item-section .col-lg-6 .deal-section-text-container .btn {
   border-radius: 0;
   padding: 0.5rem 0.7rem;
   font-weight: 600;
