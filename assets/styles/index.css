@@ -338,6 +338,10 @@ body {
   nav {
     padding: 1rem 2rem !important;
   }
+  nav .navbar,
+  nav .container-fluid.nav1 {
+    display: none;
+  }
   nav .container-fluid.responsive {
     background-color: transparent;
   }

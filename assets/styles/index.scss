@@ -354,6 +354,10 @@ body {
 }
 @media (max-width: 992px) {
   nav {
+    .navbar,
+    .container-fluid.nav1 {
+      display: none;
+    }
     padding: 1rem 2rem !important;
     .container-fluid.responsive {
       background-color: transparent;
