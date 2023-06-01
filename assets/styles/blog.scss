@@ -862,14 +862,15 @@ footer {
     padding-bottom: 1.5rem;
     color: #868e96 !important;
     max-width: 1140px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
     .row {
       font-size: 0.87rem;
       color: #adb5bd;
+      flex-wrap: wrap;
       .col-lg-8 {
-        text-align: right !important;
         ul {
           li {
             margin-right: 0.5rem;
@@ -883,6 +884,20 @@ footer {
         }
       }
     }
+  }
+}
+@media (max-width: 991px) {
+  .row .col-lg-8 {
+    text-align: center !important;
+  }
+  .row .col-lg-4 {
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .row .col-lg-8 {
+    text-align: right !important;
   }
 }
 
