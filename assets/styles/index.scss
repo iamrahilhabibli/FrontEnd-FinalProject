@@ -1757,9 +1757,56 @@ footer {
           width: 100%;
           padding-right: 15px;
           padding-left: 15px;
-          .responsive-footer-tags {
-            list-style-type: none;
-            text-decoration: none;
+          .row {
+            flex-wrap: wrap;
+            .col-lg-4 {
+              width: 100%;
+              .responsive-footer-tags {
+                list-style-type: none;
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+                margin-bottom: 1rem;
+                margin-top: 1rem;
+              }
+            }
+            .shop {
+              ul {
+                font-size: 0.87rem;
+                list-style-type: none;
+                text-align: left;
+                padding-left: 0 !important;
+
+                li {
+                  margin-bottom: 0.5rem;
+                  text-align: left;
+
+                  a {
+                    text-decoration: none;
+                    color: #868e96;
+                    font-weight: 600;
+                    position: relative;
+
+                    &::before {
+                      content: "";
+                      position: absolute;
+                      left: 0;
+                      bottom: -2px;
+                      width: 100%;
+                      height: 2px;
+                      background-color: black;
+                      transform-origin: left;
+                      transform: scaleX(0);
+                      transition: transform 0.3s ease-in;
+                    }
+
+                    &:hover::before {
+                      transform: scaleX(1);
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }

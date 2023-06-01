@@ -302,13 +302,19 @@ const shopToggle = document.querySelector(".responsive-footer-tags");
 const toggleExpandMenu = document
   .querySelector(".responsive.col-lg-7")
   .querySelector(".shop.expand-lg-collapse");
+const expandablePlus = document.querySelector(".expandable-plus");
+const expandableMinus = document.querySelector(".expandable-minus");
 
 shopToggle.addEventListener("click", (event) => {
   event.preventDefault();
 
   if (toggleExpandMenu.style.display === "none") {
     toggleExpandMenu.style.display = "block";
+    expandablePlus.style.display = "none";
+    expandableMinus.style.display = "inline";
   } else {
     toggleExpandMenu.style.display = "none";
+    expandablePlus.style.display = "inline";
+    expandableMinus.style.display = "none";
   }
 });
