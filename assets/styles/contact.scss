@@ -968,7 +968,6 @@ footer {
       color: #adb5bd;
       flex-wrap: wrap;
       .col-lg-8 {
-        text-align: right !important;
         ul {
           li {
             margin-right: 0.5rem;
@@ -990,6 +989,12 @@ footer {
   }
   .row .col-lg-4 {
     text-align: center !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .row .col-lg-8 {
+    text-align: right !important;
   }
 }
 
