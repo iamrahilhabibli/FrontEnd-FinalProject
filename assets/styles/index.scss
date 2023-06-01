@@ -1602,7 +1602,7 @@ footer {
     padding-bottom: 3rem;
 
     .footer-container {
-      max-width: 1140px;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
       padding-right: 15px;
@@ -1631,13 +1631,44 @@ footer {
       }
     }
   }
+  @media (min-width: 1200px) {
+    .footer-container {
+      max-width: 1140px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .footer-container {
+      max-width: 960px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .footer-container {
+      max-width: 720px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .footer-container {
+      max-width: 540px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
   .footer-last {
     padding-top: 6rem;
     padding-bottom: 6rem;
     .footer-last-container {
       margin-left: auto;
       margin-right: auto;
-      max-width: 1140px;
+      width: 100%;
       .row {
         flex-wrap: wrap;
         margin-left: -15px;
@@ -1724,6 +1755,38 @@ footer {
       }
     }
   }
+  @media (min-width: 1200px) {
+    .footer-last-container {
+      max-width: 1140px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .footer-last-container {
+      max-width: 960px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .footer-last-container {
+      max-width: 720px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 767px) {
+    .footer-last-container {
+      max-width: 540px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
   .footer-end-container {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -1807,20 +1870,20 @@ footer {
     margin-right: auto;
   }
 }
-@media (min-width: 768px) {
-  .footer-container {
-    max-width: 720px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+// @media (min-width: 768px) {
+//   .footer-container {
+//     max-width: 720px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
 
-@media (min-width: 576px) {
-  .footer-container {
-    max-width: 540px;
-    margin-left: auto;
-  }
-}
+// @media (min-width: 576px) {
+//   .footer-container {
+//     max-width: 540px;
+//     margin-left: auto;
+//   }
+// }
 
 @keyframes slideIn {
   0% {

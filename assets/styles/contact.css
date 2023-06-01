@@ -842,14 +842,17 @@ body {
   font-weight: 600;
 }
 
+footer {
+  background-color: white;
+}
 footer .bg-gray-100 {
   background-color: #f8f9fa;
   width: 100%;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 footer .bg-gray-100 .footer-container {
-  max-width: 1140px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -876,15 +879,42 @@ footer .bg-gray-100 .footer-container .row .col-lg-3 .service-text .text-sm {
   font-weight: 700;
   line-height: 18px;
 }
+@media (min-width: 1200px) {
+  footer .footer-container {
+    max-width: 1140px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  footer .footer-container {
+    max-width: 960px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .footer-container {
+    max-width: 720px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  footer .footer-container {
+    max-width: 540px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 footer .footer-last {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  background-color: white;
 }
 footer .footer-last .footer-last-container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1140px;
+  width: 100%;
 }
 footer .footer-last .footer-last-container .row {
   flex-wrap: wrap;
@@ -956,6 +986,34 @@ footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand
 }
 footer .footer-last .footer-last-container .row .col-lg-7 .row .col-lg-4 .expand-lg-collapse ul li a:hover::before {
   transform: scaleX(1);
+}
+@media (min-width: 1200px) {
+  footer .footer-last-container {
+    max-width: 1140px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  footer .footer-last-container {
+    max-width: 960px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  footer .footer-last-container {
+    max-width: 720px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  footer .footer-last-container {
+    max-width: 540px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 footer .footer-end-container {
   padding-top: 1.5rem;
