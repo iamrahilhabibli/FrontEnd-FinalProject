@@ -1703,7 +1703,8 @@ footer {
             }
           }
         }
-        .col-lg-7 {
+        .normal.col-lg-7 {
+          display: none;
           .row {
             flex-wrap: wrap;
             .col-lg-4 {
@@ -1750,6 +1751,15 @@ footer {
                 }
               }
             }
+          }
+        }
+        .responsive.col-lg-7 {
+          width: 100%;
+          padding-right: 15px;
+          padding-left: 15px;
+          .responsive-footer-tags {
+            list-style-type: none;
+            text-decoration: none;
           }
         }
       }

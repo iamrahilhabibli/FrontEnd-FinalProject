@@ -79,8 +79,7 @@ function loadCart() {
 
 window.addEventListener("storage", (event) => {
   if (event.key === "shoppingCart") {
-    const savedCart = JSON.parse(event.newValue); // Get the updated cart from event.newValue
-
+    const savedCart = JSON.parse(event.newValue);
     displayCartItems(savedCart);
     updateSubtotal(savedCart);
     updateCartItemsCount();

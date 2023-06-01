@@ -297,3 +297,18 @@ const clearCartButton = document.querySelector(".btn-danger");
 clearCartButton.addEventListener("click", () => {
   clearCart();
 });
+
+const shopToggle = document.querySelector(".responsive-footer-tags");
+const toggleExpandMenu = document
+  .querySelector(".responsive.col-lg-7")
+  .querySelector(".shop.expand-lg-collapse");
+
+shopToggle.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (toggleExpandMenu.style.display === "none") {
+    toggleExpandMenu.style.display = "block";
+  } else {
+    toggleExpandMenu.style.display = "none";
+  }
+});
