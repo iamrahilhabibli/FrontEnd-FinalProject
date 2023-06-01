@@ -724,6 +724,28 @@ nav .login-checkout-container ul li button {
   background-color: #ebf7ff;
   position: relative;
   padding: 3rem 0rem;
+  overflow: hidden;
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .ondeal-item-container {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .ondeal-item-container {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .ondeal-item-container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .ondeal-item-container .custom-blue-blob {
   height: 600px;
