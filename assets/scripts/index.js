@@ -34,10 +34,10 @@ function updateCountdown() {
   const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-  document.getElementById("days").textContent = days;
-  document.getElementById("hours").textContent = hours;
-  document.getElementById("minutes").textContent = minutes;
-  document.getElementById("seconds").textContent = seconds;
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours;
+  document.getElementById("minutes").innerText = minutes;
+  document.getElementById("seconds").innerText = seconds;
 }
 const shoppingCartIcon = document.querySelector(".fa-bag-shopping");
 const modalCart = document.querySelector(".modal-dialog");
@@ -227,7 +227,7 @@ function updateCartItemQuantity(cartItem) {
   );
   if (itemContainer) {
     const quantityElement = itemContainer.querySelector(".text-muted");
-    quantityElement.textContent = `Quantity: ${cartItem.count}`;
+    quantityElement.innerText = `Quantity: ${cartItem.count}`;
   }
   saveCart();
 }
