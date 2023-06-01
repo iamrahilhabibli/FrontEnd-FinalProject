@@ -532,6 +532,7 @@ nav {
     margin-right: auto;
     padding-right: 15px;
     padding-left: 15px;
+    width: 100%;
     .row {
       flex-wrap: wrap;
       height: 100%;
@@ -1001,6 +1002,31 @@ footer {
     display: none !important;
   }
 }
+
+@media (min-width: 992px) {
+  .getintouch-container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .getintouch-container {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .getintouch-container {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: 768px) {
   .footer-container {
     max-width: 720px;
