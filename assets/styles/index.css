@@ -1459,15 +1459,15 @@ footer .footer-end-container {
   padding-bottom: 1.5rem;
   color: #868e96 !important;
   max-width: 1140px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  background-color: white;
 }
 footer .footer-end-container .row {
   font-size: 0.87rem;
   color: #adb5bd;
-}
-footer .footer-end-container .row .col-lg-8 {
-  text-align: right !important;
+  flex-wrap: wrap;
 }
 footer .footer-end-container .row .col-lg-8 ul li {
   margin-right: 0.5rem;
@@ -1479,6 +1479,19 @@ footer .footer-end-container .row .col-lg-8 ul li a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 991px) {
+  .row .col-lg-8 {
+    text-align: center !important;
+  }
+  .row .col-lg-4 {
+    text-align: center !important;
+  }
+}
+@media (min-width: 992px) {
+  .row .col-lg-8 {
+    text-align: right !important;
+  }
+}
 @media (min-width: 768px) {
   .animate {
     animation-duration: 0.3s;
