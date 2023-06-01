@@ -595,6 +595,12 @@ nav .login-checkout-container ul li button {
   position: relative;
   overflow: hidden;
 }
+.slider .slider-container .swiper-container .swiper-pagination {
+  position: relative;
+}
+.slider .slider-container .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  background-color: #bcac76;
+}
 .slider .slider-container .swiper-container .swiper-wrapper {
   display: flex;
   position: relative;

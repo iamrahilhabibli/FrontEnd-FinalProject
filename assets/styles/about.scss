@@ -648,6 +648,12 @@ nav {
     .swiper-container {
       position: relative;
       overflow: hidden;
+      .swiper-pagination {
+        position: relative;
+        .swiper-pagination-bullet {
+          background-color: #bcac76;
+        }
+      }
       .swiper-wrapper {
         display: flex;
         position: relative;

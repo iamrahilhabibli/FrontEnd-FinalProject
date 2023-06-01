@@ -1,11 +1,19 @@
-const swiper = new Swiper(".swiper-container", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
+var swiper = new Swiper(".swiper-container", {
   slidesPerView: 5,
-  paginationClickable: true,
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 5,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 2,
+    },
   },
 });
 
