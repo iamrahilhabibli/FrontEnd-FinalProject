@@ -429,6 +429,21 @@ nav .login-checkout-container ul li button {
   margin-left: auto;
   margin-right: auto;
   max-width: 1140px;
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-one .main-container {
+    max-width: 720px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .section-one .main-container {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .section-one .main-container .col-xl-8 {
   margin-bottom: 75px;
