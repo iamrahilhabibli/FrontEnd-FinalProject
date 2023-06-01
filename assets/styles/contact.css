@@ -472,7 +472,6 @@ nav .login-checkout-container ul li button {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
-  height: 400px;
 }
 .getintouch-section .getintouch-container .row {
   flex-wrap: wrap;
@@ -741,7 +740,6 @@ nav .login-checkout-container ul li button {
 
 footer .bg-gray-100 {
   background-color: #f8f9fa;
-  height: 285px;
   width: 100%;
   padding-top: 6rem;
   padding-bottom: 6rem;
@@ -897,6 +895,19 @@ footer .footer-end-container .row .col-lg-8 ul li a:hover {
 @media (max-width: 575px) {
   .col-md-4.col-sm-6.language-currency {
     display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .footer-container {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 576px) {
+  .footer-container {
+    max-width: 540px;
+    margin-left: auto;
   }
 }
 
