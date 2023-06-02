@@ -606,12 +606,16 @@ body {
 .getintouch-section .getintouch-container .row .col-lg-8 {
   margin-left: auto;
 }
+.getintouch-section .getintouch-container .row .col-lg-8 form .formname {
+  text-align: left;
+}
 .getintouch-section .getintouch-container .row .col-lg-8 form .row {
   flex-wrap: wrap;
 }
 .getintouch-section .getintouch-container .row .col-lg-8 form .row .col-sm-6 .formname {
   margin-bottom: 1rem;
   height: auto;
+  text-align: left;
 }
 .getintouch-section .getintouch-container .row .col-lg-8 form .row .col-sm-6 .formname label {
   font-weight: bold;

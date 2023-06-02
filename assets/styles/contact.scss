@@ -637,12 +637,16 @@ body {
       .col-lg-8 {
         margin-left: auto;
         form {
+          .formname {
+            text-align: left;
+          }
           .row {
             flex-wrap: wrap;
             .col-sm-6 {
               .formname {
                 margin-bottom: 1rem;
                 height: auto;
+                text-align: left;
                 label {
                   font-weight: bold;
                 }
