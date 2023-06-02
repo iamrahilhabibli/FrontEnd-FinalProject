@@ -1774,6 +1774,7 @@ footer {
                   font-size: 26px;
                   position: absolute;
                   right: 0;
+                  transition: transform 0.3s ease;
                 }
                 .expandable-minus {
                   display: none;

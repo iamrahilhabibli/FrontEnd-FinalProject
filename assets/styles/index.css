@@ -1643,6 +1643,7 @@ footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .col-l
   font-size: 26px;
   position: absolute;
   right: 0;
+  transition: transform 0.3s ease;
 }
 footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .col-lg-4 .responsive-footer-tags .expandable-minus {
   display: none;
