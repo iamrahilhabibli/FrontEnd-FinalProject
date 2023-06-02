@@ -988,8 +988,8 @@ footer .footer-last .footer-last-container .row .normal.col-lg-7 .row .col-lg-4 
   transform: scaleX(1);
 }
 footer .footer-last .footer-last-container .row .responsive.col-lg-7 {
-  width: 100%;
   position: relative;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }

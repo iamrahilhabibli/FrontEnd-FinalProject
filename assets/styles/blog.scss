@@ -961,8 +961,8 @@ footer {
           }
         }
         .responsive.col-lg-7 {
-          width: 100%;
           position: relative;
+          width: 100%;
           padding-right: 15px;
           padding-left: 15px;
           .row {
@@ -976,8 +976,8 @@ footer {
                 text-decoration: none;
                 color: black;
                 font-weight: bold;
-                margin-bottom: 1rem;
-                margin-top: 1rem;
+                margin-bottom: 3rem;
+                margin-top: 3rem;
                 .expandable-plus {
                   font-size: 26px;
                   position: absolute;
@@ -1126,6 +1126,11 @@ footer {
     }
     .responsive.col-lg-7 {
       display: block;
+      .row {
+        .col-lg-4 {
+          text-align: left !important;
+        }
+      }
     }
   }
 
