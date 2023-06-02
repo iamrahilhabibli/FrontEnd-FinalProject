@@ -639,6 +639,10 @@ body {
         form {
           .formname {
             text-align: left;
+            input {
+              padding-top: 3rem;
+              border-bottom: 1px solid grey;
+            }
           }
           .row {
             flex-wrap: wrap;
@@ -650,6 +654,7 @@ body {
                 label {
                   font-weight: bold;
                 }
+
                 .formcontrol {
                   border-top: none;
                   border-right: none;
@@ -661,6 +666,7 @@ body {
           }
           .formname {
             margin-bottom: 1rem;
+            padding-bottom: 3rem;
             height: auto;
             label {
               font-weight: bold;
@@ -674,6 +680,16 @@ body {
               width: 100%;
             }
           }
+        }
+        button {
+          position: relative;
+          border-radius: 0;
+          color: #bcac76;
+          background-color: transparent;
+          border-color: #bcac76;
+          text-transform: uppercase;
+          letter-spacing: 0.3em;
+          font-weight: bold;
         }
       }
     }

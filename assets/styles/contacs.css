@@ -609,6 +609,10 @@ body {
 .getintouch-section .getintouch-container .row .col-lg-8 form .formname {
   text-align: left;
 }
+.getintouch-section .getintouch-container .row .col-lg-8 form .formname input {
+  padding-top: 3rem;
+  border-bottom: 1px solid grey;
+}
 .getintouch-section .getintouch-container .row .col-lg-8 form .row {
   flex-wrap: wrap;
 }
@@ -628,6 +632,7 @@ body {
 }
 .getintouch-section .getintouch-container .row .col-lg-8 form .formname {
   margin-bottom: 1rem;
+  padding-bottom: 3rem;
   height: auto;
 }
 .getintouch-section .getintouch-container .row .col-lg-8 form .formname label {
@@ -639,6 +644,16 @@ body {
   border-left: none;
   outline: none;
   width: 100%;
+}
+.getintouch-section .getintouch-container .row .col-lg-8 button {
+  position: relative;
+  border-radius: 0;
+  color: #bcac76;
+  background-color: transparent;
+  border-color: #bcac76;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-weight: bold;
 }
 
 .modal {
