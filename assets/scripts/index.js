@@ -308,12 +308,16 @@ shopLink.addEventListener("click", (event) => {
 
   if (shopExpandableMenu.style.display === "none") {
     shopExpandableMenu.style.display = "block";
-    shopExpandablePlus.style.display = "none";
-    shopExpandableMinus.style.display = "inline";
+    shopExpandablePlus.style.transform = "rotate(90deg)";
+    shopExpandablePlus.style.opacity = 0;
+    shopExpandableMinus.style.transform = "rotate(0)";
+    shopExpandableMinus.style.opacity = 1;
   } else {
     shopExpandableMenu.style.display = "none";
-    shopExpandablePlus.style.display = "inline";
-    shopExpandableMinus.style.display = "none";
+    shopExpandablePlus.style.transform = "rotate(0)";
+    shopExpandablePlus.style.opacity = 1;
+    shopExpandableMinus.style.transform = "rotate(-90deg)";
+    shopExpandableMinus.style.opacity = 0;
   }
 });
 
