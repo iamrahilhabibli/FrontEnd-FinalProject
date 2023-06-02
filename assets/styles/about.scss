@@ -1364,6 +1364,8 @@ footer {
             flex-wrap: wrap;
             .col-lg-4 {
               width: 100%;
+              margin-top: 1rem;
+              margin-bottom: 1rem;
               .responsive-footer-tags {
                 list-style-type: none;
                 text-decoration: none;
@@ -1371,12 +1373,22 @@ footer {
                 font-weight: bold;
                 margin-bottom: 1rem;
                 margin-top: 1rem;
+                .expandable-plus {
+                  font-size: 26px;
+                  position: absolute;
+                  right: 0;
+                  transition: transform 0.3s ease;
+                }
                 .expandable-minus {
                   display: none;
+                  font-size: 26px;
+                  position: absolute;
+                  right: 0;
                 }
               }
             }
             .shop.expand-lg-collapse {
+              display: none;
               ul {
                 font-size: 0.87rem;
                 list-style-type: none;
@@ -1414,6 +1426,7 @@ footer {
               }
             }
             .company.expand-lg-collapse {
+              display: none;
               ul {
                 font-size: 0.87rem;
                 list-style-type: none;
@@ -1451,6 +1464,7 @@ footer {
               }
             }
             .account.expand-lg-collapse {
+              display: none;
               ul {
                 font-size: 0.87rem;
                 list-style-type: none;
