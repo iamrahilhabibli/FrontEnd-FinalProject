@@ -1,11 +1,10 @@
 var image = document.getElementsByClassName("contactparallaximage");
 new simpleParallax(image);
-
 var map = L.map("map").setView([51.505, -0.09], 13);
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+
+L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
   maxZoom: 19,
-  attribution:
-    '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  attribution: '&copy; <a href="https://www.carto.com/">Carto</a>',
 }).addTo(map);
 
 function updateCartItemsCount() {
