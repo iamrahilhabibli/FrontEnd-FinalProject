@@ -688,8 +688,14 @@ body {
           background-color: transparent;
           border-color: #bcac76;
           text-transform: uppercase;
-          letter-spacing: 0.3em;
+          letter-spacing: 2px;
           font-weight: bold;
+          padding: 0.525rem 0.75rem;
+          font-size: 13px;
+          &:hover {
+            background-color: #bcac76;
+            color: black;
+          }
         }
       }
     }
