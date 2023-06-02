@@ -865,6 +865,12 @@ body {
   max-width: 100%;
   height: auto;
 }
+.slider .slider-container .swiper-container .swiper-pagination {
+  width: 80px;
+  overflow: hidden !important;
+  left: 50%;
+  white-space: nowrap;
+}
 
 .prefooter {
   padding-top: 6rem;

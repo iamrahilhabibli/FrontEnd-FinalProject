@@ -905,6 +905,12 @@ body {
           }
         }
       }
+      .swiper-pagination {
+        width: 80px;
+        overflow: hidden !important;
+        left: 50%;
+        white-space: nowrap;
+      }
     }
   }
 }
