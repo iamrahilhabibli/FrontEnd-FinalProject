@@ -1753,6 +1753,7 @@ footer {
           }
         }
         .responsive.col-lg-7 {
+          position: relative;
           width: 100%;
           padding-right: 15px;
           padding-left: 15px;
@@ -1760,15 +1761,25 @@ footer {
             flex-wrap: wrap;
             .col-lg-4 {
               width: 100%;
+              margin-top: 1rem;
+              margin-bottom: 1rem;
               .responsive-footer-tags {
                 list-style-type: none;
                 text-decoration: none;
                 color: black;
                 font-weight: bold;
-                margin-bottom: 1rem;
-                margin-top: 1rem;
+                margin-bottom: 3rem;
+                margin-top: 3rem;
+                .expandable-plus {
+                  font-size: 26px;
+                  position: absolute;
+                  right: 0;
+                }
                 .expandable-minus {
                   display: none;
+                  font-size: 26px;
+                  position: absolute;
+                  right: 0;
                 }
               }
             }
@@ -1907,6 +1918,11 @@ footer {
     }
     .responsive.col-lg-7 {
       display: block;
+      .row {
+        .col-lg-4 {
+          text-align: left !important;
+        }
+      }
     }
   }
 

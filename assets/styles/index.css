@@ -1618,6 +1618,7 @@ footer .footer-last .footer-last-container .row .normal.col-lg-7 .row .col-lg-4 
   transform: scaleX(1);
 }
 footer .footer-last .footer-last-container .row .responsive.col-lg-7 {
+  position: relative;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -1627,17 +1628,27 @@ footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row {
 }
 footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .col-lg-4 {
   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .col-lg-4 .responsive-footer-tags {
   list-style-type: none;
   text-decoration: none;
   color: black;
   font-weight: bold;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .col-lg-4 .responsive-footer-tags .expandable-plus {
+  font-size: 26px;
+  position: absolute;
+  right: 0;
 }
 footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .col-lg-4 .responsive-footer-tags .expandable-minus {
   display: none;
+  font-size: 26px;
+  position: absolute;
+  right: 0;
 }
 footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .shop.expand-lg-collapse {
   display: none;
@@ -1755,6 +1766,9 @@ footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .accou
   }
   footer .responsive.col-lg-7 {
     display: block;
+  }
+  footer .responsive.col-lg-7 .row .col-lg-4 {
+    text-align: left !important;
   }
 }
 @media (min-width: 1200px) {
