@@ -1772,7 +1772,8 @@ footer {
                 }
               }
             }
-            .shop {
+            .shop.expand-lg-collapse {
+              display: none;
               ul {
                 font-size: 0.87rem;
                 list-style-type: none;
@@ -1809,7 +1810,8 @@ footer {
                 }
               }
             }
-            .company {
+            .company.expand-lg-collapse {
+              display: none;
               ul {
                 font-size: 0.87rem;
                 list-style-type: none;
@@ -1846,7 +1848,8 @@ footer {
                 }
               }
             }
-            .account {
+            .account.expand-lg-collapse {
+              display: none;
               ul {
                 font-size: 0.87rem;
                 list-style-type: none;
