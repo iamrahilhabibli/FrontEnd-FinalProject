@@ -39,39 +39,40 @@ function updateCountdown() {
   document.getElementById("minutes").innerText = minutes;
   document.getElementById("seconds").innerText = seconds;
 }
-const shoppingCartIcon = document.querySelector(".fa-bag-shopping");
+const shoppingCartIcons = document.querySelectorAll(".fa-bag-shopping");
 const modalCart = document.querySelector(".modal-dialog");
 const modal = document.querySelector(".modal");
-const closeBtn = document
-  .querySelector(".modal-header")
-  .querySelector(".closebtn");
+const closeBtn = document.querySelector(".modal-header .closebtn");
 
 const sideBarModal = document.querySelector(".sidebar-modal");
-const sideBarModalDialog = document
-  .querySelector(".sidebar-modal")
-  .querySelector(".modal-dialog");
-const sideBarCloseBtn = document
-  .querySelector(".sidebar-modal")
-  .querySelector(".modal-header")
-  .querySelector(".closebtn");
-const staggeredBar = document.querySelector(".fa-bars-staggered");
-const modalContent = document
-  .querySelector(".modal-dialog")
-  .querySelector("modal-content");
+const sideBarModalDialog = document.querySelector(
+  ".sidebar-modal .modal-dialog"
+);
+const sideBarCloseBtn = document.querySelector(
+  ".sidebar-modal .modal-header .closebtn"
+);
+const staggeredBars = document.querySelectorAll(".fa-bars-staggered");
+const modalContent = document.querySelector(".modal-dialog .modal-content");
 
-shoppingCartIcon.addEventListener("click", () => {
-  modal.style.display = "block";
-  modalCart.style.display = "block";
+shoppingCartIcons.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    modal.style.display = "block";
+    modalCart.style.display = "block";
+  });
 });
 
 closeBtn.addEventListener("click", () => {
   modal.style.display = "none";
   modalCart.style.display = "none";
 });
-staggeredBar.addEventListener("click", () => {
-  sideBarModal.style.display = "block";
-  sideBarModalDialog.style.display = "block";
+
+staggeredBars.forEach((icon) => {
+  icon.addEventListener("click", () => {
+    sideBarModal.style.display = "block";
+    sideBarModalDialog.style.display = "block";
+  });
 });
+
 sideBarCloseBtn.addEventListener("click", () => {
   sideBarModal.style.display = "none";
   sideBarModalDialog.style.display = "none";
