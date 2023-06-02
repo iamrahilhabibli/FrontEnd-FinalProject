@@ -132,3 +132,72 @@ sideBarCloseBtn.addEventListener("click", () => {
   sideBarModal.style.display = "none";
   sideBarModalDialog.style.display = "none";
 });
+
+const shopLink = document.querySelector(".shop.responsive-footer-tags");
+const shopExpandablePlus = document.querySelector(".shop .expandable-plus");
+const shopExpandableMinus = document.querySelector(".shop .expandable-minus");
+const shopExpandableMenu = document.querySelector(".shop.expand-lg-collapse");
+
+shopLink.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (shopExpandableMenu.style.display === "none") {
+    shopExpandableMenu.style.display = "block";
+    shopExpandablePlus.style.display = "none";
+    shopExpandableMinus.style.display = "inline";
+  } else {
+    shopExpandableMenu.style.display = "none";
+    shopExpandablePlus.style.display = "inline";
+    shopExpandableMinus.style.display = "none";
+  }
+});
+
+const companyLink = document.querySelector(".company.responsive-footer-tags");
+const companyExpandablePlus = document.querySelector(
+  ".company .expandable-plus"
+);
+const companyExpandableMinus = document.querySelector(
+  ".company .expandable-minus"
+);
+const companyExpandableMenu = document.querySelector(
+  ".company.expand-lg-collapse"
+);
+
+companyLink.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (companyExpandableMenu.style.display === "none") {
+    companyExpandableMenu.style.display = "block";
+    companyExpandablePlus.style.display = "none";
+    companyExpandableMinus.style.display = "inline";
+  } else {
+    companyExpandableMenu.style.display = "none";
+    companyExpandablePlus.style.display = "inline";
+    companyExpandableMinus.style.display = "none";
+  }
+});
+
+const accountLink = document.querySelector(".account.responsive-footer-tags");
+const accountExpandablePlus = document.querySelector(
+  ".account .expandable-plus"
+);
+const accountExpandableMinus = document.querySelector(
+  ".account .expandable-minus"
+);
+const accountExpandableMenu = document.querySelector(
+  ".account.expand-lg-collapse"
+);
+
+accountLink.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  if (accountExpandableMenu.style.display === "none") {
+    accountExpandableMenu.style.display = "block";
+    accountExpandablePlus.style.display = "none";
+    accountExpandableMinus.style.display = "inline";
+  } else {
+    accountExpandableMenu.style.display = "none";
+    accountExpandablePlus.style.display = "inline";
+    accountExpandableMinus.style.display = "none";
+  }
+});
