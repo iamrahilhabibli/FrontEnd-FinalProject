@@ -228,3 +228,18 @@ accountLink.addEventListener("click", (event) => {
     accountExpandableMinus.style.opacity = 0;
   }
 });
+
+const faUserBtns = document.querySelectorAll(".fa-user");
+const loginModal = document.querySelector(".login-modal");
+
+faUserBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    loginModal.style.display = "block";
+  });
+});
+
+const closeBtnLogin = document.getElementById("login-closebtn");
+
+closeBtnLogin.addEventListener("click", () => {
+  loginModal.style.display = "none";
+});
