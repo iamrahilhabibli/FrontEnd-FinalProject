@@ -392,3 +392,11 @@ registerBtn.addEventListener("click", () => {
   loginPanel.style.display = "none";
   registerPanel.style.display = "block";
 });
+
+const faUserBtn = document.querySelector(".fa-user");
+
+const loginModal = document.querySelector(".login-modal");
+
+faUserBtn.addEventListener("click", () => {
+  loginModal.style.display = "block";
+});
