@@ -401,3 +401,9 @@ faUserBtns.forEach((btn) => {
     loginModal.style.display = "block";
   });
 });
+
+const closeBtnLogin = document.getElementById("login-closebtn");
+
+closeBtnLogin.addEventListener("click", () => {
+  loginModal.style.display = "none";
+});
