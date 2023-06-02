@@ -1083,10 +1083,15 @@ footer {
                   transition: transform 0.3s ease;
                 }
                 .expandable-minus {
-                  display: none;
                   font-size: 26px;
                   position: absolute;
                   right: 0;
+                  opacity: 0;
+                }
+
+                .expandable-plus,
+                .expandable-minus {
+                  transition: transform 0.3s ease, opacity 0.3s ease;
                 }
               }
             }

@@ -1016,10 +1016,14 @@ footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .col-l
   transition: transform 0.3s ease;
 }
 footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .col-lg-4 .responsive-footer-tags .expandable-minus {
-  display: none;
   font-size: 26px;
   position: absolute;
   right: 0;
+  opacity: 0;
+}
+footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .col-lg-4 .responsive-footer-tags .expandable-plus,
+footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .col-lg-4 .responsive-footer-tags .expandable-minus {
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 footer .footer-last .footer-last-container .row .responsive.col-lg-7 .row .shop.expand-lg-collapse {
   display: none;
