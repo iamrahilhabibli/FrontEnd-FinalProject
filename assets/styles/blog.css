@@ -546,6 +546,10 @@ body {
   color: #bcac76;
   text-decoration: none;
 }
+.blog-cards .blog-cards-container .blog-cards-pagination ul {
+  justify-content: space-between !important;
+  margin-bottom: 1rem;
+}
 
 .modal {
   display: block;

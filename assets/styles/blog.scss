@@ -575,6 +575,12 @@ body {
         }
       }
     }
+    .blog-cards-pagination {
+      ul {
+        justify-content: space-between !important;
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
 // MODALS
