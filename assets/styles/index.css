@@ -1356,7 +1356,7 @@ body {
 }
 
 .login-modal {
-  display: none;
+  display: block !important;
   position: fixed;
   top: 0;
   right: 0;
@@ -1473,6 +1473,26 @@ body {
 .login-modal .modal-dialog .modal-content .modal-body .container .tab-panel .hr-text::after {
   left: 0.25em;
   margin-left: 15px;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel .text-center .btn.btn.btn-outline-primary {
+  font-weight: bold;
+  color: #bcac76;
+  border-color: #bcac76;
+  border-radius: 0;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel .text-center .btn.btn.btn-outline-primary:hover {
+  color: black;
+  background-color: #bcac76;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel .text-center .btn.btn.btn-outline-muted {
+  font-weight: bold;
+  color: grey;
+  border-color: grey;
+  border-radius: 0;
+}
+.login-modal .modal-dialog .modal-content .modal-body .container .tab-panel .text-center .btn.btn.btn-outline-muted:hover {
+  color: white;
+  background-color: grey;
 }
 
 footer .bg-gray-100 {
