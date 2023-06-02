@@ -379,3 +379,16 @@ accountLink.addEventListener("click", (event) => {
     accountExpandableMinus.style.opacity = 0;
   }
 });
+
+const registerBtn = document
+  .querySelector(".nav.list-inline")
+  .querySelector(".register");
+
+const loginPanel = document.querySelector(".login.tab-panel");
+const registerPanel = document.querySelector("#loginModalTabRegister");
+console.log(registerPanel);
+
+registerBtn.addEventListener("click", () => {
+  loginPanel.style.display = "none";
+  registerPanel.style.display = "block";
+});
