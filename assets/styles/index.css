@@ -1217,8 +1217,9 @@ body {
   padding-top: 2rem;
   height: 80px;
   padding-bottom: 2rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(193, 193, 193);
   overflow: hidden;
+  margin-top: 30px;
 }
 .modal .modal-dialog .modal-content .modal-body .sidebar-cart-product-wrapper .customscrollbox .customscrollbox-container .navbar-cart-product .item-container a .itemimg {
   height: 100%;
@@ -1356,7 +1357,7 @@ body {
 }
 
 .login-modal {
-  display: block !important;
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
